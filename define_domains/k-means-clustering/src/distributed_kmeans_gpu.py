@@ -202,7 +202,7 @@ def select_best_candidate(
 ):
     """
     The selection sub-procedure of kmeans++ initialization.
-    Given a list of candidates to select as the next centroid, it find 
+    Given a list of candidates to select as the next centroid, it find
     the candidate that would result in the smallest partial kmeans objective.
 
     Parameters:

@@ -9,6 +9,8 @@ import logging
 from pathlib import Path
 import subprocess
 
+import os
+
 import numpy as np
 import torch
 
@@ -18,7 +20,7 @@ from src import (
     hierarchical_sampling as hs,
 )
 from src.dist_comm import enable_distributed, is_main_process, synchronize
-from src.utils import get_last_valid_checkpoint, setup_logging
+from src.utils import get_last_valid_checkpoint, setup_logging, MDSPseudoMemMap, MultiMemMap
 
 
 logger = logging.getLogger("hkmeans")
@@ -48,11 +50,24 @@ def main(args):
         overwrite=True,
     )
 
-    X_ori = np.load(args.data_path, mmap_mode="r")
+    synchronize()
+    logger.info("initial synchronized!")
+
+
+    logger.info("initializing data!")
+    if os.path.isdir(args.data_path):
+        X_ori = MultiMemMap(args.data_path, args.held_out_shards)
+    else:
+        X_ori = np.load(args.data_path, mmap_mode="r")
+    logger.info("data initialized")
+
     if args.subset_indices_path is not None:
         logger.info(f"Using subset with indices in {args.subset_indices_path}")
         subset_indices = np.load(args.subset_indices_path)
         X_ori = dkmg.ExtendedNumpyMemMap(X_ori, subset_indices)
+
+
+    logger.info("loading to workers")
     Xi_ori = dkmg.load_data_to_worker(X_ori, dtype=args.dtype)
 
     for step_id in range(args.n_steps):
@@ -177,7 +192,7 @@ def main(args):
             clusters
         )
 
-        if not Path(step_dir, "sorted_clusters.npy").exists():
+        if not Path(step_dir, "sorted_clusters.npy").exists() and not args.do_not_sort_clusters:
             centroids = centroids.cpu().numpy()
             del X, Xi
             if step_id == args.n_steps - 1:
@@ -205,16 +220,17 @@ def main(args):
                 ).unlink(missing_ok=True)
 
     if is_main_process():
-        last_sorted_clusters_path = str(
-            Path(args.exp_dir, f"step{args.n_steps-1}", "sorted_clusters.npy").resolve()
-        )
+        if not args.do_not_sort_clusters:
+            last_sorted_clusters_path = str(
+                Path(args.exp_dir, f"step{args.n_steps-1}", "sorted_clusters.npy").resolve()
+            )
+            link_command = f'ln -s {last_sorted_clusters_path} {str(Path(args.exp_dir, "sorted_clusters.npy").resolve())}'
+            process = subprocess.Popen(link_command.split(), stdout=subprocess.PIPE)
+            _, _ = process.communicate()
+
         last_centroids_path = str(
             Path(args.exp_dir, f"step{args.n_steps-1}", "centroids.npy").resolve()
         )
-
-        link_command = f'ln -s {last_sorted_clusters_path} {str(Path(args.exp_dir, "sorted_clusters.npy").resolve())}'
-        process = subprocess.Popen(link_command.split(), stdout=subprocess.PIPE)
-        _, _ = process.communicate()
 
         link_command = f'ln -s {last_centroids_path} {str(Path(args.exp_dir, "centroids.npy").resolve())}'
         process = subprocess.Popen(link_command.split(), stdout=subprocess.PIPE)
@@ -255,6 +271,17 @@ if __name__ == "__main__":
         type=str,
         default="c",
         help="resampling with closest (c) or random (r) strategy",
+    )
+    parser.add_argument(
+        "--held_out_shards",
+        type=int,
+        default=0,
+        help="Don't use last N embedding shards for clustering",
+    )
+    parser.add_argument(
+        "--do_not_sort_clusters",
+        action="store_true",
+        help="Skip sorting clusters by distance to centroid",
     )
 
     args = parser.parse_args()

@@ -39,7 +39,8 @@ f"""#!/usr/bin/env bash
 #SBATCH --job-name=kmeans_level{level_id}
 #SBATCH --output={save_dir}/logs/%j_0_log.out
 #SBATCH --error={save_dir}/logs/%j_0_log.err
-#SBATCH --time=4320
+#SBATCH --time=1-0
+#SBATCH --mem=800G
 #SBATCH --signal=USR2@300
 #SBATCH --open-mode=append\n"""
         )
@@ -78,10 +79,15 @@ f"""#!/usr/bin/env bash
 EXPDIR={save_dir}
 cd {ROOT}
 
+master_addr=${{MASTER_ADDR:-$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)}}
+
 PYTHONPATH=.. \\
+srun -N {cfg.nnodes[level_id-1]} --unbuffered --output="$EXPDIR"/logs/%j_%t_log.out --error="$EXPDIR"/logs/%j_%t_log.err \\
 torchrun \\
 --nnodes={cfg.nnodes[level_id-1]} \\
 --nproc_per_node={cfg.ngpus_per_node[level_id-1]} \\
+--rdzv_backend=c10d \\
+--rdzv_endpoint=$master_addr:56321 \\
     run_distributed_kmeans.py \\
     --use_torchrun \\
     --data_path {data_path} \\
@@ -122,7 +128,8 @@ f"""#!/usr/bin/env bash
 #SBATCH --job-name=split_kmeans_level{level_id}
 #SBATCH --output={level_dir}/logs/%j_0_log.out
 #SBATCH --error={level_dir}/logs/%j_0_log.err
-#SBATCH --time=4320
+#SBATCH --time=1-0
+#SBATCH --mem=800G
 #SBATCH --signal=USR2@300
 #SBATCH --open-mode=append\n"""
         )
@@ -158,11 +165,17 @@ f"""#!/usr/bin/env bash
 EXPDIR={level_dir}
 cd {ROOT}
 
+master_addr=${{MASTER_ADDR:-$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)}}
+
 PYTHONPATH=.. \\
+srun -N {cfg.nnodes[level_id-1]} --unbuffered --output="$EXPDIR"/logs/%j_%t_log.out --error="$EXPDIR"/logs/%j_%t_log.err \\
 torchrun \\
 --nnodes={cfg.nnodes[level_id-1]} \\
 --nproc_per_node={cfg.ngpus_per_node[level_id-1]} \\
+--rdzv_backend=c10d \\
+--rdzv_endpoint=$master_addr:56321 \\
     split_clusters.py \\
+    --use_torchrun \\
     --data_path {data_path} \\
     --clusters_path "$EXPDIR"/pre_clusters/sorted_clusters.npy \\
     --n_splits {cfg.n_splits[level_id-1]} \\

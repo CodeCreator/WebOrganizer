@@ -1,5 +1,8 @@
 # Automatic Data Curation for Self-Supervised Learning: A Clustering-Based Approach
 
+<span style="color:red">__*This repository has been adapted from the [ssl-data-curation](https://github.com/facebookresearch/ssl-data-curation) repository.
+We have added functionality to read embeddings from many numpy files and MDS datasets. We have also changed the multi-node slurm implementation to make use of torchrun on each node. The experimental scripts for the paper can be found in `exps/*/level1/slurm_script.s`.*__</span>
+
 **[FAIR at Meta](https://ai.facebook.com/research/)**
 
 *Huy V. Vo,
@@ -20,7 +23,7 @@ PyTorch implementation for the data curation pipeline with hierarchical k-means.
 
 <p align="center">
   <img width="95%" alt="data curation pipeline" src="images/curation_pipeline.png">
-</p> 
+</p>
 
 ## Contents
 - [Installation](#installation)
@@ -81,7 +84,7 @@ sampled_indices = hs.hierarchical_sampling(cl, target_size=1000)
 
 <p align="center">
   <img width="95%" alt="data curation pipeline" src="images/toy_example.png">
-</p> 
+</p>
 
 ### On large data
 To launch hierarchical k-means on large data, we need to prepare a config file. We provide below an example illustrating how to launch a 2-level hierarchical k-means on random embeddings with config in [configs/2levels_random_embeddings.yaml](configs/2levels_random_embeddings.yaml).
@@ -110,10 +113,10 @@ PYTHONPATH=.. python run_hierarchical_sampling.py \
   --save
 ```
 
-We also  provide the config used for our web-based image data pool in [configs/4levels_web_based_images.yaml](configs/4levels_web_based_images.yaml). 
+We also  provide the config used for our web-based image data pool in [configs/4levels_web_based_images.yaml](configs/4levels_web_based_images.yaml).
 
 ## Notebook
-We provide a [notebook](vis/notebook.ipynb) to reproduce visualizations in the paper and show additional examples. 
+We provide a [notebook](vis/notebook.ipynb) to reproduce visualizations in the paper and show additional examples.
 
 ## Contributing
 See [contributing](CONTRIBUTING.md) and the [code of conduct](CODE_OF_CONDUCT.md).

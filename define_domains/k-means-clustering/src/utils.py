@@ -11,6 +11,85 @@ from pathlib import Path
 import numpy as np
 import torch
 
+from streaming import LocalDataset
+
+
+class MultiMemMap:
+    def __init__(self, path: str, held_out_shards: int = 0):
+        """
+        Parameters:
+            X: memmap to a numy array, or an array
+            indices: array, indices representing the slice
+        """
+        paths = sorted(Path(path).glob("*.npy"))
+        self.shards = [
+            np.load(path, mmap_mode="r")
+            for path in paths[:len(paths)-held_out_shards]
+        ]
+        self.lengths = [
+            len(shard) for shard in self.shards
+        ]
+        self.cum_lengths = np.cumsum(self.lengths)
+        self.dim = self.shards[0].shape[-1]
+        self.dtype = self.shards[0].dtype
+
+    def __getitem__(self, ids):
+        if isinstance(ids, int):
+            return self.__getitem__([ids])[0]
+        ids = np.arange(len(self))[ids]
+
+        shard_idx = np.searchsorted(self.cum_lengths, ids, side='right')
+        results = np.zeros((len(shard_idx), self.dim), dtype=self.dtype)
+
+        for shard_id in np.unique(shard_idx):
+            ids_mask = shard_idx == shard_id
+            results[ids_mask] = self.shards[shard_id][ids[ids_mask] - self.cum_lengths[shard_id]]
+        return results
+
+    def __len__(self):
+        return self.cum_lengths[-1]
+
+    @property
+    def shape(self):
+        return (self.cum_lengths[-1], self.dim)
+
+    def numpy(self):
+        return self.__getitem__(slice(0, len(self)))
+
+    def to_tensor(self, dtype, device):
+        return torch.tensor(self.numpy(), device=device, dtype=dtype)
+
+
+class MDSPseudoMemMap(LocalDataset):
+    def __init__(self, path: str, field="embedding"):
+        """
+        Parameters:
+            X: memmap to a numy array, or an array
+            indices: array, indices representing the slice
+        """
+        super().__init__(path)
+        self.field = field
+
+    def __getitem__(self, ids):
+        result = super().__getitem__(ids)
+        if isinstance(result, dict):
+            return result[self.field]
+        elif isinstance(result[0], dict):
+            return np.stack([r[self.field] for r in result])
+        else:
+            return np.stack(result)
+
+    @property
+    def shape(self):
+        return (len(self), len(self[0]))
+
+    def numpy(self):
+        return self.__getitem__(slice(0, len(self)))
+
+    def to_tensor(self, dtype, device):
+        return torch.tensor(self.numpy(), device=device, dtype=dtype)
+
+
 
 def create_clusters_from_cluster_assignment(
     cluster_assignment: np.array,

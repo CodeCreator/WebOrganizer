@@ -5,7 +5,9 @@
 # LICENSE file in the root directory of this source tree.
 
 import os
+import datetime
 import random
+import subprocess
 import re
 import socket
 from typing import Dict, List
@@ -122,21 +124,21 @@ def _is_slurm_job_process() -> bool:
     return "SLURM_JOB_ID" in os.environ
 
 
-def _parse_slurm_node_list(s: str) -> List[str]:
-    nodes = []
-    # Extract "hostname", "hostname[1-2,3,4-5]," substrings
-    p = re.compile(r"(([^\[]+)(?:\[([^\]]+)\])?),?")
-    for m in p.finditer(s):
-        prefix, suffixes = s[m.start(2) : m.end(2)], s[m.start(3) : m.end(3)]
-        for suffix in suffixes.split(","):
-            span = suffix.split("-")
-            if len(span) == 1:
-                nodes.append(prefix + suffix)
-            else:
-                width = len(span[0])
-                start, end = int(span[0]), int(span[1]) + 1
-                nodes.extend([prefix + f"{i:0{width}}" for i in range(start, end)])
-    return nodes
+
+def _parse_slurm_node_list(slurm_job_nodelist: str) -> List[str]:
+    try:
+        # Run the scontrol command and capture the output
+        result = subprocess.run(
+            ["scontrol", "show", "hostnames", slurm_job_nodelist],
+            check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+        )
+        # Split the output into lines and return as a list of nodes
+        nodes = result.stdout.strip().split('\n')
+        return nodes
+    except subprocess.CalledProcessError as e:
+        print(f"Error running scontrol: {e.stderr}")
+        return []
+
 
 
 class _TorchDistributedEnvironment:
@@ -174,15 +176,17 @@ class _TorchDistributedEnvironment:
         job_id = int(os.environ["SLURM_JOB_ID"])
         node_count = int(os.environ["SLURM_JOB_NUM_NODES"])
         nodes = _parse_slurm_node_list(os.environ["SLURM_JOB_NODELIST"])
-        assert len(nodes) == node_count
+        if len(nodes) != node_count:
+            print(f"len({nodes}) != {node_count}")
+            node_count = len(nodes)
 
         self.master_addr = nodes[0]
         self.master_port = _get_master_port(seed=job_id)
         print(f"using {self.master_addr}:{self.master_port}")
-        self.rank = int(os.environ["SLURM_PROCID"])
-        self.world_size = int(os.environ["SLURM_NTASKS"])
+        self.rank = int(os.environ.get("SLURM_PROCID", 0))
+        self.world_size = int(os.environ.get("SLURM_NTASKS", 1))
         assert self.rank < self.world_size
-        self.local_rank = int(os.environ["SLURM_LOCALID"])
+        self.local_rank = int(os.environ.get("SLURM_LOCALID", 0))
         self.local_world_size = self.world_size // node_count
         assert self.local_rank < self.local_world_size
 
@@ -297,6 +301,8 @@ def gather_tensor(x, do_all_gather=False):
             return None
 
 
+group_gloo = None
+
 def synchronize():
     """
     Helper function to synchronize (barrier) among all processes when
@@ -309,4 +315,8 @@ def synchronize():
     world_size = get_global_size()
     if world_size == 1:
         return
-    dist.barrier()
+    # dist.barrier()
+    global group_gloo
+    if group_gloo is None:
+        group_gloo = dist.new_group(backend="gloo", timeout=datetime.timedelta(hours=6))
+    dist.monitored_barrier(group=group_gloo, timeout=datetime.timedelta(hours=6))

@@ -1,4 +1,4 @@
---extra-index-url https://download.pytorch.org/whl/cu118
+--extra-index-url https://download.pytorch.org/whl/cu121
 torch==2.2
 matplotlib==3.8.2
 scipy==1.11.4

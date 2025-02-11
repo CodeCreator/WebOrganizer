@@ -4,6 +4,7 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
+import os
 import sys
 from argparse import ArgumentParser
 import logging
@@ -13,7 +14,7 @@ from tqdm import tqdm
 import numpy as np
 import torch
 
-from src.utils import setup_logging
+from src.utils import setup_logging, MDSPseudoMemMap, MultiMemMap
 
 from src.dist_comm import (
     enable_distributed,
@@ -46,7 +47,16 @@ def split_clusters(
         use_torchrun=use_torchrun,
         overwrite=True,
     )
-    X = np.load(data_path, mmap_mode="r")
+
+    synchronize()
+    logger.info("initial synchronized!")
+
+
+    if os.path.isdir(data_path):
+        X = MultiMemMap(data_path)
+    else:
+        X = np.load(data_path, mmap_mode="r")
+
     if subset_indices_path is not None:
         logger.info(f"Using subset with indices in {subset_indices_path}")
         subset_indices = np.load(subset_indices_path)
@@ -196,3 +206,4 @@ if __name__ == "__main__":
         "cuda",
         args.use_torchrun,
     )
+    synchronize()
