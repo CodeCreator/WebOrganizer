@@ -40,7 +40,15 @@ def assign_clusters(dataset, indices, process_id, options):
             embeddings = centroids[cluster_ids]
 
         for cluster_id_by_level in zip(*assignments_by_level):
-            yield {f"level{i+1}": cluster_id for i, cluster_id in enumerate(cluster_id_by_level)}
+            if len(cluster_id_by_level) == 1:
+                yield {
+                    "": cluster_id_by_level[0]
+                }
+            else:
+                yield {
+                    f"level{i+1}": cluster_id
+                    for i, cluster_id in enumerate(cluster_id_by_level)
+                }
 
 
 if __name__ == "__main__":

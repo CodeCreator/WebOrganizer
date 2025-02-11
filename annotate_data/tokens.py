@@ -19,7 +19,10 @@ def predict_fn(dataset, indices, process_id, tokenizer_name, text_field="text"):
         text = dataset[i][text_field]
         tokens = tokenizer.encode(text)
         num_tokens = len(tokens) + 1  # + 1 for <bos>
-        yield {"": num_tokens, "bin": np.clip(np.log2(num_tokens).astype(int), 6, 11), "tokens": tokens}
+        yield {
+            "": num_tokens,
+            # "bin": np.clip(np.log2(num_tokens).astype(int), 6, 11)
+        }
 
 
 if __name__ == "__main__":

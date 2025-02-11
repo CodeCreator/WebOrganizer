@@ -66,8 +66,8 @@ def predict_fn(subset, indices, process_id, options):
 
         for seq_score in scores:
             yield {
-                "score": seq_score.item(),
-                "int_score": int(round(max(0, min(seq_score.item(), 5))))
+                "": seq_score.item(),
+                "rounded": int(round(max(0, min(seq_score.item(), 5))))
             }
 
 

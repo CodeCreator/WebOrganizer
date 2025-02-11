@@ -60,6 +60,6 @@ for id in $(jq -n "range($worker; $num_files; $num_workers)"); do
     #     $data_root/embeds/$output_file
     # python clusters.py \
     #     $data_root/embeds/${output_file}.npy \
-    #     $data_root/domains_clusters/$output_file \
+    #     $data_root/domains_clusters-k24/$output_file \
     #     --clustering_folder ../define_domains/k-means-clustering/exps/dclm-k24
 done
