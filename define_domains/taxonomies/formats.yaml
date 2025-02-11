@@ -1,0 +1,146 @@
+system_template: |-
+  Your task is to classify the format of web pages into one of the following 24 categories:
+  {choices}
+
+  Choose which format from the above list is the best match for describing the style, purpose and origin of the web page content. If the content has multiple formats, choose the one that is most prominent.
+  Remember to focus on the format, and not the topic, e.g., a research paper about legal issues does not count as 'Legal Notices'.
+  The URL might help you understand the content. Avoid shortcuts such as word overlap between the page and the format descriptions or simple patterns in the URL, for example `.../blog/...` may also occur for organizational announcements, comment sections, and other formats.
+  Start your response with the single-letter ID of the correct format followed by an explanation.
+template: |-
+  Consider the following web page:
+
+  URL: `{url}`
+  Content: ```
+  {text}
+  ```
+
+  Your task is to classify the format of web pages into one of the following 24 categories:
+  {choices}
+
+  Choose which format from the above list is the best match for describing the style, purpose and origin of the web page content. If the content has multiple formats, choose the one that is most prominent.
+  Remember to focus on the format, and not the topic, e.g., a research paper about legal issues does not count as 'Legal Notices'.
+  The URL might help you understand the content. Avoid shortcuts such as word overlap between the page and the format descriptions or simple patterns in the URL, for example `.../blog/...` may also occur for organizational announcements, comment sections, and other formats.
+  Start your response with the single-letter ID of the correct format followed by an explanation.
+choices:
+- |-
+  Academic Writing
+   - Examples: a research paper, a paper abstract, a thesis, a literature review
+   - This does not include other web pages that have academia and research only as their topic
+- |-
+  Content Listing
+   - The page contains an overview of content and is used for navigation
+   - Examples: sitemap, product catalog, search results, news listings with short snippets of articles, web directory
+   - Note that hyperlinks are not visible from the text content and you have to deduce which parts of the page contain hyperlinks
+- |-
+  Creative Writing
+   - The page content consists of a short story, chapters from a novel, a poem or song lyrics
+   - This does not include other web pages (e.g. forums or news articles) that have literature and fiction only as their topic
+- |-
+  Customer Support Page
+   - Content by an organization and for a general audience
+   - Examples: a troubleshooting guide
+   - For customer support pages in the specific format of FAQs, choose 'FAQs' instead
+- |-
+  Discussion Forum / Comment Section
+   - Community sites like reddit or comment sections on news article or blog posts
+   - Has to contain multiple posts or comments
+- |-
+  FAQs
+   - The page content is in the Frequently Asked Questions format
+- |-
+  Incomplete Content
+   - The page contents are truncated, pay-walled, or require a login to access
+   - If the page has multiple snippets of truncated articles, choose 'Content Listing' instead
+   - Also includes multimedia web pages where the web page text primarily describes and supplements the audiovisual content, e.g., a YouTube video description or image gallery
+- |-
+  Knowledge Article
+   - Written in an objective and neutral style
+   - Published on a moderated platform (like Wikipedia) or by a reputable source
+- |-
+  Legal Notices
+   - Examples: terms of service, legal disclaimers, privacy policy, license agreement
+   - This does not include other web pages that only have law-related topics
+- |-
+  Listicle
+   - A blog or article that presents content in the form of a list
+   - Examples: Buzzfeed-style articles, "Top 10" lists, "7 things you didn't know about Y", "4 best places to visit in Z"
+   - If the list is meant to give an overview of the site contents and facilitate navigation, choose 'Content Listing' instead
+- |-
+  News Article
+   - Written by journalists on current events and published by news organizations
+   - For long reads, profiles, editorials, and journalistic essays, choose 'Nonfiction Writing' instead
+   - For newspaper interviews, choose 'Transcript / Interview' instead
+- |-
+  Nonfiction Writing
+   - Long reads, profiles, editorials, essays, obituaries, memoirs and other forms of nonfiction writing
+   - Written by journalists and other professional writers
+- |-
+  Organizational About Page
+   - Typically contains a self-description or introduction by an organization such as a company, university, government agency, non-profit organization
+   - Note that the content may appear similar to a 'Knowledge Article' in some cases, but is not verified and may contain self-promotion
+- |-
+  Organizational Announcement
+   - Examples: a press release, a blog post by an organization such as a company, university, government agency, non-profit organization
+- |-
+  Personal About Page
+   - An "About Page" on a personal website or hobby website
+   - Typically contains a self-description, introduction or profile information
+- |-
+  Personal Blog
+   - Written by an individual typically relating personal experiences and opinions
+   - If the blog's comment section is longer than the blog post, choose 'Discussion Forum / Comment Section' instead
+- |-
+  Product Page
+   - Typically contains descriptions and promotions for a product or service
+   - Also includes products in a wider sense, for example university course descriptions
+   - If most of the page content consists of user reviews, choose 'User Reviews' instead
+- |-
+  Q&A Forum
+   - A user forum with an explicit question & answer format, e.g., Quora, Stack Exchange
+- |-
+  Spam / Ads
+   - The page consists primarily of spam content, SEO keyword stuffing, or short online ads for other pages, products or services
+   - Also choose this category if the page has no apparent purpose
+- |-
+  Structured Data
+   - Multiple data entries with a common structure
+   - Examples: a table, datasheet, movie database, glossary, dictionary, json file, csv, xml
+- |-
+  Technical Writing
+   - Examples: API documentation, README files, source code
+   - If the page only contains a link to documentation, choose a different category instead
+   - Unlike 'Customer Support Page', this content is meant for developers and experts, rather than end-users
+- |-
+  Transcript / Interview
+   - A written record of spoken language
+   - Examples: interviews (e.g. in a newspaper), the transcript of a court hearing, movie, podcast, lecture or speech
+- |-
+  Tutorial / How-To Guide
+   - Examples: cooking recipes, DIY instructions, a WikiHow page, a Khan Academy course
+   - The page must contain the actual content of the tutorial / how-to guide
+   - If the page only contains a brief description or promotion of the tutorial, choose a different category instead
+   - If the guide is specific to products or services from the same website, choose 'Customer Support Page' instead
+- |-
+  User Reviews
+   - Reviews posted by users, e.g., on Yelp, TripAdvisor
+demonstrations: # All demonstrations from dclm-refinedweb/global-shard_01_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zstd
+- url: http://abacus.bates.edu/cbb/indexf7a0.html?q=node/41
+  text: "A wealth of publications on the topic of plagiarism exists. To help you navigate or locate relevant resources, we have compiled a list of print and electronic resources.\n\nBibliography of Print Resources\n\nAltman, Ellen and Peter Hernon, eds. Research Misconduct: Issues, Implications, and Strategies. London: Ablex, 1997.\n\nAnderson, Judy. Plagiarism, Copyright Violation & Other Thefts of Intellectual\nProperty: An Annotated Bibliography\n. Jefferson, NC: McFarland 1998.\n\n\nBuranen, Lisa and Alice M. Roy, eds. Perspectives on Plagiarism and Intellectual Property in a postmodern world. Albany: SUNY Press, 2001.\n\nCQ Quarterly, \"Combating Plagiarism,\" 13:32 (2003): 773-796\n\nDecoo, Wilfried. Crisis on Campus: Confronting Academic Misconduct. Cambridge: MIT Press, 2002.\n\nA guide to academic misconduct that includes a concise history that situates the phenomenon in contemporary academic practice, describes its various phases, and offers advice on detection as well as avoidance.\n\nDunn, Lee and Chris Morgan, Sharon Parry, Meg O'Reilly. The Student Assessment Handbook: New Directions in Traditional and Online Assessment. London: Routledge Falmer, 2004.\n\nIncludes a discussion of lagiarism.\n\nHarris, Robert. The Plagiarism Handbook: Strategies for Preventing, Detecting, and Dealing with Plagiarism. Los Angeles: Pyrczak, 2001.\n\nHoward, Rebecca Moore. Standing in the Shadow of Giants: Plagiarists, Authors & Collaborators. Stanford, CT: Ablex 1999."
+  choice: "Structured Data"
+  explanation: "The page is a bibliography that consists mostly of a list of resources, with each entry following a similar format."
+- url: http://www.creazaeducation.com/cartoonist?goback=.gde_2845660_member_189359695
+  text: "Make a Comic Strip!\n\n\nCreaza Cartoonist\n\n\n\n\n\n  • Here, you can cut, paste, and copy elements from a frame.\n\n  • Here, you will find functions for the frame.\n  • You can give the frame a name or a descriptive text under Properties.  The text can be the name of the frame, or part of your story, and becomes visible when you display or print out your cartoon.\n  • If you want to re-use a frame you have made, first, you select the frame you want to copy, then click Copy.\n  • Here, you can also delete a frame and create a new frame.\n\n  • Functions for drawing are activated when you select an element to work with.\n  • You can choose between several different bubbles, as well as free-hand drawing, ellipses, and squares.\n  • You can arrange elements in sequence, meaning that you can add depth to your cartoon by placing elements behind or in front of each other.\n  • When you have your characters and other elements in place, it can be a good idea to lock what you have done so far.  When you choose unlock, all elements will be unlocked at the same time.\n\n  • Here, you can work with the appearance of your text, lines, and bubbles.  You can choose thick or thin lines.  Your lines can have different line styles, and your bubbles can be in all kinds of colours and gradients.\n\n  • You can either click on the button for expression or click on the arrow to get an overview of alternative expressions you can choose from."
+  choice: "Customer Support Page"
+  explanation: "The page provides instructions and guidance on how to use the Creaza Cartoonist tool, which is a form of customer support for users of this service."
+- url: http://seanwes.com/tag/ideas/
+  text: "Skip to Content\n\nYou decided to show up. “I’m going to do this thing,” you say to yourself. “I’m going to dedicate time every day to practicing hand lettering.”\n\nIt’s morning. You sit down at your desk in front of a blank page. The sun is just now starting to come through the blinds in the window. It’s casting a beam of light onto your fresh, white paper.\n\nBut there’s a problem: your mind is absolutely blank. You have no idea what to write. You look around frantically for inspiration, but nothing interesting stands out.\n\nWhat went wrong?\n\nWhen it comes to thinking of a concept or approach for a design project, it’s not all that hard to have a first idea. In fact, just about everyone does. When you hold a word association experiment, you find that when given a specific word or concept, people largely think of many of the same  Continue Reading »"
+  choice: "Incomplete Content"
+  explanation: "The page appears to be blog post relating personal experiences and insights. However, it is cut off and therefore qualifies as 'Incomplete Content'."
+- url: http://www.iris.edu/hq/news/story/first_earthscope_transportable_array_station_installed_in_virginia
+  text: "First EarthScope Transportable Array Station Installed in Virginia\n\nEarthScope Transportable Array Station R58B in Mineral, Virginia.\n\nOn August 8, EarthScope installed its first seismic station in Mineral, Virginia, near the epicenter of last year's magnitude 5.8 earthquake. This Transportable Array station, R58B, is a complement to other seismic stations in the area and is capable of detecting small regional aftershocks as well as earthquakes of about magnitude 5 occurring anywhere in the world. Both a high-quality broadband seismometer and a strong motion accelerometer were installed. The station will operate for about 2.5 years. In Spring 2013, an additional 18 stations will be installed in Virginia when the Transportable Array blankets the Mid-Atlantic states. To view the the most recent 24-hour seismogram at Station R58B or any other operating EarthScope seismic station, click here.\n\n\nBecause of the station's proximity to Washington, DC, the installation was observed by a small group of visitors including the Virginia state geologist, geoscience researchers from James Madison University in Harrisonburg, Virginia, and staff from IRIS Headquarters."
+  choice: "Knowledge Article"
+  explanation: "The page discusses the installation of a seismic station in Virginia in a concise and factual manner, which is characteristic of a knowledge article."
+- url: https://www.voyageairguitar.com/component/content/article/42/196-a-letter-from-voyage-air-ceo-jeff-cohen-
+  text: "A Letter From Voyage-Air CEO Jeff Cohen\n\nA big thank you to all of the many fans of Voyage-Air Guitar! Your comments and well wishes are much appreciated. Our email boxes are stuffed with mail from people that want to either buy a guitar, invest in the company, or just tell us how cool our guitar really is.\n\nThank you also to the producers ofShark Tank! It is not an easy thing to edit a one hour negotiation between me and the Sharks into just a few minutes ofairtime. One point I'd like to clarify about the show was the actual deal on the table. For $1 million, I was offering the Sharks a 49% stake in a new company, not Voyage-Air Guitar. The new company would license the technology to build Voyage-Air type guitars to other guitar manufacturers. Voyage-Air Guitar would continue to build its brand and build and sell guitars just the way it does today! The nuances of this deal were a bit much for the producers to work into our short segment. But, the Sharks and I knew exactly what was on the table!\n\nWe accomplished our goal of demonstrating the benefits of the Voyage-Air Guitar to millions of people and we are getting an overwhelming response! If you like the idea of having a guitar that folds in half, fits in a backpack and can be carried everywhere you go, then I hope you'll consider buying one for yourself.\n\nBest regards,"
+  choice: "Organizational Announcement"
+  explanation: "The page is a letter from the CEO of Voyage-Air Guitar, which is an announcement from an organization."
