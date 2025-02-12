@@ -9,10 +9,17 @@ let currentExamples = [];
 
 // Fetch all required data
 async function loadData() {
+    // Wait for Plotly to be available
+    if (typeof Plotly === 'undefined') {
+        console.log('Waiting for Plotly to load...');
+        await new Promise(resolve => setTimeout(resolve, 100));
+        return loadData();
+    }
+
     const [topics, formats, statistics] = await Promise.all([
-        fetch('assets/topics.json').then(r => r.json()),
-        fetch('assets/formats.json').then(r => r.json()),
-        fetch('assets/statistics.json').then(r => r.json())
+        fetch('assets/data/topics.json').then(r => r.json()),
+        fetch('assets/data/formats.json').then(r => r.json()),
+        fetch('assets/data/statistics.json').then(r => r.json())
     ]);
 
     topicsData = topics;
@@ -126,11 +133,11 @@ function renderTreemaps(topicValues, formatValues) {
 async function loadExamples() {
     let url;
     if (selectedTopic !== null && selectedFormat !== null) {
-        url = `assets/examples/topic${selectedTopic}_format${selectedFormat}.json`;
+        url = `assets/data/examples/topic${selectedTopic}_format${selectedFormat}.json`;
     } else if (selectedTopic !== null) {
-        url = `assets/examples/topic${selectedTopic}.json`;
+        url = `assets/data/examples/topic${selectedTopic}.json`;
     } else if (selectedFormat !== null) {
-        url = `assets/examples/format${selectedFormat}.json`;
+        url = `assets/data/examples/format${selectedFormat}.json`;
     } else {
         return;
     }
@@ -211,5 +218,13 @@ function previousExample() {
     }
 }
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', loadData);
+// Initialize on page load with a check for Plotly
+function initialize() {
+    if (document.readyState === 'complete') {
+        loadData();
+    } else {
+        window.addEventListener('load', loadData);
+    }
+}
+
+initialize();
