@@ -1,0 +1,122 @@
+[
+    {
+        "domain_id":0,
+        "domain_name":"Adult",
+        "domain_description":""
+    },
+    {
+        "domain_id":1,
+        "domain_name":"Art & Design",
+        "domain_description":"- Includes: architecture"
+    },
+    {
+        "domain_id":2,
+        "domain_name":"Software Dev.",
+        "domain_description":"- Includes: algorithms, coding, and web development"
+    },
+    {
+        "domain_id":3,
+        "domain_name":"Crime & Law",
+        "domain_description":"- Includes: law enforcement\n- Financial crime and litigation fall under `Finance & Business'\n- Social issues and the legislative process fall under `Politics'"
+    },
+    {
+        "domain_id":4,
+        "domain_name":"Education & Jobs",
+        "domain_description":"- Includes: pedagogy, training & certification, academia\n- Educational pages about a topic, e.g., food or mathematics, fall under that topic"
+    },
+    {
+        "domain_id":5,
+        "domain_name":"Hardware",
+        "domain_description":"- Includes: computer hardware, phones, televisions, other consumer electronics"
+    },
+    {
+        "domain_id":6,
+        "domain_name":"Entertainment",
+        "domain_description":"- Includes: music, movies, TV shows, videos, celebrities, humor, nightlife\n- Music or film discussed as art rather than entertainment falls under `Art & Design'"
+    },
+    {
+        "domain_id":7,
+        "domain_name":"Social Life",
+        "domain_description":"- Includes: family, friends, relationships, community\n- Specific social activity (e.g., sports or board games) fall under those topics"
+    },
+    {
+        "domain_id":8,
+        "domain_name":"Fashion & Beauty",
+        "domain_description":"- Includes: clothing, accessories, cosmetics"
+    },
+    {
+        "domain_id":9,
+        "domain_name":"Finance & Business",
+        "domain_description":"- Includes: taxes, regulations, investments, insurance, credit cards, personal finance, corporate communication, marketing, human resources"
+    },
+    {
+        "domain_id":10,
+        "domain_name":"Food & Dining",
+        "domain_description":"- Includes: recipes, groceries, beverages, restaurants\n- Nutritional sciences fall under `Health'"
+    },
+    {
+        "domain_id":11,
+        "domain_name":"Games",
+        "domain_description":"- Includes: video games, board games, gambling"
+    },
+    {
+        "domain_id":12,
+        "domain_name":"Health",
+        "domain_description":"- Includes: medicine, wellness, mental health, veterinary science, nutritional science\n- Health insurance falls under `Finance & Business'"
+    },
+    {
+        "domain_id":13,
+        "domain_name":"History",
+        "domain_description":"- Includes: geography, archaeology"
+    },
+    {
+        "domain_id":14,
+        "domain_name":"Home & Hobbies",
+        "domain_description":"- Includes: real estate, renting, relocation, furniture, appliances, home improvement, DIY, gardening, pets, toys, collecting"
+    },
+    {
+        "domain_id":15,
+        "domain_name":"Industrial",
+        "domain_description":"- Topics related to mining, agriculture, manufacturing, utilities and construction\n- Includes: raw materials, industrial goods, chemicals, textiles\n- General business topics or business finance fall under `Finance & Business'"
+    },
+    {
+        "domain_id":16,
+        "domain_name":"Literature",
+        "domain_description":"- Includes: literary criticism, linguistics, philosophy, related subjects in the humanities\n- Text written in literary style fall under the topic of its contents"
+    },
+    {
+        "domain_id":17,
+        "domain_name":"Politics",
+        "domain_description":"- Includes: social issues, political campaigns, the legislative process, geopolitics, protests, activism"
+    },
+    {
+        "domain_id":18,
+        "domain_name":"Religion",
+        "domain_description":"- Includes: spirituality"
+    },
+    {
+        "domain_id":19,
+        "domain_name":"Science & Tech.",
+        "domain_description":"- Includes: physics, chemistry, biology, environmental science, mathematics, statistics, biotech, engineering"
+    },
+    {
+        "domain_id":20,
+        "domain_name":"Software",
+        "domain_description":"- Topics related to the use of software and the internet"
+    },
+    {
+        "domain_id":21,
+        "domain_name":"Sports & Fitness",
+        "domain_description":"- Includes: martial arts, motor sports, outdoor activities, sports equipment"
+    },
+    {
+        "domain_id":22,
+        "domain_name":"Transportation",
+        "domain_description":"- Includes: cars and other vehicles, taxis, public transportation, traffic, commuting, aviation, rail, shipping, logistics"
+    },
+    {
+        "domain_id":23,
+        "domain_name":"Travel",
+        "domain_description":"- Includes: hospitality, hotels, sight-seeing, cruises\n- Detailed descriptions of tourist destinations fall under `History'"
+    }
+]

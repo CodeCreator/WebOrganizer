@@ -1,0 +1,66 @@
+[
+    {
+        "url":"https:\/\/diagrid.org\/kb\/groups\/faq",
+        "text":"Knowledge Base\n\nFrequently Asked Questions\n\nWhat is the difference between public, restricted, and private groups?\n\nPublic groups are listed around the site (searches, etc.) and viewable by anyone.\n\nRestricted groups are discoverable (searches, etc.) and viewable by registered users only.\n\nThere are three types of public groups: anyone can join and automatically is a member, restricted (anyone can request membership but must be approved by a manager), and invitation only. Group administrators can choose to show or hide resources, wiki pages, and discussion topics at any time.\n\nPrivate groups are not listed anywhere on the site. You can join them only by invitation.\n\nHow do I make a public group private? And vice-versa?\n\nIf you are an administrator, go to your Groups page and select the group. Select \"Edit\" on the lower right. Go to Privacy toward the bottom. Click \"private\" and save.\n\nInstructions are the same for making a private group public except click \"public\" under the privacy section.\n\nHow are groups managed?\n\nWhen you create a group, you are automatically made its first manager. As manager, you can also promote members to help you run the group.\n\nA group manager can:\n\n  1. Create group participation rules\n  2. Promote\/demote members and approve\/deny membership requests.\n  3. Modify information about the group\n    \u2022 Create or change the group name\n    \u2022 Create or change the group description\n    \u2022 Associate the group with an external URL\n    \u2022 Determine whether or not your group wiki pages, resources, and discussion topics can be viewed by non-members.\n    \u2022 Moderate group discussions\n\nThere's no upper limit on the number of managers a group can have, but a group must have at least one manager at all times.\n\nYou can read about keeping your group happy on the Tips for Running Your Group page.\n\nWho can see resources\/wiki pages\/discussions in a group?\n\nAdding a photo to a group pool allows any group member to view your photo and add notes, tags, and comments, regardless of the photo's privacy setting.\n\nYour photo retains the privacy settings you set for anyone who isn't a group member. It also stays in your photostream, available to everyone who can view it. You (or a group administrator) can remove your photo from the pool at any time.\n\nHow do I leave a group?\n\nGo to your Groups tab on your members page and select the group you'd like to leave. On the right-hand side, there's a link labelled 'cancel'. Click this and you'll be taken to a page where you can leave the group.\n\nGo to the Groups page and search or browse for the group you'd like to leave. On the right-hand side, there's a link labelled 'cancel'. Click this and you'll be taken to a page where you can leave the group.\n\nHow do I delete a group?\n\nThe only way to delete a group is to leave the group as the last remaining member. But you can quit the group (described above).\n\nA group can't be deleted if it has more than one member.\n\nReturn to the main groups page.\n\n0 Dislike\n\nLast updated\n\nComments on this entry\n\nThere are no comments on this entry.\n\nPost a comment\n\nPost a comment\n\nComments are closed on this entry.\n\nPlease keep comments relevant to this entry. Comments deemed offensive or inappropriate may be removed.",
+        "topic_id":20,
+        "format_id":5,
+        "topic_confidence":0.9473551512,
+        "format_confidence":0.9800769687
+    },
+    {
+        "url":"https:\/\/www.rswebsols.com\/category\/forum\/rsflashion-faq",
+        "text":"FAQ \u2013 RSFlashion (In order to view this object you need Flash Player 9+ support!)\n\nExtension Name: RS-Flashion | From: xristina xristina: I saw the post with the same problem but you\u2019ve told him to look at which is a page not found. I\u2019m also sure I\u2019ve put the correct image folder which is \u201cimages\/stories\/slideshow\/\u201d. Can i know how do i fixed this? Thank you in advance!! Support Team: Thanks for your email. This is a most common issue and it comes if you miss-configure the module. Can you please send us the screenshot \u2026 Continue Reading\u2026\n\n\nFAQ \u2013 RSFlashion (step by step instructions for first time user)\n\nExtension Name: RS-Flashion | From: Nicki Nicki: I am having a hard time trying to figure out how to upload pictures to the RS-Flashion I just installed for my web page. I have tried to look up support for this but have not had any luck. I am looking for step by step instructions (first time user). Support Team: Thanks for your email. Please read this documentation (step-by-step instruction) first and try it: If you still have any configuration \u2026 Continue Reading\u2026\n\nPin It on Pinterest",
+        "topic_id":20,
+        "format_id":5,
+        "topic_confidence":0.8182597756,
+        "format_confidence":0.706917882
+    },
+    {
+        "url":"https:\/\/www.se.com\/us\/en\/faqs\/FA212309\/",
+        "text":"Browse FAQs\n\n\"Too Many Pages\" error in ION Enterprise Vista client\n\nPublished date: 29 May 2020\n\nGoals and Symptoms\n\n\nUpon opening up a Vista diagram, following error message pops up multiple times:\n\nToo many pages\n\nCauses and Fixes\n\n\nThe Too many pages error is due to the use of large numbers of Data Log viewers in one user diagram. Each log viewer in a diagram file triggers the creation of a \"Log Plotter\" page, and the pointers of all the created pages are stored in a global array which has a limit of 60. When opening a diagram that includes more than 60 data log viewers, the limit of this array is reached and the error dialog is displayed.\n\nThe workaround is to reduce the number of Data Log viewers contained in a single diagram.\n\nThis is problem in all ION Enterprise releases up to and including ION Enterprise 6.0 Service Pack 1.\n\nThere is a hot fix available for this problem for ION Enterprise 6.0 SP1 only. Contact Technical Support if it is required.\n\nLast Updated: May 20, 2011\nAll content \u00a9 1992-2011 Schneider Electric\n\nLegacy KB System (APS) Data: RESL200456 V2.0, Originally authored by DaMi on 11\/10\/2009, Last Edited by JaMc on 05\/21\/2011\nRelated ranges: ION Enterprise V6.0, ION Enterprise V5.6, ION Enterprise V5.5, ION Enterprise V5.0, ION Enterprise V4.5, ION Enterprise V4.0\n\nWas this helpful?\n\nWhat can we do to improve the information ?\n\nCan't find what you are looking for?\n\nReach out to our customer care team to receive information on technical support, assistance for complaints and more.",
+        "topic_id":20,
+        "format_id":5,
+        "topic_confidence":0.9113157988,
+        "format_confidence":0.8209500313
+    },
+    {
+        "url":"https:\/\/www.discreet.email\/a\/7\/do-you-support-multi-factor-authentication-mfa--2fa",
+        "text":"Do you support multi-factor authentication (MFA \/ 2FA)?\n\n\nWe currently utilize it for the operational side of the business and will soon be deploying it for users to help protect thier account login.\u00a0 The standard we will be supporting is\u00a0Time-Based Token (TOTP) which is an open standard allowing you to use a variety of options both paid and free.",
+        "topic_id":20,
+        "format_id":5,
+        "topic_confidence":0.5192866325,
+        "format_confidence":0.5497187972
+    },
+    {
+        "url":"http:\/\/www.bagpiper.com\/support\/rss\/index.php?\/Knowledgebase\/Feed\/Index\/16",
+        "text":"<![CDATA[Bagpiper.Com]]> <![CDATA[Can I get a Bagpiper.Com Domain ?]]> Can I get a Bagpiper.Com Domain for my Website ?\n\nYes you can have vanity domain at bagpiper.com\n\nWhat is a vanity domain ?\n\nA vanity domain is comprised of your selected name followed by a period and then bagpiper.com\u00c2\u00a0\n\n\n\nDo it cost anything to have a Vanity Domain ?\n\nThere are no yearly registration fees associated with vanity domains unlike top level domains names such www.yourname.com\n\nDo you only offer Bagpiper.Com as a vanity domain ?\n\nNo. We can offer other domains as well, such as Bagpipers.Com and Pipeband.Com",
+        "topic_id":20,
+        "format_id":5,
+        "topic_confidence":0.6434340477,
+        "format_confidence":0.9516180158
+    },
+    {
+        "url":"http:\/\/mhvt.net\/quicktime\/eng\/globalclockz\/faq.php",
+        "text":"MacHouse Software\n\n\n\u00a0\u00a0 Last updated: February 19, 2011\n\n\n\n\n\n\nGlobalClockz - FAQ\n\n\nMac software GlobalClockz\n\n\n\n1. Do you have a bulk discount?\n\nYes.\u00a0 For information on a bulk discount, please contact us at MacHouse Support, indicating how many copies you intend to purchase.\n\n\n2. Do I have to change settings when my time zone enters a daylight saving time?\n\nNo.\u00a0 As long as you have Internet connection, the switch will be automatic.\u00a0 And all the clocks under World atlas will be taken care of.\u00a0 Alarm clocks under World alarms will automatically make the switch as well.",
+        "topic_id":20,
+        "format_id":5,
+        "topic_confidence":0.9872502089,
+        "format_confidence":0.9755860567
+    },
+    {
+        "url":"https:\/\/signupforms.com\/faqs?category=User+Accounts",
+        "text":"What is Sign Up Forms?\n\nSign Up Forms provides easy to create, easy to track forms, registrations and payment collection for all types of events and activities. \u00a0Our easy to use features save the organizer time and effort while getting them a custom personalized look and feel. Sign Up Forms provides an enjoyable experience for those registering whether they're using desktop, tablet or mobile.\n\nWill I get a bunch of spam and solicitation if I login to signupforms.com with Google or Facebook?\n\nNo, you will not be put on any mailing list of receive any spam. If you use Facebook, we will not post on your wall, ever! This authentication login is a simple and secure way to login without requiring you to have another password.\n\nWhat if I don\u2019t have a Google or Facebook account, can I still log in to signupforms.com?\n\nYes, you can use your email address. If you already have a Facebook or Google account, these provide a safe secure way of signing in (and you won't get spam!), but if you prefer, you can log in with just your email address. It's easy! Just enter your name and your email address, then check your email. You will have an email from Sign Up Forms entitled \"Please validate your email address\" Open the email, click the link, and you're in! You can quickly create your first registration. Other login methods for info on other methods to login. Look for a generic email registration option coming soon.\n\nCan I have other people help manage my event?\n\nYes, select the \u201cTeam\u201d tab, add the person\u2019s email address, select \u201cAdd\u201d and \u201cSave\u201d. The added Team member can now help modify the registration and check in individuals. The only thing a team member cannot perform is change the Stripe account.\n\nI have more questions. What should I do?\n\nWe know these pages don\u2019t cover it all, and we\u2019re eager to help answer your questions. Please contact us.",
+        "topic_id":20,
+        "format_id":5,
+        "topic_confidence":0.9281491041,
+        "format_confidence":0.9783465862
+    },
+    {
+        "url":"http:\/\/faq.7search.com\/index.php?sid=5525784&lang=en&action=artikel&cat=3&id=354&artlang=en",
+        "text":"Advertisers \u00bb Account Management\n\nID #1384\n\nWhat is the \u201cDefault Ad Title\u201d and Why is it Important?\n\nAll 7Search text ads allow for the use of up to 60 characters (including spaces) in the Default Ad Title field.\u00a0 This title will appear across the 7Search Advertising Network whenever your ad is shown unless you choose to set a unique title at the keyword level (learn more here).\n\nLooking to increase relevance to your viewers?\u00a0 Try using our dynamic keyword insert as part of your title or description.\u00a0 Simply enter ###KEYWORD### to automatically show your searched keyword in the ad shown.\n\nTags: ad title field, default ad title\n\nRelated entries:\n\nLast update: 2015-07-14 21:13\nAuthor: 7Search FAQ Administrator\nRevision: 1.1\n\nPlease rate this FAQ:\n\nAverage rating: 5 (1 Vote)\n\ncompletely useless 1 2 3 4 5 most valuable\n\nYou cannot comment on this entry",
+        "topic_id":20,
+        "format_id":5,
+        "topic_confidence":0.8054485917,
+        "format_confidence":0.9743902087
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "url":"https:\/\/www.diademcandles.com\/pages\/recycle-reuse-reduce",
+        "text":"Cart 0\n\nRecycle, Reuse, Refill, Reduce\n\nThe Diadem Candles company strives to leave as little negative footprint on this planet as possible. All vessels and packaging are up-cycled, re-cycled or re-usable and all candle ingredients are 100% natural and toxin free to ensure clean burning.\n\nWe do encourage our customers to reuse\u00a0and refill our vessels.",
+        "topic_id":14,
+        "format_id":3,
+        "topic_confidence":0.8133068085,
+        "format_confidence":0.8414308429,
+        "weight":0.0060208888
+    },
+    {
+        "url":"https:\/\/support.duda.co\/hc\/en-us\/articles\/1500001499041-Custom-Code-Guidelines",
+        "text":"Custom Code Guidelines\n\nOur editor is very flexible in that you can extend the functionality of your site by adding any custom script or code, though the custom code has a tendency to break or disable the editor or require other steps to be done to work. Because of that, we have some guidelines that you should follow whenever testing custom code.\n\n\nIf you are working with custom code, it is good to know that scripts and resources can only be loaded in the same HTTP or HTTPS.\n\nThe editor by default is always loaded in HTTPS. If you are using an HTTP script in the editor, it will not be visible in the editor since it is loaded over a secure connection, but will be visible on the live site since it is loading in an unsecured connection.\n\nTo fix this, it is always better to load your resources over a secure connection.\n\nCustom Header Code\n\nWhen adding custom code to a header, create a duplicate of the site, and test your code on the duplicate site. If it fails, you can simply delete the site.\n\nAlternatively, you can test the header code on a separate, blank page on the same site. If the page crashes, simply delete the page or access the code via developer mode.\n\nCustom Page Code\n\nWhen adding custom code to a page:\n\n  1. Create a duplicate of the page, then add in your custom code.\n  2. If it fails, you can actually navigate to the page's HTML\/CSS by going to another page and accessing developer mode from there.\n  3. You can also delete the page and start again by creating a duplicate.\n  4. If custom code is on your homepage, you can try accessing your editor by adding a \/contact or some other URL to the end of your editor's link.\n\nPage Speed Optimization\n\nPage speed optimization affects how certain scripts are run. We run PageSpeed optimization on most pages in Duda, which can cause issues with your custom code. When troubleshooting code, you can see if it is a PageSpeed issue by:\n\n  1. Duplicating the page with your scripts.\n  2. Changing the URL to \"testing_scripts.\"\n  3. Publishing and checking the page on your live site.\n\nIf your code works on that page, contact support to turn off PageSpeed optimization for your site.\n\nIf you are using a script, you can also try making sure your script runs asynchronously\u2014it is not guaranteed, but it sometimes can solve the issue with scripts not executing properly in the browser.\n\nTo enable async on scripts, alter your code using the following:\n\n  \u2022 Old code: <script src=\u201d\u201d><\/script>\n  \u2022 New code: <script src=\u201d\u201d async defer><\/script>\n\nDisable Animated Navigation\n\nDuda's animated navigation feature often interferes with the way the custom code is loaded. You can disable animated navigation in responsive sites by right-clicking your navigation element in your editor, click Edit, and click Turn off animated navigation.\n\n\nA site that is broken by custom code normally loads a blank page in the editor (or breaks your editing features). If custom code broke your site, there are several options available:\n\n  \u2022 If you have a backup, in the left panel, click Settings, click Backup Site, and restore to a backup.\n  \u2022 Log in to which is a more code friendly version of our platform.\n  \u2022 If you are unable to access that in your editor by loading it, you might be able to workaround it by loading a new page.\n\n    To fix this issue, try accessing your editor on a new page. You can do this by entering a different URL in your editor link. This is a link accessing the \"About Us\" page of a site, for example:\n\n  \u2022 If the editor is broken, try to force open the editor by using the keyboard shortcut for the element inspector\n    \u2022 Mac. Command+Option+C\n    \u2022 PC. Ctrl+Alt+C\n  \u2022 If custom code is not running correctly, try disabling AJAX Page Changing (Quick Navigation) in the Header HTML.\n\nDuda's Custom Code Policy\n\nDue to the unpredictable nature of custom code, we are unable to troubleshoot why a custom coded element might not be working on a site.\n\nWe currently do not have any developers available to troubleshoot custom code, so please follow the guidelines above when experimenting with custom code on your site.\n\nWas this article helpful?\n0 out of 0 found this helpful\n\nFeedback on this article\n\n\nPlease sign in to leave a comment.\n\n\nPlease Log in as a Pro\n\nPriority Phone Support is available exclusively to Pros. Log in to your Pro account now to see our international support numbers.\n\nLog In\nNot a Pro? Purchase a Pro plan!",
+        "topic_id":2,
+        "format_id":3,
+        "topic_confidence":0.8075794578,
+        "format_confidence":0.9593414068,
+        "weight":0.0017277197
+    },
+    {
+        "url":"https:\/\/compassionindying.org.uk\/library\/?_topics%5B%5D=342&_topics%5B%5D=14&_topics%5B%5D=21&_topics%5B%5D=214&_topics%5B%5D=314",
+        "text":"\n\nIf you can\u2019t find what you need, or have any questions, please feel free to get in touch.\n\nInformation Standard memberWe are committed to providing up-to-date and accurate information, and are proud to have received accreditation from the NHS England Information Standard.\n\nAll of our printed information written for the public that meets these requirements carries the Information Standard logo.\n\nRead more about how we produce our information.\n\n\nHOST: REQUEST: \/library\/ QUERY: _topics%5B%5D=342&_topics%5B%5D=14&_topics%5B%5D=21&_topics%5B%5D=214&_topics%5B%5D=314",
+        "topic_id":12,
+        "format_id":3,
+        "topic_confidence":0.9457010031,
+        "format_confidence":0.797660768,
+        "weight":0.0112200826
+    },
+    {
+        "url":"http:\/\/p0089.enginefaultcode.com\/",
+        "text":"P0089 Engine Fault Code\n\nCheck Solution For P0089 OBD Code :\n\nP0089 engine code seems a kind of powertrain problem, we try to show one by one the meaning and the solution.\nBrief explanation of the P0089 code and definition of P0089 is the bottom side.\n\nP0089 Meaning :\n\np Powertrain Code\nProblem is related engine, transmission and emissions systems.\n0 SAE - Generic\n0 Fuel And Air Metering\n8 Exhaust Gas Recirculation System Valve 1\n9 Kick-Down Switch Failed Short\n\nSAE - Generic codes, which have a '0' as their second digit to indicate they are common to all makes and models of vehicles. These are the codes that are required for basic emissions fault diagnosis.\n\nHow To Fix P0089 ?\n\nDeactivation of cylinders is achieved by releasing a synchroniser pin that normally interlocks the cam follower and rocker arms. P0089 code resolves the synchroniser pin is released using hydraulic pressure which is controlled by a dedicated solenoid.\n\nP0089 Code Description:\n\nIs the fuel pump sometimes not priming when you turn the key to ON(II)? Start by measuring the fuel pressure and checking whether you have bright white-bluish spark at all four plugs. The mechanical timing is also something that you should check, as we mentioned above. When you see P0089 engine fault code on your engine code reader this description will help you.\n\nP Codes List of all Powertrain codes.\n\nFinal Step: In the definitions listed below, there is a test drive recommended after you've completed any repairs to see if the condition is fixed. Before you take a test drive after a repair, always erase the P Code(s) first. This will turn the check engine light off and then you will know if the check engine light returns, you've got further diagnostics to complete.\n\nThis engine code information is presented for information purposes only. This is not intended as repair advice and we are not responsible for any actions you take on any vehicle.\n\nCopyright \u00a9 2016 - EngineFaultCode.com\nAll rights reserved.\n\nValid CSS!",
+        "topic_id":22,
+        "format_id":3,
+        "topic_confidence":0.9022117853,
+        "format_confidence":0.6701284647,
+        "weight":0.0054429584
+    },
+    {
+        "url":"http:\/\/montessori4children.com\/admissions\/procedure\/",
+        "text":"After an application has been received, notification of acceptance of a child for admission is made by letter. Upon acceptance, parents complete and return an Enrollment Form, Sign the Policy Form and Pony Riding\/Headgear Form, Immunization Record, and a Medical Permit. The Enrollment form requests additional information about the child and an agreement by the parents that the child will attend school. The forms should be returned within 10 days of the date of acceptance. A payment in the amount of one month\u2019s tuition for each child is due with the completed forms. This payment is applied to tuition for the first month. There is also a Child Information Form that needs to be completed regarding important diet restrictions, medical conditions, etc.",
+        "topic_id":4,
+        "format_id":3,
+        "topic_confidence":0.9963276982,
+        "format_confidence":0.8575322032,
+        "weight":0.0200237326
+    },
+    {
+        "url":"http:\/\/thephoenixsurgery.co.uk\/opening-times.aspx",
+        "text":"This website uses cookies to function correctly.\nYou may delete cookies at any time but doing so may result in some parts of the site not working correctly.\n\nOpening Times\n\n\nMonday8:30am - 6:30pm\nTuesday8:30am - 6:30pm\nWednesday8:30am - 6:30pm\nThursday8:30am - 6:30pm\nFriday8:30am - 6:00pm\n\nSouth Cerney\n\n\n8:30am - 11:45pm\n\n3.15pm - 6.00pm\n\nTuesday8:30am - 12:00pm\n\n8:45am - 12:00pm\n\n2.45pm - 6.00pm\n\nThursday8:45am - 12:00pm\nFriday8:45am - 12:00pm\n\n\nMonday3.00pm- 6.30pm\nTuesday2.00pm - 5.30pm (Dispensary Only)\nThursday8.00am - 11.30am\nFriday8.00am - 11.30am\n\nOut of hours service\n\n\n01285 652056\n0300 421 0220\n\nOut of hours services are generally busy so please think carefully before asking to see a doctor and only do so if you genuinely cannot wait until the surgery re-opens.\n\nIn a genuine emergency you should call 999.\nChest pains, Strokes and sudden shortness of breath are examples of an emergency.\n\nDo you need an appointment after 6:30 pm?\n\nThen not to worry. You can book an appointment within the times below with the following doctors.\nMonday6.30pm - 7.15pmDr Hill & Dr Hein Le Roux\nTuesdayDr Nichol, Dr Khalid & Dr Amylou Douglas\nWednesdayDr Sethi\nThursdayDr Woodward & Dr Naomi Woodward\nSaturdaySome morningsDoctor on rota basis\nCall 111 when you need medical help fast but it\u2019s not a 999 emergencyNHS ChoicesThis site is brought to you by My Surgery Website",
+        "topic_id":12,
+        "format_id":3,
+        "topic_confidence":0.9966187477,
+        "format_confidence":0.6021416187,
+        "weight":0.0084698646
+    },
+    {
+        "url":"https:\/\/www.sunriseseniorliving.com\/communities\/sunrise-of-des-peres\/maps-directions.aspx",
+        "text":"Sunrise of Des Peres\n\nVisit Sunrise of Des Peres\n\nCome visit us at Sunrise of Des Peres! Enter your address below for door to door driving directions to our community. From our programming and activities offerings (feel free to join a book club meeting, take an afternoon stroll, or play a trivia game when you visit) to our delicious and nutritious dining experience tailored for optimum senior nutrition, you'll find all the comforts of home here. Our Designated Care Managers continually go above and beyond to make you and your loved ones feel right at home, offering nothing but the best for all of our residents here at Sunrise Senior Living. But don't just take our word for it \u2013 come see for yourself today.\n\nGet Directions\n\nTo: 13460 Manchester Road, Des Peres, MO 63131\nSunrise Care Questionnaire\n\nNot sure what type of care you need?\n\nTake our Survey",
+        "topic_id":12,
+        "format_id":3,
+        "topic_confidence":0.8388356566,
+        "format_confidence":0.8656622171,
+        "weight":0.0121766069
+    },
+    {
+        "url":"http:\/\/www.simplemobile.com\/wps\/portal\/home\/h\/sims\/!ut\/p\/a0\/04_SjzS1MLEwMTQytNSP0I_KSyzLTE8syczPS8wB8aPM4l0MvHyNAx09jIxDPQwNPH1Mg_2DPIwNDAyM9XOjHBUBSjIn7A!!\/",
+        "text":"\n\nPlease choose the type of phone you have:\n\nPlease enter the zip code of the area where you will be using your phone the most:\n\n\nSwitching to SimpleMobile\nWeb Content Viewer (JSR 286)",
+        "topic_id":5,
+        "format_id":3,
+        "topic_confidence":0.9157977104,
+        "format_confidence":0.8833355308,
+        "weight":0.0042913362
+    }
+]

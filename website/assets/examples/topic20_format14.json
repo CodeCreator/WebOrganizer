@@ -1,0 +1,66 @@
+[
+    {
+        "url":"http:\/\/www.msfn.org\/board\/profile\/125543-danpye\/",
+        "text":"Jump to content\nStrawberry Orange Banana Lime Leaf Slate Sky Blueberry Grape Watermelon Chocolate Marble\nStrawberry Orange Banana Lime Leaf Slate Sky Blueberry Grape Watermelon Chocolate Marble\n\nMSFN is made available via donations, subscriptions and advertising revenue. The use of ad-blocking software hurts the site.\u00a0Please disable ad-blocking software or set an exception for MSFN. Alternatively, register and become a site sponsor\/subscriber and ads will be disabled automatically.\u00a0\n\n\n  \u2022 Content count\n\n  \u2022 Donations\n\n  \u2022 Joined\n\n  \u2022 Last visited\n\nCommunity Reputation\n\n0 Neutral\n\nAbout danpye\n\n  1. Portable Windows 7 build from Winpe 3.0\n\n    Thank you very much. I got it working using the update that you provided to me on the Reboot.pro post. Dan\n  2. Portable Windows 7 build from Winpe 3.0\n\n    Like I said, I can get the explorer.exe to launch, but only as a file browser, not as the actual shell. (btw - in order to do this, i had to chance the USERPROFILE env var from x:\\windows\\sytem32\\config\\systemprofile to x:\\Users\\default ) When I go into the winlogon reg key and change the SHELL entry from the cmd \/k cmd.exe to explorer.exe, then open taskmanager, kill explorer.exe and relaunch it, I see the little blurb about 'Preparing windows ' - Windows update, etc.. (small grey screen at upper right corner), but the actual GUI never launches.\n  3. Portable Windows 7 build from Winpe 3.0\n\n    I left that step out of my post, but I did go in and get the following keys via regedit (I extracted all files from the Install WIM from the DVD to my HD and then opened regedit. I then File - load Hive and loaded the software hive. I exported the following to reg files) HKLM\\Software\\Classes HKLM\\Sfotware\\MS\\Windows\\Explorer HKLM\\Software\\MS\\Windows NT\\\\Svchost I then went in, changed the D:\\ and the 44,00,... to the right values Next, I mounted my custom build WIM file and imported the reg files. I then unmounted registry hives, unmounted Custom build Wim file, and recreated iso file. do you have to go in and get all of the services to get explorer.exe as shell?\n  4. Portable Windows 7 build from Winpe 3.0\n\n    Hi Kullenen_Ask I am trying to follow your instructions regarding creating a custom PE disk (win pe 3.0) and getting explorer.exe working but am having a problem with explorer.exe If I change the HKLM\\Software\\MS\\WINNT\\CurrentVer\\Winlogon\\Shell= key to explorer.exe, then type explorer.exe in the command prompt, explorer runs the ie4unit process, and then doesnt initialize the gui. If i change this value to anything else, explorer.exe comes up, but onlly as a file browser, and I dont get any gui. I know that I am missing one small thing, but not sure what. any ideas? Thanks Dan\n  5. Windows PE 2005 and XPSP3\n\n    All: I am using WinPE 2005 based off of Windows XP Pro SP2. When you slipstream XP SP3 into the i386 folder of your Install source, WinPE doesnt let you build... anyone know if MS is making an update to PE 2005 to get this to work with XP SP3? Otherwise, I guess I will have to build a plugin for WinPE 1.5 to update to SP3.... not fun... Thanks Dan\n  6. FDISK problems\n\n    Hey, I am working on using the multiboot AIO DVD guide to create a multiboot tools disk. I have the DOS boot disk working & launching FDISK from the floppy. I created the image file (.ima) with winimage and add it to the shell, but when it boots up (tried both with memdisk and diskemu) and I try to launch FDISK, I get \"No Fixed disks present\". When I boot from the floppy directly, it works fine. Any thoughts or help would be appreciated. Dan\n  7. Smart Card Services\n\n    Here is what I have so far.. any help with this would be appreciated. )) Thanks Dan AC2_Software.txt Ac2_System.txt\n  8. Smart Card Services\n\n    Trying to get Smart Card services working... I have it showing up as a service, but it still not functioning.. my reader is visible in device manager, but the cac software is not seeing the reader. Any help would be appreciated.. this is in Win PE 2005 btw. Thanks Dan",
+        "topic_id":20,
+        "format_id":14,
+        "topic_confidence":0.8710882068,
+        "format_confidence":0.8914624453
+    },
+    {
+        "url":"http:\/\/siteownersforums.com\/member.php?s=86152443364c1c94e6752de25ba8fe99&u=11631",
+        "text":"\n\nGo Back \u00a0 Site Owners Forums - Webmaster Forums\n\n\nPuneetJvw PuneetJvw is offline\n\nRegistered User\n\nVisitor Messages\n\nShowing Visitor Messages 1 to 1 of 1\n  1. Faraone\n\nAbout Me\n\n\nTotal Posts\nVisitor Messages\nGeneral Information\n  \u2022 Last Activity: 05-27-2017 12:03 AM\n  \u2022 Join Date: 06-26-2006\n  \u2022 Referrals: 1\n\nAll times are GMT -7. The time now is 07:26 AM.\n\nPowered by vBulletin Copyright \u00a9 2013 vBulletin Solutions, Inc.",
+        "topic_id":20,
+        "format_id":14,
+        "topic_confidence":0.8280836344,
+        "format_confidence":0.9884150028
+    },
+    {
+        "url":"https:\/\/www.webmasterworld.com\/profilev4.cgi?action=view&member=boblord666",
+        "text":"homepage Welcome to WebmasterWorld Guest from\nregister, free tools, login, search, pro membership, help, library, announcements, recent posts, open posts,\nBecome a Pro Member\n\nHome \/ Forums Index \/ View Profile \/ boblord666\nPersonal Information:\nMember Since:July 23, 2011\nLast Post:Dec 4, 2011\nTotal Posts:3\nInterests:Lawn bowls, alcohol\nSocial Media Links:\nLocation Information:\nLocation: Sunny QLD Australia\nCompany Information:\nCompany Name: Self\nOccupation: Retired\nRecent Activity:\nRecent Messages WATCH: latest scam with content writing \u00a0 in Content, Writing and Copyright\nLinks From General Directories - Are They Worth It? \u00a0 in Link Development\nHome \/ Forums Index \/ View Profile \/ boblord666\nrss feed\n\nAll trademarks and copyrights held by respective owners. Member comments are owned by the poster.\nHome \u00a6 Free Tools \u00a6 Terms of Service \u00a6 Privacy Policy \u00a6 Report Problem \u00a6 About \u00a6 Library \u00a6 Newsletter\nWebmasterWorld is a Developer Shed Community owned by Jim Boykin.\n\u00a9 Webmaster World 1996-2014 all rights reserved",
+        "topic_id":20,
+        "format_id":14,
+        "topic_confidence":0.6259707808,
+        "format_confidence":0.9921121597
+    },
+    {
+        "url":"http:\/\/forum.flirc.tv\/index.php?\/profile\/21355-analysir\/",
+        "text":"Jump to content\nFlirc Forums\n\n\n  \u2022 Posts\n\n  \u2022 Joined\n\n  \u2022 Last visited\n\nProfile Information\n\n  \u2022 Gender\n  \u2022 Location\n    Dublin, Ireland\n  \u2022 Interests\n    Infrared Remote Control\n\nAnalysIR's Achievements\n\n\nNewbie (1\/14)\n\n\n\n  1. Just a note to let Flirc users know that we have now added support for Flirc to our AnalysIR software application. With this you can decode, analyse, reverse engineer IR signals & much much more. Details along with a video tutorial on how to start using your Flirc with AnalysIR can be viewed in this post. The interface is achieved via the existing Flirc GUI, and we have only tested with the newer Flirc. We have not tested with the original Flirc as we have only the newer one available for testing. To see the blog post & video tutorial click: Using AnalysIR with Flirc \u2013 Video tutorial Disclaimer: You need a registered copy of AnalysiR to use this feature.\n  \u2022 Create New...",
+        "topic_id":20,
+        "format_id":14,
+        "topic_confidence":0.8223011494,
+        "format_confidence":0.9737458229
+    },
+    {
+        "url":"http:\/\/www.fold3.com\/profile\/lhouse\/",
+        "text":"lhouse's member photo\n\nMaking your own Profile Page is easy, free and quick. Join now and start sharing your insights and discoveries.\n\nContribution Score\n\nLook below to see what lhouse has contributed. About\n\n\n  \u2022 North Carolina, United States\n  \u2022 Member since 24 May 2008\n  \u2022 Watch\n\nWhat lhouse is doing on Fold3\u2026",
+        "topic_id":20,
+        "format_id":14,
+        "topic_confidence":0.7343979478,
+        "format_confidence":0.991522193
+    },
+    {
+        "url":"https:\/\/services.addons.thunderbird.net\/en-us\/firefox\/user\/Areed\/",
+        "text":"About me\n\nDeveloper Information\nName Areed\nUser since July 24, 2012\nNumber of add-ons developed 0 add-ons\nAverage rating of developer's add-ons Not yet rated\n\nMy Reviews\n\nStop Tube HTML5\n\nRated 3 out of 5 stars\n\nI need this to block autoplay AND block buffering. Unfortunately it doesn't always work. In fact I'm not sure if it works at all.\n\nKey config\n\nRated 3 out of 5 stars\n\nThe addon is a bit glitched. If you press 1 or 2 to switch tabs while the cursor is in a text box, it switches tabs instead of inputting 1 or 2 into the text box. This makes it impossible to type 1 or 2 unless you do it in an external application (eg. notepad) and copy-paste to the text box in Firefox.\n\nThis addon should not switch tabs using 1\/2 shortcut keys while text box is selected.\n\nSingle Key Tab Switch\n\nRated 2 out of 5 stars\n\nAbout the tab skipping issue I wrote about before; false alarm, it was another addon causing the issue.\n\nHowever there is another glaring issue that makes this addon unusable: When typing in some text boxes, if I type 1 or 2, it will switch tabs, making it impossible to type 1 or 2 in said text box. This may not happen with all text boxes but if you want to test this issue for yourself, just try in the forum. Opera does not have this issue with its single-key shortcuts, as it won't switch tabs if a text box is highlighted (which is how this addon should behave)\n\nUltimately I cannot use this addon until this issue is addressed.\n\nThis review is for a previous version of the add-on (\u00a0\n\n\nRated 4 out of 5 stars\n\nWould be nice to have a 1\/4 page size scroll option for step size.\n\n1\/5 is too slow\n1\/3 is too fast\n\nThis review is for a previous version of the add-on (",
+        "topic_id":20,
+        "format_id":14,
+        "topic_confidence":0.843411088,
+        "format_confidence":0.7994650006
+    },
+    {
+        "url":"https:\/\/www.dropboxforum.com\/t5\/user\/viewprofilepage\/user-id\/163362",
+        "text":"Showing results for\u00a0\nShow\u00a0\u00a0only\u00a0 | Search instead for\u00a0\nDid you mean:\u00a0\nBack again with another edition of 'How we use Dropbox', so find out how Ross uses Dropbox to answer some new house questions here!\nJiho P.\n\nUser's statistics\n\n  \u2022 0 members helped\n  \u2022 0 accepted solutions\n  \u2022 9 comments posted\n  \u2022 0 likes received",
+        "topic_id":20,
+        "format_id":14,
+        "topic_confidence":0.967487514,
+        "format_confidence":0.8371607065
+    },
+    {
+        "url":"https:\/\/moz.com\/community\/users\/357077",
+        "text":"Profile Information\n\nFull Name JustineV\nDisplay Name JustineV\n\nBlog Comments & Posts\n\nDomain Authority & Page Authority Metrics - Whiteboard Friday\nBlog Post: January 21, 2010\n  \u2022 Totally new to the world of SEO so my long journey starts now, delighted that I discovered your SEOmoz toolbar it's been a great insight so far. \u00a0Our home page is ranking quite well PA 52 DA 53, however, some of the pages are only showing PA of 1, is there anything obvious I'm missing?",
+        "topic_id":20,
+        "format_id":14,
+        "topic_confidence":0.9025090933,
+        "format_confidence":0.9758511782
+    }
+]

@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="assets/css/treemaps.css">
+
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <script src="assets/js/treemaps.js"></script>
 
   <style>
     /* Custom styles */
@@ -106,7 +111,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">
-              <img src="assets/icon.png" style="height: 1em; vertical-align: -10%;"> Organize the Web: Constructing Domains Enhances Pre-Training Data Curation
+              <img src="assets/icon.png" style="height: 0.9em; vertical-align: -10%;"> Organize the Web: Constructing Domains Enhances Pre-Training Data Curation
             </h1>
 
             <div class="publication-authors">
@@ -138,7 +143,7 @@
               </span>
 
               <span class="link-block">
-                <a href="https://github.com/your-repo" class="button is-normal is-rounded is-dark">
+                <a href="https://github.com/CodeCreator/WebOrganizer" class="button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -158,7 +163,19 @@
       <div class="columns is-centered">
         <div class="column">
           <div class="content">
-            <img src="assets/treemaps.png" alt="Overview over WebOrganizer domains" style="width: 100%; margin-bottom: 2rem;">
+            <h2 class="title is-2">Domain Distribution</h2>
+            <p class="is-size-5">
+              Explore the distribution of web content across different topics and formats. Click on any category to see conditional distributions and examples.
+            </p>
+
+            <div class="treemap-container">
+              <div id="topic-treemap" class="treemap"></div>
+              <div id="format-treemap" class="treemap"></div>
+            </div>
+
+            <div id="example-viewer" class="example-viewer">
+              <p>Click on a category to view examples</p>
+            </div>
 
             <h2 class="title is-2">Overview</h2>
             <p class="is-size-5">
