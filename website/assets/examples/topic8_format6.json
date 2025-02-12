@@ -8,30 +8,6 @@
         "format_confidence":0.6854810715
     },
     {
-        "url":"https:\/\/www.ikraal.com\/jelena-for-tesco-uk\/",
-        "text":"iKraal | Jelena for Tesco (UK)\n\nJelena for Tesco (UK)\n\nJelena from iKraal on Vimeo.\n\nJelena for Tesco (UK) \u2013 We spent a week shooting summer fashion inserts for London based chain store Tesco. Making the most of the Cape Town summer to shoot their still catalogue for the up and coming queens jubilee we where asked to cover the story for a behind the scenes video for the Tesco magazine website.\n\nWhile we were at it we shot some general fashion videos with a few of the models which is always a bit of fun.\n\nAll shot on Canon 5D MarkII.\n\nLeave a Comment\n\nYour feedback is valuable for us. Your email will not be published.",
-        "topic_id":8,
-        "format_id":6,
-        "topic_confidence":0.8021557331,
-        "format_confidence":0.623683989
-    },
-    {
-        "url":"http:\/\/wigglingpen.com\/tag\/miss-world\/",
-        "text":"Femina Miss India Throwback\n\nFem\u00adi\u00adna Miss India is a beau\u00adty pageant in India that annu\u00adal\u00adly selects rep\u00adre\u00adsen\u00adta\u00adtives to com\u00adpete in Miss World, Miss Uni\u00adverse, and Miss Asia Paci\u00adfic. Every year, every Indi\u00adan await for this pageant to look for\u00adward most beau\u00adti\u00adful girl with brains who will rep\u00adre\u00adsent India on the glob\u00adal\u00a0stage.\u00a0 Since1947, this pageant is hold\u00ading up its\u2019s val\u00adues Read More",
-        "topic_id":8,
-        "format_id":6,
-        "topic_confidence":0.6928870678,
-        "format_confidence":0.7050685883
-    },
-    {
-        "url":"https:\/\/rrp.photoshelter.com\/gallery-image\/Fashion\/G0000eV0REkr6o38\/I0000mibnMpVVuM8",
-        "text":"Image 53 of 55\n<\u00a0Prev Next\u00a0>\nHN Lipton 7Miss Irld 7.jpg\nNo fee for repro..(l-r)  Lynda Duffy, Anne Marie Gannon, Roz Purcell, Adrienne Rock, Lynn Kelly, Rosanna Davison and Laura Patterson joined forces to announce details of Lipton Fruit & Herbal tea's 'Drink Gorgeous, Look Gorgeous' competition to coincide with Lipton's style task on hit programme, Stylewars. Pic Robbie Reynolds..To celebrate the partnership of style and taste on TV3's hottest fashion show, Lipton is running a gorgeous competition to find 7 lucky ladies who will each win a Fran & Jane shopping spree to create their own Lipton inspired look. The competition starts today and will run for the next 7 weeks on Lipton Ireland's Facebook page:  .For further information please contact: .Cliodhna Lamont or Julie Blakeney, or 01 6690030 or 087 9250874 (Cliodhna)",
-        "topic_id":8,
-        "format_id":6,
-        "topic_confidence":0.9696339965,
-        "format_confidence":0.7716339231
-    },
-    {
         "url":"http:\/\/www.thefabricstore.com.au\/new-arrivals\/amazing-silk-shipment-unloading-now",
         "text":"A PHP Error was encountered\n\nSeverity: Warning\n\nMessage: array_slice() expects parameter 1 to be array, boolean given\n\nFilename: controllers\/galleries.php\n\nLine Number: 75\n\nThe Fabric Store, Australia | New Arrivals\n\nFabric availability is only valid at the time of posting and is not updated. Please contact your local store for current status of stock.",
         "topic_id":8,
@@ -40,12 +16,12 @@
         "format_confidence":0.8491877913
     },
     {
-        "url":"http:\/\/www.thebeautyslice.com\/tag\/number-7-skin-care-range\/",
-        "text":"Definitions of Number 7 Skin Care\n\nThe Do\u2019s and Don\u2019ts of\u00a0number 7 skin care Morning, and prior to going to someone can depend on guard your skin against. Natural home remedies pores If your skin isn\u2019t overly sensitive, you might have the ability to use the advantages of fruit acid. It when mixed with ingredients, which can lighten your skin and [\u2026]",
+        "url":"http:\/\/www.peoplestylewatch.com\/people\/stylewatch\/gallery\/0,,20274968_20615996,00.html",
+        "text":"Last Night's Look: Hit or Miss?\n\nVote on this week's styles including Kate Hudson, Jessica Biel, Jennifer Garner and more stars! You decide \u2013 are they fashionistas or flops?\n\n\nMary-Kate's sister takes an even sleeker approach at the luncheon in her little black dress, cutout sandals and pin-straight locks.",
         "topic_id":8,
         "format_id":6,
-        "topic_confidence":0.9601871967,
-        "format_confidence":0.7230404615
+        "topic_confidence":0.9662098885,
+        "format_confidence":0.6098636985
     },
     {
         "url":"http:\/\/www.chictopia.com\/White-Romwe-Minimal-Shirt\/info",
@@ -56,11 +32,35 @@
         "format_confidence":0.5270239115
     },
     {
-        "url":"http:\/\/www.peoplestylewatch.com\/people\/stylewatch\/gallery\/0,,20274968_20615996,00.html",
-        "text":"Last Night's Look: Hit or Miss?\n\nVote on this week's styles including Kate Hudson, Jessica Biel, Jennifer Garner and more stars! You decide \u2013 are they fashionistas or flops?\n\n\nMary-Kate's sister takes an even sleeker approach at the luncheon in her little black dress, cutout sandals and pin-straight locks.",
+        "url":"http:\/\/wigglingpen.com\/tag\/miss-world\/",
+        "text":"Femina Miss India Throwback\n\nFem\u00adi\u00adna Miss India is a beau\u00adty pageant in India that annu\u00adal\u00adly selects rep\u00adre\u00adsen\u00adta\u00adtives to com\u00adpete in Miss World, Miss Uni\u00adverse, and Miss Asia Paci\u00adfic. Every year, every Indi\u00adan await for this pageant to look for\u00adward most beau\u00adti\u00adful girl with brains who will rep\u00adre\u00adsent India on the glob\u00adal\u00a0stage.\u00a0 Since1947, this pageant is hold\u00ading up its\u2019s val\u00adues Read More",
         "topic_id":8,
         "format_id":6,
-        "topic_confidence":0.9662098885,
-        "format_confidence":0.6098636985
+        "topic_confidence":0.6928870678,
+        "format_confidence":0.7050685883
+    },
+    {
+        "url":"http:\/\/www.thebeautyslice.com\/tag\/number-7-skin-care-range\/",
+        "text":"Definitions of Number 7 Skin Care\n\nThe Do\u2019s and Don\u2019ts of\u00a0number 7 skin care Morning, and prior to going to someone can depend on guard your skin against. Natural home remedies pores If your skin isn\u2019t overly sensitive, you might have the ability to use the advantages of fruit acid. It when mixed with ingredients, which can lighten your skin and [\u2026]",
+        "topic_id":8,
+        "format_id":6,
+        "topic_confidence":0.9601871967,
+        "format_confidence":0.7230404615
+    },
+    {
+        "url":"https:\/\/rrp.photoshelter.com\/gallery-image\/Fashion\/G0000eV0REkr6o38\/I0000mibnMpVVuM8",
+        "text":"Image 53 of 55\n<\u00a0Prev Next\u00a0>\nHN Lipton 7Miss Irld 7.jpg\nNo fee for repro..(l-r)  Lynda Duffy, Anne Marie Gannon, Roz Purcell, Adrienne Rock, Lynn Kelly, Rosanna Davison and Laura Patterson joined forces to announce details of Lipton Fruit & Herbal tea's 'Drink Gorgeous, Look Gorgeous' competition to coincide with Lipton's style task on hit programme, Stylewars. Pic Robbie Reynolds..To celebrate the partnership of style and taste on TV3's hottest fashion show, Lipton is running a gorgeous competition to find 7 lucky ladies who will each win a Fran & Jane shopping spree to create their own Lipton inspired look. The competition starts today and will run for the next 7 weeks on Lipton Ireland's Facebook page:  .For further information please contact: .Cliodhna Lamont or Julie Blakeney, or 01 6690030 or 087 9250874 (Cliodhna)",
+        "topic_id":8,
+        "format_id":6,
+        "topic_confidence":0.9696339965,
+        "format_confidence":0.7716339231
+    },
+    {
+        "url":"https:\/\/www.ikraal.com\/jelena-for-tesco-uk\/",
+        "text":"iKraal | Jelena for Tesco (UK)\n\nJelena for Tesco (UK)\n\nJelena from iKraal on Vimeo.\n\nJelena for Tesco (UK) \u2013 We spent a week shooting summer fashion inserts for London based chain store Tesco. Making the most of the Cape Town summer to shoot their still catalogue for the up and coming queens jubilee we where asked to cover the story for a behind the scenes video for the Tesco magazine website.\n\nWhile we were at it we shot some general fashion videos with a few of the models which is always a bit of fun.\n\nAll shot on Canon 5D MarkII.\n\nLeave a Comment\n\nYour feedback is valuable for us. Your email will not be published.",
+        "topic_id":8,
+        "format_id":6,
+        "topic_confidence":0.8021557331,
+        "format_confidence":0.623683989
     }
 ]

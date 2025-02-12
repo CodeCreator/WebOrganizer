@@ -1,29 +1,5 @@
 [
     {
-        "url":"https:\/\/wiki.openstreetmap.org\/wiki\/File:Wmsplugin_jaunty.png",
-        "text":"File:Wmsplugin jaunty.png\n\nFrom OpenStreetMap Wiki\nJump to: navigation, search\nOriginal file(1,280 \u00d7 800 pixels, file size: 698 KB, MIME type: image\/png)\n\nFile history\n\nClick on a date\/time to view the file as it appeared at that time.\n\ncurrent19:36, 18 May 2009Thumbnail for version as of 19:36, 18 May 20091,280 \u00d7 800 (698 KB)Michael Buege (talk | contribs)\n  \u2022 You cannot overwrite this file.\n\nThere are no pages that link to this file.",
-        "topic_id":20,
-        "format_id":6,
-        "topic_confidence":0.8899653554,
-        "format_confidence":0.682815671
-    },
-    {
-        "url":"http:\/\/brmlab.cz\/user\/maxfx?do=backlink",
-        "text":"\n\nNothing was found.\n\nExcept where otherwise noted, content on this wiki is licensed under the following license: CC Attribution-Noncommercial-Share Alike 3.0 Unported\nRecent changes RSS feed Donate Powered by PHP Valid XHTML 1.0 Valid CSS Driven by DokuWiki",
-        "topic_id":20,
-        "format_id":6,
-        "topic_confidence":0.6112508774,
-        "format_confidence":0.6632462144
-    },
-    {
-        "url":"https:\/\/fantom.gsc.riken.jp\/5\/sstar\/index.php?title=FF:372-23H2&action=edit",
-        "text":"Personal tools\n\nView source for FF:372-23H2\n\n\nJump to: navigation, search\n\nYou do not have permission to edit this page, for the following reason:\n\nThe action you have requested is limited to users in the group: Users.\n\nYou can view and copy the source of this page.\n\nReturn to FF:372-23H2.",
-        "topic_id":20,
-        "format_id":6,
-        "topic_confidence":0.9032059908,
-        "format_confidence":0.9767329097
-    },
-    {
         "url":"http:\/\/uncyclopedia.wikia.com\/wiki\/User:Eller200",
         "text":"From Uncyclopedia, the content-free encyclopedia\n\nJump to: navigation, search\n\nThere is currently no text in this page. Would you like to create Eller200 or Search for Eller200 in Uncyclopedia?\n\nIf you just created this page, wait a few minutes and reload in case of database delay. Our servers are run by hamsters on caffeine, so some database delay is to be expected. It may also have been deleted.\n\nPersonal tools",
         "topic_id":20,
@@ -32,20 +8,20 @@
         "format_confidence":0.5682617426
     },
     {
-        "url":"https:\/\/edeliveryapp.com\/2018\/12\/",
-        "text":"Tookan & eDeliveryApp Comparison\n0 (0)\n\nTookan is a field force management platform and edeliveryapp is a complete online ordering system with a complete comprehensive module for delivery and drivers management with deep google maps(and few other maps providers) integration. Today we compare features, pricing and value for money that each system offers and which system should users go for as [...]",
+        "url":"https:\/\/wiki.openstreetmap.org\/wiki\/File:Wmsplugin_jaunty.png",
+        "text":"File:Wmsplugin jaunty.png\n\nFrom OpenStreetMap Wiki\nJump to: navigation, search\nOriginal file(1,280 \u00d7 800 pixels, file size: 698 KB, MIME type: image\/png)\n\nFile history\n\nClick on a date\/time to view the file as it appeared at that time.\n\ncurrent19:36, 18 May 2009Thumbnail for version as of 19:36, 18 May 20091,280 \u00d7 800 (698 KB)Michael Buege (talk | contribs)\n  \u2022 You cannot overwrite this file.\n\nThere are no pages that link to this file.",
         "topic_id":20,
         "format_id":6,
-        "topic_confidence":0.8990888,
-        "format_confidence":0.7550590038
+        "topic_confidence":0.8899653554,
+        "format_confidence":0.682815671
     },
     {
-        "url":"https:\/\/wiki4.cyclos.org\/index.php\/Cyclos4_Wiki:Privacy_policy",
-        "text":"Login required\n\nJump to: navigation, search\n\nPlease click here to log in to the wiki.\n\nUsers having a social license and users paying for a S, M, L or XL license can be granted access to the full wiki. In this case an NDA with STRO needs to be signed.\nThe following wiki pages are publicly available:\n\nGeneral documentation\n\nSpecification pages\n\nInstruction pages\n\nAll other documentation can be found here - https:\/\/www.cyclos.org\/documentation",
+        "url":"https:\/\/fantom.gsc.riken.jp\/5\/sstar\/index.php?title=FF:372-23H2&action=edit",
+        "text":"Personal tools\n\nView source for FF:372-23H2\n\n\nJump to: navigation, search\n\nYou do not have permission to edit this page, for the following reason:\n\nThe action you have requested is limited to users in the group: Users.\n\nYou can view and copy the source of this page.\n\nReturn to FF:372-23H2.",
         "topic_id":20,
         "format_id":6,
-        "topic_confidence":0.6334318519,
-        "format_confidence":0.9136200547
+        "topic_confidence":0.9032059908,
+        "format_confidence":0.9767329097
     },
     {
         "url":"https:\/\/coreltrainer.com\/videos\/publish-to-pdf\/",
@@ -62,5 +38,29 @@
         "format_id":6,
         "topic_confidence":0.8582325578,
         "format_confidence":0.9658775926
+    },
+    {
+        "url":"http:\/\/brmlab.cz\/user\/maxfx?do=backlink",
+        "text":"\n\nNothing was found.\n\nExcept where otherwise noted, content on this wiki is licensed under the following license: CC Attribution-Noncommercial-Share Alike 3.0 Unported\nRecent changes RSS feed Donate Powered by PHP Valid XHTML 1.0 Valid CSS Driven by DokuWiki",
+        "topic_id":20,
+        "format_id":6,
+        "topic_confidence":0.6112508774,
+        "format_confidence":0.6632462144
+    },
+    {
+        "url":"https:\/\/wiki4.cyclos.org\/index.php\/Cyclos4_Wiki:Privacy_policy",
+        "text":"Login required\n\nJump to: navigation, search\n\nPlease click here to log in to the wiki.\n\nUsers having a social license and users paying for a S, M, L or XL license can be granted access to the full wiki. In this case an NDA with STRO needs to be signed.\nThe following wiki pages are publicly available:\n\nGeneral documentation\n\nSpecification pages\n\nInstruction pages\n\nAll other documentation can be found here - https:\/\/www.cyclos.org\/documentation",
+        "topic_id":20,
+        "format_id":6,
+        "topic_confidence":0.6334318519,
+        "format_confidence":0.9136200547
+    },
+    {
+        "url":"https:\/\/edeliveryapp.com\/2018\/12\/",
+        "text":"Tookan & eDeliveryApp Comparison\n0 (0)\n\nTookan is a field force management platform and edeliveryapp is a complete online ordering system with a complete comprehensive module for delivery and drivers management with deep google maps(and few other maps providers) integration. Today we compare features, pricing and value for money that each system offers and which system should users go for as [...]",
+        "topic_id":20,
+        "format_id":6,
+        "topic_confidence":0.8990888,
+        "format_confidence":0.7550590038
     }
 ]

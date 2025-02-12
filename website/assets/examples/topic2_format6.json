@@ -1,37 +1,5 @@
 [
     {
-        "url":"https:\/\/gist.github.com\/uploadcare-user\/9df3b01a2a337e6c82bbe86777560810",
-        "text":"Skip to content\n\nInstantly share code, notes, and snippets.\n\nWhat would you like to do?\nSnippet, <safescript> in a template processor\n{% safescript %}\nvar s = \"surprise!<\/script><script>alert('whoops!')<\/script>\";\n{% endsafescript %}\n{% safescript %}\nvar a = 'Consider this string: <!--';\nvar b = '<script>';\n{% endsafescript %}\nSign up for free to join this conversation on GitHub. Already have an account? Sign in to comment\nYou can\u2019t perform that action at this time.",
-        "topic_id":2,
-        "format_id":6,
-        "topic_confidence":0.9852132201,
-        "format_confidence":0.5968676209
-    },
-    {
-        "url":"https:\/\/blog.yo61.com\/2012\/06\/20\/",
-        "text":"When I began using puppet, I quickly realised that configuration data was best kept separate from puppet manifests. Initially, I used extlookup and kept configuration data in CSV files. Then complex data structures came to puppet and I now use hirea\/hiera-puppet with configuration data stored in hierarchical YAML files (other hiera backends are available). This article describes how to define in YAML the resources that should be applied to a node.\n\nContinue reading",
-        "topic_id":2,
-        "format_id":6,
-        "topic_confidence":0.9440408349,
-        "format_confidence":0.7923573256
-    },
-    {
-        "url":"http:\/\/javacook.darwinsys.com\/fr.html",
-        "text":"French Edition\n\nThe French Edition <<Java en action>> is temporarily out of print and the page has been removed from the O' site. Here is a link to the original, to the Internet Archive copy, and a local copy. I presume that O' is working on a translation of the second edition, but I often don't find out about these things until they appear. Contact O'Reilly France to find out.",
-        "topic_id":2,
-        "format_id":6,
-        "topic_confidence":0.9513236284,
-        "format_confidence":0.8531663418
-    },
-    {
-        "url":"http:\/\/www.es.mdh.se\/news-events\/75-Seminar__Kurt_Wallnau_SEI_CMU",
-        "text":"\n\nThe full-text document you are about to access is subject to national and international copyright laws. In most cases (but not necessarily all) the consequence is that personal use is allowed given that the copyright owner is duly acknowledged and respected. All other use (typically) require an explicit permission (often in writing) by the copyright owner.\n\nFor the reports in this repository we specifically note that\n\n  \u2022 the use of articles under IEEE copyright is governed by the IEEE copyright policy (available at\n  \u2022 the use of articles under ACM copyright is governed by the ACM copyright policy (available at\n  \u2022 technical reports and other articles issued by M\u00c3\u00a4lardalen University is free for personal use. For other use, the explicit consent of the authors is required\n  \u2022 in other cases, please contact the copyright owner for detailed information\n\nBy accepting I agree to acknowledge and respect the rights of the copyright owner of the document I am about to access.\n\nIf you are in doubt, feel free to contact\n\nSeminar, Kurt Wallnau SEI\/CMU\n\n\nKurt Wallnau , Kurt Wallnau\n\n\n\nStart time:\n\n2004-01-29 13:15\n\nEnd time:\n\n2004-01-29 16:15\n\n\n\nContact person:\n\n\nKurt Wallnau, SEI\/CMU, US Predictable assembly from certificated componentsAs a part of a course Advanced component-based software engineering Kurt will present concepts of Predictable assembly from certificated components. For more information see Predictable assembly - an Overview\n\nKurt Wallnau,",
-        "topic_id":2,
-        "format_id":6,
-        "topic_confidence":0.9200991392,
-        "format_confidence":0.5630412102
-    },
-    {
         "url":"https:\/\/www.confreaks.tv\/videos\/rubyconf2014-strong-duck-type-driven-development",
         "text":"Talking head\nRuby Conference 2014\n\nThis presentation, by John Cinnamond, is licensed under a Creative Commons Attribution ShareAlike 3.0\n\nAs a language, Ruby plays fast and loose with the type system. Developers rely on duck typing to check that the things they want to do with an object are permissible. Whilst this freedom makes writing code frictionless and often a whole lot of fun, it doesn't always scale up well to writing larger systems. I can't promise that strong duck typing - adding automated checking to inter-object interfaces - will make writing complex systems easy but it will help you think about how to structure code in new ways and bring some of the lessons learned from other languages to the Ruby community.\n\nRated: Everyone\nViewed 986 times\nTags: There are no tags for this video.",
         "topic_id":2,
@@ -40,12 +8,12 @@
         "format_confidence":0.9655559063
     },
     {
-        "url":"http:\/\/oxfordindex.oup.com\/view\/10.1093\/oi\/authority.20110803100008171",
-        "text":"Internet Server Application Programming Interface\n\nShow Summary Details\n\nQuick Reference\n\nAn API developed by Microsoft which enables developers to integrate a server with application programs; in this case programs written for the Windows operating system. For example, it would allow access to database management systems and enable back end processes.\n\nSubjects: Computing.\n\nReference entries\n\nUsers without a subscription are not able to see the full content. Please, subscribe or login to access all content.",
+        "url":"https:\/\/gist.github.com\/uploadcare-user\/9df3b01a2a337e6c82bbe86777560810",
+        "text":"Skip to content\n\nInstantly share code, notes, and snippets.\n\nWhat would you like to do?\nSnippet, <safescript> in a template processor\n{% safescript %}\nvar s = \"surprise!<\/script><script>alert('whoops!')<\/script>\";\n{% endsafescript %}\n{% safescript %}\nvar a = 'Consider this string: <!--';\nvar b = '<script>';\n{% endsafescript %}\nSign up for free to join this conversation on GitHub. Already have an account? Sign in to comment\nYou can\u2019t perform that action at this time.",
         "topic_id":2,
         "format_id":6,
-        "topic_confidence":0.929289937,
-        "format_confidence":0.9186615348
+        "topic_confidence":0.9852132201,
+        "format_confidence":0.5968676209
     },
     {
         "url":"https:\/\/redtalks.live\/2017\/02\/",
@@ -56,11 +24,43 @@
         "format_confidence":0.503837347
     },
     {
+        "url":"http:\/\/javacook.darwinsys.com\/fr.html",
+        "text":"French Edition\n\nThe French Edition <<Java en action>> is temporarily out of print and the page has been removed from the O' site. Here is a link to the original, to the Internet Archive copy, and a local copy. I presume that O' is working on a translation of the second edition, but I often don't find out about these things until they appear. Contact O'Reilly France to find out.",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.9513236284,
+        "format_confidence":0.8531663418
+    },
+    {
         "url":"http:\/\/www.itprotoday.com\/software-development\/using-asynchronous-method-calls-c",
         "text":"Using Asynchronous Method Calls in C#\n\nClasses in the .NET Framework Base Class Library (BCL) provide both synchronous and asynchronous method signatures. This article describes when and how it can be more beneficial to use asynchronous method calls.\n\nClick here for entire article.\n\nHide comments\n\n\n  \u2022 Allowed HTML tags: <em> <strong> <blockquote> <br> <p>\n\nPlain text\n\n  \u2022 No HTML tags allowed.\n  \u2022 Web page addresses and e-mail addresses turn into links automatically.\n  \u2022 Lines and paragraphs break automatically.",
         "topic_id":2,
         "format_id":6,
         "topic_confidence":0.9903631806,
         "format_confidence":0.95940274
+    },
+    {
+        "url":"http:\/\/oxfordindex.oup.com\/view\/10.1093\/oi\/authority.20110803100008171",
+        "text":"Internet Server Application Programming Interface\n\nShow Summary Details\n\nQuick Reference\n\nAn API developed by Microsoft which enables developers to integrate a server with application programs; in this case programs written for the Windows operating system. For example, it would allow access to database management systems and enable back end processes.\n\nSubjects: Computing.\n\nReference entries\n\nUsers without a subscription are not able to see the full content. Please, subscribe or login to access all content.",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.929289937,
+        "format_confidence":0.9186615348
+    },
+    {
+        "url":"http:\/\/www.es.mdh.se\/news-events\/75-Seminar__Kurt_Wallnau_SEI_CMU",
+        "text":"\n\nThe full-text document you are about to access is subject to national and international copyright laws. In most cases (but not necessarily all) the consequence is that personal use is allowed given that the copyright owner is duly acknowledged and respected. All other use (typically) require an explicit permission (often in writing) by the copyright owner.\n\nFor the reports in this repository we specifically note that\n\n  \u2022 the use of articles under IEEE copyright is governed by the IEEE copyright policy (available at\n  \u2022 the use of articles under ACM copyright is governed by the ACM copyright policy (available at\n  \u2022 technical reports and other articles issued by M\u00c3\u00a4lardalen University is free for personal use. For other use, the explicit consent of the authors is required\n  \u2022 in other cases, please contact the copyright owner for detailed information\n\nBy accepting I agree to acknowledge and respect the rights of the copyright owner of the document I am about to access.\n\nIf you are in doubt, feel free to contact\n\nSeminar, Kurt Wallnau SEI\/CMU\n\n\nKurt Wallnau , Kurt Wallnau\n\n\n\nStart time:\n\n2004-01-29 13:15\n\nEnd time:\n\n2004-01-29 16:15\n\n\n\nContact person:\n\n\nKurt Wallnau, SEI\/CMU, US Predictable assembly from certificated componentsAs a part of a course Advanced component-based software engineering Kurt will present concepts of Predictable assembly from certificated components. For more information see Predictable assembly - an Overview\n\nKurt Wallnau,",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.9200991392,
+        "format_confidence":0.5630412102
+    },
+    {
+        "url":"https:\/\/blog.yo61.com\/2012\/06\/20\/",
+        "text":"When I began using puppet, I quickly realised that configuration data was best kept separate from puppet manifests. Initially, I used extlookup and kept configuration data in CSV files. Then complex data structures came to puppet and I now use hirea\/hiera-puppet with configuration data stored in hierarchical YAML files (other hiera backends are available). This article describes how to define in YAML the resources that should be applied to a node.\n\nContinue reading",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.9440408349,
+        "format_confidence":0.7923573256
     }
 ]
