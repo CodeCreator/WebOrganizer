@@ -24,7 +24,7 @@ The __topic and format definitions__ and instructions for prompting large langua
 
 
 #### Corpus Annotations
-We pre-process the `1b-1x` pool from DataComps-LM using [RefinedWeb filters](https://github.com/mlfoundations/dclm/blob/main/baselines/baselines_configs/dclm_bas   eline_refinedweb.yaml) and [BFF deduplication](https://github.com/mlfoundations/dclm/tree/main/dedup/bff).
+We pre-process the `1b-1x` pool from DataComps-LM using [RefinedWeb filters](https://github.com/mlfoundations/dclm/blob/main/baselines/baselines_configs/dclm_baseline_refinedweb.yaml) and [BFF deduplication](https://github.com/mlfoundations/dclm/tree/main/dedup/bff).
 The resulting 200B token corpus is available at, together with the annotations: [WebOrganizer/Corpus-200B](https://huggingface.co/datasets/WebOrganizer/Corpus-200B).
 __Download the dataset by cloning the repository with Git LFS instead of HuggingFace's `load_dataset()`.__
 The dataset has the following folder structure:
@@ -54,7 +54,8 @@ Corpus-200B/
         - CC_shard_00000000_processed__choice.npy  # index of top choice
         - ...
     domains_clusters-k24/  # K-means clusters
-    scores_pythia-160m/  # loss of each document with pythia-160m (for perplexity filtering)
+        - CC_shard_00000000_processed.npy  # cluster assignment for each document
+        - ...
 ```
 We also include statistics about the presence and co-occurence of domains in the `domain_statistics/` folder, computed with the `domain_statistics.py` script.
 
