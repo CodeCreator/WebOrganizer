@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Organize the Web: Constructing Domains Enhances Pre-Training Data Curation">
+  <meta name="keywords" content="WebOrganizer, Data Curation, Pre-training, Domain Classification">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebOrganizer</title>
+
+  <!-- Fonts and styles -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <style>
+    /* Custom styles */
+    .publication-title {
+      font-family: 'Google Sans', sans-serif;
+      font-size: 2.5rem;
+    }
+
+    .publication-authors {
+      font-family: 'Google Sans', sans-serif;
+      margin: 2rem 0;
+      font-size: 1.1rem;
+    }
+
+    .author-block {
+      margin: 0 1rem;
+    }
+
+    .publication-links {
+      margin-top: 2rem;
+    }
+
+    .link-block {
+      margin: 0.5rem;
+    }
+
+    .domain-section {
+      margin: 4rem 0;
+    }
+
+    .resource-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .resource-card .card-content {
+      flex-grow: 1;
+    }
+
+    #treemap-viz {
+      width: 100%;
+      height: 500px;
+      margin: 2rem 0;
+    }
+
+    /* Adjust content font sizes */
+    .content p.is-size-5 {
+      font-size: 0.95rem !important;
+    }
+
+    .content ul.is-size-5 {
+      font-size: 0.95rem !important;
+    }
+
+    .content ul.is-size-5 li {
+      font-size: 0.95rem !important;
+    }
+
+    .subtitle.is-6 {
+      font-size: 0.9rem;
+    }
+
+    .content ul li {
+      font-size: 0.95rem !important;
+    }
+
+    .content p {
+      font-size: 0.95rem !important;
+    }
+
+    .title.is-2 {
+      font-size: 2rem;
+    }
+
+    .title.is-3 {
+      font-size: 1.75rem;
+    }
+
+    .title.is-4 {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hero section with title and authors -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              <img src="assets/icon.png" style="height: 1em; vertical-align: -10%;"> Organize the Web: Constructing Domains Enhances Pre-Training Data Curation
+            </h1>
+
+            <div class="publication-authors">
+              <span class="author-block">Alexander Wettig</span>
+              <span class="author-block">Kyle Lo</span>
+              <span class="author-block">Sewon Min</span>
+              <span class="author-block">Hannaneh Hajishirzi</span>
+              <span class="author-block">Danqi Chen</span>
+              <span class="author-block">Luca Soldaini</span>
+            </div>
+
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="ARXIV_TBD" class="button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://huggingface.co/WebOrganizer" class="button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-code"></i>
+                  </span>
+                  <span>Hugging Face</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://github.com/your-repo" class="button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content">
+            <img src="assets/treemaps.png" alt="Overview over WebOrganizer domains" style="width: 100%; margin-bottom: 2rem;">
+
+            <h2 class="title is-2">Overview</h2>
+            <p class="is-size-5">
+              Modern language models are trained on vast web-crawled datasets, but their unstructured nature makes systematic data curation challenging. We introduce WebOrganizer, a framework that brings structure to web-based pre-training data through comprehensive domain classification, focusing on both topic and format domains.
+            </p>
+
+            <div class="columns is-centered mt-4 mb-6">
+              <div class="column is-10">
+                <div class="box">
+                  <h3 class="title is-4 mb-4">Key Contributions</h3>
+                  <div class="content">
+                    <ul class="is-size-5">
+                      <li><strong>Domain Taxonomies:</strong> Development of comprehensive taxonomies for categorizing web content by topic and format</li>
+                      <li><strong>Efficient Classification:</strong> Distillation of large language model annotations into lightweight, efficient domain classifiers</li>
+                      <li><strong>Domain Mixing:</strong> Novel approaches for combining content from different domains to improve downstream task performance</li>
+                      <li><strong>Quality Integration:</strong> Methods for combining domain-based and quality-based data curation approaches</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="columns is-centered">
+              <div class="column is-10">
+                <div class="box">
+                  <h3 class="title is-4 mb-4">Key Findings</h3>
+                  <div class="content">
+                    <ul class="is-size-5">
+                      <li>Combining insights about effective topics and formats leads to improved model performance</li>
+                      <li>Domain mixing enhances existing quality-based data selection methods</li>
+                      <li>Quality-based methods implicitly affect domain distribution in predictable ways</li>
+                      <li>Domain-aware curation provides a valuable complement to quality-based approaches</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2">Resources</h2>
+
+      <!-- Domain Classifiers -->
+      <div class="domain-section">
+        <h3 class="title is-3">Domain Classifiers</h3>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <div class="card resource-card">
+              <div class="card-content">
+                <p class="title is-4">Topic Classifier</p>
+                <p class="subtitle is-6">Categorize web content by subject matter</p>
+                <div class="content">
+                  <ul>
+                    <li><a href="https://huggingface.co/WebOrganizer/TopicClassifier">Standard Version</a></li>
+                    <li><a href="https://huggingface.co/WebOrganizer/TopicClassifier-NoURL">No-URL Version</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-half">
+            <div class="card resource-card">
+              <div class="card-content">
+                <p class="title is-4">Format Classifier</p>
+                <p class="subtitle is-6">Identify document structure and presentation</p>
+                <div class="content">
+                  <ul>
+                    <li><a href="https://huggingface.co/WebOrganizer/FormatClassifier">Standard Version</a></li>
+                    <li><a href="https://huggingface.co/WebOrganizer/FormatClassifier-NoURL">No-URL Version</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Corpus -->
+      <div class="domain-section">
+        <h3 class="title is-3">Corpus Annotations</h3>
+        <div class="content">
+          <p class="is-size-5">
+            Our 200B token corpus is available at <a href="https://huggingface.co/datasets/WebOrganizer/Corpus-200B">WebOrganizer/Corpus-200B</a>.
+            The dataset includes:
+          </p>
+          <ul class="is-size-5">
+            <li>Pre-processed web documents</li>
+            <li>Token counts</li>
+            <li>Quality scores</li>
+            <li>Domain annotations</li>
+            <li>Cluster assignments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Citation -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2">Citation</h2>
+      <div class="content">
+        <pre><code>@article{wettig2025organize,
+  title={Organize the Web: Constructing Domains Enhances Pre-Training Data Curation},
+  author={Alexander Wettig and Kyle Lo and Sewon Min and Hannaneh Hajishirzi and Danqi Chen and Luca Soldaini},
+  year={2025}
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          Website template adapted from various academic project pages.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Add any interactive visualizations or dynamic content here
+  </script>
+</body>
+</html>
