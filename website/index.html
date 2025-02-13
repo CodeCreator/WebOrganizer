@@ -22,6 +22,10 @@
       font-size: 2.5rem;
     }
 
+    .section {
+        padding: 1.5rem;
+    }
+
     .publication-authors {
       font-family: 'Google Sans', sans-serif;
       margin: 2rem 0;
@@ -41,7 +45,7 @@
     }
 
     .domain-section {
-      margin: 4rem 0;
+      margin: 2rem 0;
     }
 
     .resource-card {
@@ -56,8 +60,8 @@
 
     #treemap-viz {
       width: 100%;
-      height: 500px;
-      margin: 2rem 0;
+      height: 400px;
+      margin: 0 0;
     }
 
     /* Adjust content font sizes */
@@ -96,6 +100,144 @@
     .title.is-4 {
       font-size: 1.5rem;
     }
+
+    .content .topic-highlight {
+      color: #c1615d;
+      font-weight: bold;
+    }
+
+    .content .format-highlight {
+      color: #3c7ab6;
+      font-weight: bold;
+    }
+
+    .treemap-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .treemap {
+        flex: 1;
+        min-width: 400px;
+        max-width: 400px;
+    }
+
+    .example-viewer {
+        margin: 20px auto;
+        max-width: 1000px;
+        padding: 20px;
+        background: #f5f5f5;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+
+    .example-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .example-navigation button {
+        padding: 8px 16px;
+        border: none;
+        background: #007bff;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .example-navigation button:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+    }
+
+    .example-navigation span {
+        font-size: 0.9em;
+        color: #666;
+    }
+
+    .example-content {
+        background: white;
+        padding: 20px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        overflow-x: auto;
+    }
+
+    .example-content pre {
+        font-size: 0.7em;
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    .example-header {
+        background: #f8f9fa;
+        padding: 10px 15px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        font-size: 0.85em;
+        line-height: 1.4;
+        font-size: 0.9em;
+    }
+
+    .example-header .url {
+        color: #0366d6;
+        word-break: break-all;
+        font-weight: bold;
+    }
+
+    .example-header .metadata {
+        color: #586069;
+        margin-top: 5px;
+    }
+
+    .domain-descriptions {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+
+    .domain-description {
+        flex: 1;
+        min-width: 400px;
+        max-width: 400px;
+        padding: 10px;
+        border-radius: 8px;
+        display: none;
+    }
+
+    .domain-description.active {
+        display: block;
+    }
+
+    .domain-description h3 {
+        margin: 0 0 10px 0;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .domain-description h3.default-heading {
+        font-family: 'Castoro', cursive;
+        font-style: italic;
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    .domain-description p {
+        margin: 0;
+        font-size: 0.9em;
+        white-space: pre-line;
+    }
+
   </style>
 </head>
 
@@ -107,23 +249,23 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">
-              <img src="assets/icon.png" style="height: 0.9em; vertical-align: -10%;"> Organize the Web: Constructing Domains Enhances Pre-Training Data Curation
+              <img src="assets/images/icon.png" style="height: 0.9em; vertical-align: -10%;"> Organize the Web: Constructing Domains Enhances Pre-Training Data Curation
             </h1>
 
             <div class="publication-authors">
-              <span class="author-block">Alexander Wettig</span>
-              <span class="author-block">Kyle Lo</span>
-              <span class="author-block">Sewon Min</span>
-              <span class="author-block">Hannaneh Hajishirzi</span>
-              <span class="author-block">Danqi Chen</span>
-              <span class="author-block">Luca Soldaini</span>
+              <span class="author-block"><a href="https://www.cs.princeton.edu/~awettig/" target="_blank">Alexander Wettig</a></span>
+              <span class="author-block"><a href="https://kyleclo.com/" target="_blank">Kyle Lo</a></span>
+              <span class="author-block"><a href="https://www.sewonmin.com/" target="_blank">Sewon Min</a></span>
+              <span class="author-block"><a href="https://homes.cs.washington.edu/~hannaneh/" target="_blank">Hannaneh Hajishirzi</a></span>
+              <span class="author-block"><a href="https://www.cs.princeton.edu/~danqic/" target="_blank">Danqi Chen</a></span>
+              <span class="author-block"><a href="https://soldaini.net/" target="_blank">Luca Soldaini</a></span>
             </div>
 
             <div class="publication-links">
               <span class="link-block">
                 <a href="ARXIV_TBD" class="button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
+                    <i class="fas fa-book"></i>
                   </span>
                   <span>Paper</span>
                 </a>
@@ -132,7 +274,7 @@
               <span class="link-block">
                 <a href="https://huggingface.co/WebOrganizer" class="button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="fas fa-code"></i>
+                    <p style="font-size:18px">🤗</p>
                   </span>
                   <span>Hugging Face</span>
                 </a>
@@ -159,9 +301,9 @@
       <div class="columns is-centered">
         <div class="column">
           <div class="content">
-            <h2 class="title is-2">Domain Distribution</h2>
+            <h2 class="title is-3">Explore the Corpus</h2>
             <p class="is-size-5">
-              Explore the distribution of web content across different topics and formats. Click on any category to see conditional distributions and examples.
+              Explore different topics and formats and click to see examples! We visualize a <a href="https://huggingface.co/datasets/WebOrganizer/Corpus-200B">200B pre-training corpus</a> based on CommonCrawl.
             </p>
 
             <div class="treemap-container">
@@ -169,45 +311,122 @@
               <div id="format-treemap" class="treemap"></div>
             </div>
 
-            <div id="example-viewer" class="example-viewer">
-              <p>Click on a category to view examples</p>
+            <div class="domain-descriptions">
+              <div id="topic-description" class="domain-description"></div>
+              <div id="format-description" class="domain-description"></div>
             </div>
 
-            <h2 class="title is-2">Overview</h2>
+            <div class="example-viewer">
+              <p>
+                <em>Disclaimer: The examples are randomly sampled and not manually curated. The web pages <strong>may contain offensive content</strong> and the domain classification may be subject to errors.</em>
+              </p>
+              <div id="example-viewer">
+                Click on a topic or format to view examples!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column">
+                <div class="content">
+                    <h2 class="title is-3">Downloads</h2>
+                    <p class="is-size-5">We fine-tune small (140M parameter) domain classifiers which can be used to annotate data at scale. We train these models on annotations from Llama-3.1-405B-Instruct prompted with detailed descriptions of the domains. We release the models and training data on HuggingFace Hub.</p>
+                </div>
+                <!-- Domain Classifiers -->
+                <div class="columns is-multiline">
+                    <div class="column is-half">
+                    <div class="card resource-card">
+                        <div class="card-content">
+                        <p class="title is-4">Topic Classifier</p>
+                        <div class="content">
+
+                            <ul>
+                                <li>🤗 <a href="https://huggingface.co/WebOrganizer/TopicClassifier">WebOrganizer/TopicClassifier</a></li>
+                                <li>🤗 <a href="https://huggingface.co/WebOrganizer/TopicClassifier-NoURL">WebOrganizer/TopicClassifier-NoURL</a> <br>(supports classification of documents without URLs)</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="column is-half">
+                    <div class="card resource-card">
+                        <div class="card-content">
+                        <p class="title is-4">Format Classifier</p>
+                        <div class="content">
+                            <ul>
+                                <li>🤗 <a href="https://huggingface.co/WebOrganizer/FormatClassifier">WebOrganizer/FormatClassifier</a></li>
+                                <li>🤗 <a href="https://huggingface.co/WebOrganizer/FormatClassifier-NoURL">WebOrganizer/FormatClassifier-NoURL</a> <br>(supports classification of documents without URLs)</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+            <h4 class="title is-4">Corpus Annotations</h3>
+            <div class="content">
             <p class="is-size-5">
-              Modern language models are trained on vast web-crawled datasets, but their unstructured nature makes systematic data curation challenging. We introduce WebOrganizer, a framework that brings structure to web-based pre-training data through comprehensive domain classification, focusing on both topic and format domains.
+                Our 200B token corpus is available on HuggingfaceHub 🤗 at <a href="https://huggingface.co/datasets/WebOrganizer/Corpus-200B">WebOrganizer/Corpus-200B</a>.
+                It is based on the DataComps-LM 1b-1x pool and was pre-processed using best practice techniques (RefinedWeb filters and BFF deduplication).
+                We provide the processed documents together with token counts, quality scores, domain annotations, and k-means cluster assignments.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column">
+            <div class="content">
+          <h2 class="title is-3">Motivation</h2>
+          <p class="is-size-5">
+              Modern language models are trained on large, unstructured datasets consisting of trillions of tokens and obtained from crawling the web.
+              We introduce WebOrganizer, a framework that organizes this vast amount of information into meaningful <span class="topic-highlight">topic</span> and <span class="format-highlight">format</span> domains.
+            </p>
+            <p class="is-size-5">
+              These domains expose the internal composition of monolithic web corpora and we also demonstrate that they are useful for curating better pre-training data for language models.
             </p>
 
-            <div class="columns is-centered mt-4 mb-6">
-              <div class="column is-10">
-                <div class="box">
-                  <h3 class="title is-4 mb-4">Key Contributions</h3>
-                  <div class="content">
-                    <ul class="is-size-5">
-                      <li><strong>Domain Taxonomies:</strong> Development of comprehensive taxonomies for categorizing web content by topic and format</li>
-                      <li><strong>Efficient Classification:</strong> Distillation of large language model annotations into lightweight, efficient domain classifiers</li>
-                      <li><strong>Domain Mixing:</strong> Novel approaches for combining content from different domains to improve downstream task performance</li>
-                      <li><strong>Quality Integration:</strong> Methods for combining domain-based and quality-based data curation approaches</li>
-                    </ul>
-                  </div>
+            <h2 class="title is-3">Takeaways</h2>
+            <p class="is-size-5">
+              <strong>Better Data Mixing:</strong> Constructing domains has the advantage that we can systematically study the importance of each subset. We adapt the RegMix framework for learning which domains are most useful for improving performance on MMLU and HellaSwag.
+              <div style="text-align: center; margin: 20px;">
+                    <img src="assets/images/mixtures_regmix.png" alt="Domain mixture optimization using RegMix" style="max-width: 100%; height: auto;">
                 </div>
-              </div>
-            </div>
+            </p>
 
-            <div class="columns is-centered">
-              <div class="column is-10">
-                <div class="box">
-                  <h3 class="title is-4 mb-4">Key Findings</h3>
-                  <div class="content">
-                    <ul class="is-size-5">
-                      <li>Combining insights about effective topics and formats leads to improved model performance</li>
-                      <li>Domain mixing enhances existing quality-based data selection methods</li>
-                      <li>Quality-based methods implicitly affect domain distribution in predictable ways</li>
-                      <li>Domain-aware curation provides a valuable complement to quality-based approaches</li>
-                    </ul>
-                  </div>
-                </div>
+            <p class="is-size-5">
+            Our optimized domain mixtures improve downstream performance over the default proportions of the corpus across a range of tasks, and topics and formats mixing can be combined to further improve performance.
+              <div style="text-align: center; margin: 20px;">
+                <img src="assets/images/results_main.png" alt="Main results table" style="max-width: 100%; height: auto;">
               </div>
+            </p>
+
+            <p class="is-size-5">
+              <strong>Complementary to Quality Filters:</strong>
+              Data curation with domains and quality filters have complimentary strengths - quality filtering can discard individual documents, while domain mixing can be finely calibrated towards downstream needs. Using them both together achieves the strongest perfomrance overall.
+            </p>
+            <p class="is-size-5">
+              <div style="text-align: center; margin: 20px;">
+                    <img src="assets/images/mixtures_implicit.png" alt="Domain mixture optimization using RegMix" style="max-width: 100%; height: auto;">
+                </div>
+              <strong>Understanding Data Curation:</strong> Our framework also provides insights into existing data curation practices. We consider how quality filters will implicitly change the domain distributions, and observe both similarities and differences in the domain preferences of two quality filters, FineWeb-edu and DCLM-fasttext.
+              We study how much we can approximate the performance of quality filters from their implicit domain mixtures. While their domain mixtures perform better than the default corpus proportions, there remains a gap in performance, suggesting that fine-grained quality filtering also contributes to the performance.
+            </p>
+            </div>
             </div>
           </div>
         </div>
@@ -215,71 +434,9 @@
     </div>
   </section>
 
-  <!-- Resources section -->
   <section class="section">
     <div class="container is-max-desktop">
-      <h2 class="title is-2">Resources</h2>
-
-      <!-- Domain Classifiers -->
-      <div class="domain-section">
-        <h3 class="title is-3">Domain Classifiers</h3>
-        <div class="columns is-multiline">
-          <div class="column is-half">
-            <div class="card resource-card">
-              <div class="card-content">
-                <p class="title is-4">Topic Classifier</p>
-                <p class="subtitle is-6">Categorize web content by subject matter</p>
-                <div class="content">
-                  <ul>
-                    <li><a href="https://huggingface.co/WebOrganizer/TopicClassifier">Standard Version</a></li>
-                    <li><a href="https://huggingface.co/WebOrganizer/TopicClassifier-NoURL">No-URL Version</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-half">
-            <div class="card resource-card">
-              <div class="card-content">
-                <p class="title is-4">Format Classifier</p>
-                <p class="subtitle is-6">Identify document structure and presentation</p>
-                <div class="content">
-                  <ul>
-                    <li><a href="https://huggingface.co/WebOrganizer/FormatClassifier">Standard Version</a></li>
-                    <li><a href="https://huggingface.co/WebOrganizer/FormatClassifier-NoURL">No-URL Version</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Corpus -->
-      <div class="domain-section">
-        <h3 class="title is-3">Corpus Annotations</h3>
-        <div class="content">
-          <p class="is-size-5">
-            Our 200B token corpus is available at <a href="https://huggingface.co/datasets/WebOrganizer/Corpus-200B">WebOrganizer/Corpus-200B</a>.
-            The dataset includes:
-          </p>
-          <ul class="is-size-5">
-            <li>Pre-processed web documents</li>
-            <li>Token counts</li>
-            <li>Quality scores</li>
-            <li>Domain annotations</li>
-            <li>Cluster assignments</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Citation -->
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-2">Citation</h2>
+      <h2 class="title is-3">Citation</h2>
       <div class="content">
         <pre><code>@article{wettig2025organize,
   title={Organize the Web: Constructing Domains Enhances Pre-Training Data Curation},
@@ -297,6 +454,20 @@
         <p>
           Website template adapted from various academic project pages.
         </p>
+        <div class="institutional-logos" style="margin-top: 2rem;">
+          <a href="https://allenai.org/" target="_blank">
+            <img src="assets/images/ai2_logo.png" alt="AI2 Logo" style="height: 120px; margin: 0 40px;">
+          </a>
+          <a href="https://www.berkeley.edu/" target="_blank">
+            <img src="assets/images/uc_berkeley_logo.png" alt="UC Berkeley Logo" style="height: 120px; margin: 0 40px;">
+          </a>
+          <a href="https://www.princeton.edu/" target="_blank">
+            <img src="assets/images/princeton_logo.png" alt="Princeton Logo" style="height: 120px; margin: 0 40px;">
+          </a>
+          <a href="https://www.washington.edu/" target="_blank">
+            <img src="assets/images/uw_logo.png" alt="University of Washington Logo" style="height: 120px; margin: 0 40px;">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
