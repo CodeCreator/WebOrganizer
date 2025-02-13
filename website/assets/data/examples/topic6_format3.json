@@ -1,13 +1,5 @@
 [
     {
-        "url":"https:\/\/www.eastbournetheatres.co.uk\/book\/115402",
-        "text":"As\u00a0a result of current\u00a0restrictions Visitor Services including box office at the Welcome Building is closed to in-person and telephone callers.\u00a0The Box Office email will be monitored by\u00a0a\u00a0reduced number of staff, so thank you in advance for your patience if you contact us this way -\u00a0Online bookings are operating as normal so you may prefer to use this service. If you cannot book the seat combination you require online, please email\u00a0us.",
-        "topic_id":6,
-        "format_id":3,
-        "topic_confidence":0.9590235949,
-        "format_confidence":0.8212270737
-    },
-    {
         "url":"http:\/\/ncgmovies.com\/club-card\/",
         "text":"Club Card\n\nPresent your NCG Club Card when purchasing movie tickets to earn points toward free movies. Your Reward Voucher will automatically print at the box office once you\u2019ve reached a reward level. The Reward Voucher is good for any movie on your next visit. Club Card points can be earned for online purchases at the time of redemption.\n\nClub Cards may be obtained at any NCG Cinema location or choose your theater below to order a gift online:\n\n1 Ticket = 50 points(500 point limit per day)\nPrizes 500 points ***** 1 Free Ticket*\nYour points will reset after 500\n\nYou can Check your card balance here",
         "topic_id":6,
@@ -22,6 +14,14 @@
         "format_id":3,
         "topic_confidence":0.9730433822,
         "format_confidence":0.6604331732
+    },
+    {
+        "url":"http:\/\/walkthelinefestival.blogspot.com\/p\/ticket-information.html",
+        "text":"Ticket information\n\nTickets for our 2014 event are on sale. Buy your tickets now!\n\nYou can either pick and chose the shows you want to go to, or you can buy a pass for the whole weekend, which allows entry to all shows.\n\nPrices on the door will be higher, so buy in advance to save! You will need to bring a print out of your e-ticket or your paper ticket to the wristband exchange point. Details of the wristband exchange point will be published soon.\n\nTerms and conditions apply, which you agree to upon purchasing a ticket:\n\n  \u2022 The Frog and Fiddle is a strictly 18+ venue\n  \u2022 You agree comply with the rules of the individual venues. Each venue reserves the right to refuse admission and to search customers upon entry if required. Please carry a driving license or passport as proof of age\n  \u2022 You consent to yourself being captured in photographs and videos at the festival, which may be used by Tribe Festivals Ltd and our partners\n  \u2022 Some venues are 18+. Please check before buying and get in touch if you aren't sure. Tickets incorrectly bought by or for under 18s will not be refunded\n  \u2022 Tickets are non refundable, except in the highly unlikely case of the festival being canceled or postponed. Refunds are not available for customers who have been either refused entry or ejected from venues due to breaches of the venue rules. We can not re-issue lost or stolen tickets.\n  \u2022 The line-up may be subject to change. We will keep you informed of any changes via the website. Refunds are not available for changes to the line-up.\n\nBlogger Templates by Isnaini Dot Com and Wedding Gowns. Powered by Blogger",
+        "topic_id":6,
+        "format_id":3,
+        "topic_confidence":0.9810194373,
+        "format_confidence":0.7477711439
     },
     {
         "url":"https:\/\/cinemagear.com\/contact.html",
@@ -40,20 +40,12 @@
         "format_confidence":0.8459150791
     },
     {
-        "url":"http:\/\/walkthelinefestival.blogspot.com\/p\/ticket-information.html",
-        "text":"Ticket information\n\nTickets for our 2014 event are on sale. Buy your tickets now!\n\nYou can either pick and chose the shows you want to go to, or you can buy a pass for the whole weekend, which allows entry to all shows.\n\nPrices on the door will be higher, so buy in advance to save! You will need to bring a print out of your e-ticket or your paper ticket to the wristband exchange point. Details of the wristband exchange point will be published soon.\n\nTerms and conditions apply, which you agree to upon purchasing a ticket:\n\n  \u2022 The Frog and Fiddle is a strictly 18+ venue\n  \u2022 You agree comply with the rules of the individual venues. Each venue reserves the right to refuse admission and to search customers upon entry if required. Please carry a driving license or passport as proof of age\n  \u2022 You consent to yourself being captured in photographs and videos at the festival, which may be used by Tribe Festivals Ltd and our partners\n  \u2022 Some venues are 18+. Please check before buying and get in touch if you aren't sure. Tickets incorrectly bought by or for under 18s will not be refunded\n  \u2022 Tickets are non refundable, except in the highly unlikely case of the festival being canceled or postponed. Refunds are not available for customers who have been either refused entry or ejected from venues due to breaches of the venue rules. We can not re-issue lost or stolen tickets.\n  \u2022 The line-up may be subject to change. We will keep you informed of any changes via the website. Refunds are not available for changes to the line-up.\n\nBlogger Templates by Isnaini Dot Com and Wedding Gowns. Powered by Blogger",
+        "url":"https:\/\/www.eastbournetheatres.co.uk\/book\/115402",
+        "text":"As\u00a0a result of current\u00a0restrictions Visitor Services including box office at the Welcome Building is closed to in-person and telephone callers.\u00a0The Box Office email will be monitored by\u00a0a\u00a0reduced number of staff, so thank you in advance for your patience if you contact us this way -\u00a0Online bookings are operating as normal so you may prefer to use this service. If you cannot book the seat combination you require online, please email\u00a0us.",
         "topic_id":6,
         "format_id":3,
-        "topic_confidence":0.9810194373,
-        "format_confidence":0.7477711439
-    },
-    {
-        "url":"http:\/\/www.chriscountry.co.uk\/listen\/listening-on-sonos\/",
-        "text":"Listen on Sonos\n\nYou can listen to Chris Country on your Sonos system, just by finding us in the RadioPlayer listings.\n\nThe best way to listen is by firstly, choosing RadioPlayer in the list of music services that are available...\n\nThen, on the list of stations, you'll see Chris Country!\n\nDouble-click on our name and we'll start playing. You can then also save us as a favourite station, and listen to us any time on your Sonos device!\n\nOn Air Now\n\nThe Bobby Bones Show 8:00AM - Noon\n\nNow Playing\n\nHome > How To Listen > Listen on Sonos",
-        "topic_id":6,
-        "format_id":3,
-        "topic_confidence":0.9540003538,
-        "format_confidence":0.8570047617
+        "topic_confidence":0.9590235949,
+        "format_confidence":0.8212270737
     },
     {
         "url":"http:\/\/www.bigbasstabs.com\/submitbasstabs.html?reqid=6508",
@@ -62,5 +54,13 @@
         "format_id":3,
         "topic_confidence":0.9793636203,
         "format_confidence":0.5536837578
+    },
+    {
+        "url":"http:\/\/www.chriscountry.co.uk\/listen\/listening-on-sonos\/",
+        "text":"Listen on Sonos\n\nYou can listen to Chris Country on your Sonos system, just by finding us in the RadioPlayer listings.\n\nThe best way to listen is by firstly, choosing RadioPlayer in the list of music services that are available...\n\nThen, on the list of stations, you'll see Chris Country!\n\nDouble-click on our name and we'll start playing. You can then also save us as a favourite station, and listen to us any time on your Sonos device!\n\nOn Air Now\n\nThe Bobby Bones Show 8:00AM - Noon\n\nNow Playing\n\nHome > How To Listen > Listen on Sonos",
+        "topic_id":6,
+        "format_id":3,
+        "topic_confidence":0.9540003538,
+        "format_confidence":0.8570047617
     }
 ]

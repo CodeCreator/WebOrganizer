@@ -8,20 +8,12 @@
         "format_confidence":0.9494518042
     },
     {
-        "url":"http:\/\/www.icpsr.umich.edu\/icpsrweb\/NACJD\/support\/faqs\/2006\/01\/how-do-i-find-data-that-i-can-use-for",
-        "text":"The Source for Crime and Justice Data\n\nHow do I find data that I can use for my research project?\n\nThe Data Access\/Download Data page allows you to search our data holdings by keyword. The page also gives you several options to browse our data holdings. On the search results page, you may filter your results by subject, geography, time period, funding agency, author, and recency.\n\nPlease keep in mind that our data collections consist of ASCII data files and documentation. These data files must be read into a statistical package such as SAS or SPSS in order to generate statistics. Our Web site does not have statistics that have already been produced or published reports, charts, or other analyses based upon data holdings. For more information about these products, see the answer to I don't want to run my own statistics. Where can I get reports or statistics that have already been generated?",
+        "url":"https:\/\/www.beavertonoregon.gov\/Faq.aspx?QID=154",
+        "text":"How long is my term of jury duty?\nJurors in the City of Beaverton serve a three-month term. Although you are on call during those three months, you will not be required to serve on more than two juries nor more than 10 days unless additional days are needed to finish a trial. Most jury trials last only one day, but occasionally they last two days.\n\nShow All Answers\n\n1. Why is jury service required?\n2. Who is eligible to serve as a juror?\n3. How long is my term of jury duty?\n4. Will I get paid for jury duty?\n5. Will I have to come if the case is settled before the day of trial?\n6. What if my employer doesn\u2019t want me to serve?\n7. Can I change the date that I am required to report?\n8. Where is the Municipal Court, and where do I park?\n9. What should I bring when I report?\n10. When will I get to eat lunch?\n11. What if I fail to appear on the day I am summoned?\n12. Where do I check in?\n13. Where are the restrooms?\n14. Can I use a telephone?\n15. May I take my cell phone or pager into the courtroom?\n16. What kind of case will I hear?\n17. Why does the judge have a computer terminal on his\/her bench?\n18. Will I be chosen for a specific trial?\n19. May I investigate or research the case outside of the court?\n20. Are there certain rules of court that I need to follow?\n21. What are the stages of a typical trial?\n22. What should I expect when the jury retires for deliberation?\n23. Do I go back into open court?",
         "topic_id":3,
         "format_id":5,
-        "topic_confidence":0.8150177598,
-        "format_confidence":0.9588510394
-    },
-    {
-        "url":"https:\/\/durhamfamilylawspecialist.com\/if-my-case-goes-to-trial-will-the-judge-hear-about-what-we-discussed-at-the-mediation\/",
-        "text":"I am here to help. Call now.\n\n\nIs Mediation Negotiation Admissible?\n\nIf my case goes to trial, will the Judge hear about what we discussed at the mediation?\n\nNo. The negotiations that occur as part of a mediation are confidential and cannot be disclosed at trial to a Judge or jury. Neither party may subpoena the mediator and require the mediator\u2019s testimony or notes.\n\nContact Barri Payne",
-        "topic_id":3,
-        "format_id":5,
-        "topic_confidence":0.9963537455,
-        "format_confidence":0.7962494493
+        "topic_confidence":0.990211308,
+        "format_confidence":0.9746135473
     },
     {
         "url":"http:\/\/yorkcountysheriff.com\/faq.aspx?TID=16",
@@ -32,12 +24,20 @@
         "format_confidence":0.9737363458
     },
     {
-        "url":"https:\/\/www.lifeanddisabilitylaw.com\/faq\/my-erisa-claim-was-denied-can-i-file-a-lawsuit-immediately\/",
-        "text":"Call For A FREE Case Evaluation 510.992.6130\n\nMy ERISA Claim Was Denied, Can I File A Lawsuit Immediately?\n\nPosted By:\n\nBefore you can file a lawsuit, you must \u201cexhaust\u201d any administrative remedies available to you.\u00a0 The plan document will set forth what you need to do upon receipt of a claim denial.\u00a0 Usually, you must submit at least one request for review (or appeal) to the claims administrator.\u00a0 You cannot file a lawsuit until the deadline for the administrator to make a decision has passed or the administrator has finally denied your claim.\u00a0 If you do not follow your plan\u2019s claims procedure, a court will likely dismiss your lawsuit for failing to exhaust administrative remedies, unless you can prove that exhaustion would have been pointless.\n\nGet The Help You Need Today",
+        "url":"http:\/\/www.insd.uscourts.gov\/content\/obtaining-copies-court-documents",
+        "text":"Obtaining Copies of Court Documents\n\nCommon FAQ\n  \u2022 Documents in most newer civil and criminal cases are available for viewing\/printing via the internet, by accessing the court's CM\/ECF - PACER system. A U.S. Courts PACER account is required. Documents are in PDF format, and cost 10 cents per page, with a quarterly minimum billing amount and a per document maximum charge. For more details, contact the PACER Service Center, at (800) 676-6856, or visit www.pacer.gov.\n  \u2022 Documents in older cases may be identified on docket sheets through the court's Case Search page. Then, a request for specific documents may be made by mail or fax using the Copy Request Form. Copies are provided by the court at 50 cents per page. Court staff will contact the requestor to arrange payment.\n  \u2022 Documents available through PACER may also be viewed and printed at the Clerk's office on public access computers. No PACER account is required, and copies are 10 cents per page. Check our Office Locations.\n  \u2022 Contact the Clerk's office, at (317) 229-3700, for further assistance with copy requests.",
         "topic_id":3,
         "format_id":5,
-        "topic_confidence":0.9651206732,
-        "format_confidence":0.9447298646
+        "topic_confidence":0.9944637418,
+        "format_confidence":0.5504742265
+    },
+    {
+        "url":"http:\/\/www.icpsr.umich.edu\/icpsrweb\/NACJD\/support\/faqs\/2006\/01\/how-do-i-find-data-that-i-can-use-for",
+        "text":"The Source for Crime and Justice Data\n\nHow do I find data that I can use for my research project?\n\nThe Data Access\/Download Data page allows you to search our data holdings by keyword. The page also gives you several options to browse our data holdings. On the search results page, you may filter your results by subject, geography, time period, funding agency, author, and recency.\n\nPlease keep in mind that our data collections consist of ASCII data files and documentation. These data files must be read into a statistical package such as SAS or SPSS in order to generate statistics. Our Web site does not have statistics that have already been produced or published reports, charts, or other analyses based upon data holdings. For more information about these products, see the answer to I don't want to run my own statistics. Where can I get reports or statistics that have already been generated?",
+        "topic_id":3,
+        "format_id":5,
+        "topic_confidence":0.8150177598,
+        "format_confidence":0.9588510394
     },
     {
         "url":"https:\/\/www.allprobailbond.com\/blog\/ca-laws\/medical-marijuana-faqs\/",
@@ -48,19 +48,19 @@
         "format_confidence":0.9231821299
     },
     {
-        "url":"https:\/\/www.beavertonoregon.gov\/Faq.aspx?QID=154",
-        "text":"How long is my term of jury duty?\nJurors in the City of Beaverton serve a three-month term. Although you are on call during those three months, you will not be required to serve on more than two juries nor more than 10 days unless additional days are needed to finish a trial. Most jury trials last only one day, but occasionally they last two days.\n\nShow All Answers\n\n1. Why is jury service required?\n2. Who is eligible to serve as a juror?\n3. How long is my term of jury duty?\n4. Will I get paid for jury duty?\n5. Will I have to come if the case is settled before the day of trial?\n6. What if my employer doesn\u2019t want me to serve?\n7. Can I change the date that I am required to report?\n8. Where is the Municipal Court, and where do I park?\n9. What should I bring when I report?\n10. When will I get to eat lunch?\n11. What if I fail to appear on the day I am summoned?\n12. Where do I check in?\n13. Where are the restrooms?\n14. Can I use a telephone?\n15. May I take my cell phone or pager into the courtroom?\n16. What kind of case will I hear?\n17. Why does the judge have a computer terminal on his\/her bench?\n18. Will I be chosen for a specific trial?\n19. May I investigate or research the case outside of the court?\n20. Are there certain rules of court that I need to follow?\n21. What are the stages of a typical trial?\n22. What should I expect when the jury retires for deliberation?\n23. Do I go back into open court?",
+        "url":"https:\/\/www.lifeanddisabilitylaw.com\/faq\/my-erisa-claim-was-denied-can-i-file-a-lawsuit-immediately\/",
+        "text":"Call For A FREE Case Evaluation 510.992.6130\n\nMy ERISA Claim Was Denied, Can I File A Lawsuit Immediately?\n\nPosted By:\n\nBefore you can file a lawsuit, you must \u201cexhaust\u201d any administrative remedies available to you.\u00a0 The plan document will set forth what you need to do upon receipt of a claim denial.\u00a0 Usually, you must submit at least one request for review (or appeal) to the claims administrator.\u00a0 You cannot file a lawsuit until the deadline for the administrator to make a decision has passed or the administrator has finally denied your claim.\u00a0 If you do not follow your plan\u2019s claims procedure, a court will likely dismiss your lawsuit for failing to exhaust administrative remedies, unless you can prove that exhaustion would have been pointless.\n\nGet The Help You Need Today",
         "topic_id":3,
         "format_id":5,
-        "topic_confidence":0.990211308,
-        "format_confidence":0.9746135473
+        "topic_confidence":0.9651206732,
+        "format_confidence":0.9447298646
     },
     {
-        "url":"http:\/\/www.insd.uscourts.gov\/content\/obtaining-copies-court-documents",
-        "text":"Obtaining Copies of Court Documents\n\nCommon FAQ\n  \u2022 Documents in most newer civil and criminal cases are available for viewing\/printing via the internet, by accessing the court's CM\/ECF - PACER system. A U.S. Courts PACER account is required. Documents are in PDF format, and cost 10 cents per page, with a quarterly minimum billing amount and a per document maximum charge. For more details, contact the PACER Service Center, at (800) 676-6856, or visit www.pacer.gov.\n  \u2022 Documents in older cases may be identified on docket sheets through the court's Case Search page. Then, a request for specific documents may be made by mail or fax using the Copy Request Form. Copies are provided by the court at 50 cents per page. Court staff will contact the requestor to arrange payment.\n  \u2022 Documents available through PACER may also be viewed and printed at the Clerk's office on public access computers. No PACER account is required, and copies are 10 cents per page. Check our Office Locations.\n  \u2022 Contact the Clerk's office, at (317) 229-3700, for further assistance with copy requests.",
+        "url":"https:\/\/durhamfamilylawspecialist.com\/if-my-case-goes-to-trial-will-the-judge-hear-about-what-we-discussed-at-the-mediation\/",
+        "text":"I am here to help. Call now.\n\n\nIs Mediation Negotiation Admissible?\n\nIf my case goes to trial, will the Judge hear about what we discussed at the mediation?\n\nNo. The negotiations that occur as part of a mediation are confidential and cannot be disclosed at trial to a Judge or jury. Neither party may subpoena the mediator and require the mediator\u2019s testimony or notes.\n\nContact Barri Payne",
         "topic_id":3,
         "format_id":5,
-        "topic_confidence":0.9944637418,
-        "format_confidence":0.5504742265
+        "topic_confidence":0.9963537455,
+        "format_confidence":0.7962494493
     }
 ]

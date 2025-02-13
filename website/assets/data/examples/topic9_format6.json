@@ -8,44 +8,12 @@
         "format_confidence":0.8648332953
     },
     {
-        "url":"http:\/\/www.idahostatesman.com\/news\/business\/personal-finance\/article145246589.html",
-        "text":"Borrowers must fight for themselves as student loan reforms are rolled back\n\nApril 18, 2017 12:58 PM\n\nUPDATED April 18, 2017 12:59 PM\n\nMore Videos\n\n  \u2022 Boise State coach Bryan Harsin discusses his first win over Air Force\n\n    Boise State football coach Bryan Harsin talks after the Broncos' 44-19 win over Air Force, which ended a three-game losing streak against the Falcons. (video courtesy of Boise State)",
-        "topic_id":9,
-        "format_id":6,
-        "topic_confidence":0.8354583383,
-        "format_confidence":0.8639150262
-    },
-    {
-        "url":"http:\/\/www.latinfinance.com\/Article\/2363148\/M-A\/BofA-Merrill-Surprises-on-Upside.html?ArticleId=2363148",
-        "text":"BofA Merrill Surprises on Upside\n\nDec 24, 2009\n\nAt the end of an extremely challenging year for investment banks globally, there are two big surprises in LatAm. One is that the fee pool from core investment banking activities \u2013M&A, DCM and ECM \u2013 has actually expanded slightly. The other is that Bank of America Merrill Lynch \u2013 which most of the street had written off as a regional player after its...\n\nTo continue reading please take a free trial, subscribe or login below.\n\nAlready have an account?\n\n\nSubscribe now for unlimited access to all current and archive news, data and market analysis.\u00a0\n\n\nFree trial\n\nTake a free two-week trial now for the latest news,\u00a0data and market analysis.\n\nFree Trial\n\nLatinFinance Events\n\n\nWill a strong dollar deter investors from LatAm bonds?",
-        "topic_id":9,
-        "format_id":6,
-        "topic_confidence":0.9985117316,
-        "format_confidence":0.9863165021
-    },
-    {
-        "url":"https:\/\/www.insuranceinsider.com\/article\/2876i8dsocotyf5yp3f28\/advent-investment-loss-in-mainsail-doesnt-scupper-q3-results",
-        "text":"\nAccessibility | Terms & Conditions | Privacy Policy | Modern Slavery Act | Cookies | Subscription Terms & Conditions\n\nAdvent investment loss in Mainsail doesn't scupper Q3 results\n\nWe use cookies to provide a personalized site experience.\nBy continuing to use & browse the site you agree to our Privacy Policy.\nI agree",
-        "topic_id":9,
-        "format_id":6,
-        "topic_confidence":0.9975175858,
-        "format_confidence":0.9514974356
-    },
-    {
         "url":"https:\/\/podbay.fm\/podcast\/1252771442\/e\/1537908248",
         "text":"Episode 67 - Tricks for Expanding Your Contact List\nPublished September 25, 2018\n28 min\n    Add to queue\n    Copy URL\n    Show notes\n    It's not about being lucky or signing up a magical client! If you want to be successful in the world of network marketing, you need to match your enthusiasm with skill. Face yourself in the mirror and realize when you are spewing excuses.\n        0:00:00 \/ 0:00:00",
         "topic_id":9,
         "format_id":6,
         "topic_confidence":0.9278416634,
         "format_confidence":0.8510818481
-    },
-    {
-        "url":"http:\/\/www.afr.com\/p\/business\/resources\/agl_origin_eye_infigen_sources_KYUtOHt2f8rFUgWf1mtM1M",
-        "text":"\n\nTry The Financial Review App on your Android Tablet\n\nDo not show this message again\n\nAGL, Origin eye Infigen: sources\n\nShare Links:\n\nAustralia's largest energy retailers, AGL Energy and Origin Energy, are interested in buying assets of wind company Infigen Energy, banking sources with knowledge of the situation told Reuters.\n\nRelated News\n\n\nRead more\n\nCompanies AGL Energy Ltd, Origin Energy, Infigen Energy\nTopics Energy & Utilities \/Alternative Energy , Energy & Utilities \/Gas Distribution , Energy & Utilities \/Electricity",
-        "topic_id":9,
-        "format_id":6,
-        "topic_confidence":0.8856081367,
-        "format_confidence":0.7219247818
     },
     {
         "url":"http:\/\/video.cnbc.com\/gallery\/?play=1&video=3000200831",
@@ -62,5 +30,37 @@
         "format_id":6,
         "topic_confidence":0.9278251529,
         "format_confidence":0.9862297773
+    },
+    {
+        "url":"https:\/\/www.insuranceinsider.com\/article\/2876i8dsocotyf5yp3f28\/advent-investment-loss-in-mainsail-doesnt-scupper-q3-results",
+        "text":"\nAccessibility | Terms & Conditions | Privacy Policy | Modern Slavery Act | Cookies | Subscription Terms & Conditions\n\nAdvent investment loss in Mainsail doesn't scupper Q3 results\n\nWe use cookies to provide a personalized site experience.\nBy continuing to use & browse the site you agree to our Privacy Policy.\nI agree",
+        "topic_id":9,
+        "format_id":6,
+        "topic_confidence":0.9975175858,
+        "format_confidence":0.9514974356
+    },
+    {
+        "url":"http:\/\/www.afr.com\/p\/business\/resources\/agl_origin_eye_infigen_sources_KYUtOHt2f8rFUgWf1mtM1M",
+        "text":"\n\nTry The Financial Review App on your Android Tablet\n\nDo not show this message again\n\nAGL, Origin eye Infigen: sources\n\nShare Links:\n\nAustralia's largest energy retailers, AGL Energy and Origin Energy, are interested in buying assets of wind company Infigen Energy, banking sources with knowledge of the situation told Reuters.\n\nRelated News\n\n\nRead more\n\nCompanies AGL Energy Ltd, Origin Energy, Infigen Energy\nTopics Energy & Utilities \/Alternative Energy , Energy & Utilities \/Gas Distribution , Energy & Utilities \/Electricity",
+        "topic_id":9,
+        "format_id":6,
+        "topic_confidence":0.8856081367,
+        "format_confidence":0.7219247818
+    },
+    {
+        "url":"http:\/\/www.latinfinance.com\/Article\/2363148\/M-A\/BofA-Merrill-Surprises-on-Upside.html?ArticleId=2363148",
+        "text":"BofA Merrill Surprises on Upside\n\nDec 24, 2009\n\nAt the end of an extremely challenging year for investment banks globally, there are two big surprises in LatAm. One is that the fee pool from core investment banking activities \u2013M&A, DCM and ECM \u2013 has actually expanded slightly. The other is that Bank of America Merrill Lynch \u2013 which most of the street had written off as a regional player after its...\n\nTo continue reading please take a free trial, subscribe or login below.\n\nAlready have an account?\n\n\nSubscribe now for unlimited access to all current and archive news, data and market analysis.\u00a0\n\n\nFree trial\n\nTake a free two-week trial now for the latest news,\u00a0data and market analysis.\n\nFree Trial\n\nLatinFinance Events\n\n\nWill a strong dollar deter investors from LatAm bonds?",
+        "topic_id":9,
+        "format_id":6,
+        "topic_confidence":0.9985117316,
+        "format_confidence":0.9863165021
+    },
+    {
+        "url":"http:\/\/www.idahostatesman.com\/news\/business\/personal-finance\/article145246589.html",
+        "text":"Borrowers must fight for themselves as student loan reforms are rolled back\n\nApril 18, 2017 12:58 PM\n\nUPDATED April 18, 2017 12:59 PM\n\nMore Videos\n\n  \u2022 Boise State coach Bryan Harsin discusses his first win over Air Force\n\n    Boise State football coach Bryan Harsin talks after the Broncos' 44-19 win over Air Force, which ended a three-game losing streak against the Falcons. (video courtesy of Boise State)",
+        "topic_id":9,
+        "format_id":6,
+        "topic_confidence":0.8354583383,
+        "format_confidence":0.8639150262
     }
 ]

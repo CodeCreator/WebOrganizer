@@ -1,27 +1,11 @@
 [
     {
-        "url":"http:\/\/www.euronews.com\/2012\/11\/02\/madrid-in-mourning-after-halloween-stampede\/",
-        "text":"Log in\nPlease enter your login details\n\nSkip to main content\n\nBreaking News\n  \u2022 Egypt says it has discovered the biggest gas field in the Mediterranean\nFacebook Twitter Google+ Reddit\n\nThe mayor of Madrid has declared a day of mourning after three girls died in an apparent stampede at a Halloween party. Two others have been left in a critical condition.\n\nIt is not known what caused the crush of people at the party held in an indoor stadium which can hold up to 10,000. Spanish police have launched an investigation.\n\nAlso read: Madrid Halloween party crush kills four women\n\nMore about:",
+        "url":"http:\/\/www.standard-democrat.com\/story\/1601897.html",
+        "text":"[Nameplate] Fair ~ 75\u00b0F \u00a0\nHigh: 78\u00b0F ~ Low: 60\u00b0F\nSaturday, Apr. 18, 2015\n\nE-mail hoax is circulating\n\nWednesday, January 13, 2010\n\nCARUTHERSVILLE -- Law enforcement agencies are responding to a hoax circulating largely through e-mail.\n\nThe Pemiscot County Sheriff's Department has received calls from residents and municipalities regarding an e-mail that details how gang members are reportedly placing child car seats along major highways and interstates with baby dolls in them.\n\nFor the complete article and more stories from the Standard Democrat, click here to log on to the electronic edition.",
         "topic_id":3,
         "format_id":6,
-        "topic_confidence":0.6010963321,
-        "format_confidence":0.6957546473
-    },
-    {
-        "url":"http:\/\/www.the-review.com\/local%20news\/2003\/01\/14\/alliance-student-charged-with-inciting-panic",
-        "text":"Heading Logo\n\nAlliance student charged with inciting panic\n\nBy GEORGE SALSBERRYThe Review Published:\n\nA 12-year-old boys Monday morning actions ran him afoul of school officials and police. The boy was\n\nCurrent subscribers have full access to all online news content as part of their subscription. If you are a current subscriber, please log in with your website account information for full access. If you are a current subscriber, but have not yet registered for access to the website, please call our Circulation Department at (330) 821-1200",
-        "topic_id":3,
-        "format_id":6,
-        "topic_confidence":0.9591688514,
-        "format_confidence":0.9845314622
-    },
-    {
-        "url":"https:\/\/www.law360.com\/articles\/143346\/evaluating-the-first-sale-rule",
-        "text":"Evaluating The First Sale Rule\n\nLaw360, New York (January 13, 2010, 4:23 PM EST) -- The holidays are over and we hope everyone is well rested and ready to feast upon the customs and trade challenges of 2010. If you are looking for something to sink your teeth into, perhaps you will want to choose the First Sale Rule file that has been sitting on a shelf for the past year.\n\nThe U.S. International Trade Commission released its report to the House Ways and Means and the Senate Finance Committees on Dec. 23, 2009, concerning Use of the \u201cFirst Sale Rule\u201d...\nTo view the full article, register now.\nLaw360 Pro Say Podcast\nCheck out Law360's new podcast, Pro Say, which offers a weekly recap of both the biggest stories and hidden gems from the world of law.",
-        "topic_id":3,
-        "format_id":6,
-        "topic_confidence":0.9404651523,
-        "format_confidence":0.9814652205
+        "topic_confidence":0.9907338619,
+        "format_confidence":0.94545573
     },
     {
         "url":"https:\/\/eastgrandforks.wordpress.com\/2015\/07\/15\/coming-soon-ritual-the-sacrafice-of-caylee-anthony\/",
@@ -30,14 +14,6 @@
         "format_id":6,
         "topic_confidence":0.9779441953,
         "format_confidence":0.8773588538
-    },
-    {
-        "url":"http:\/\/www.standard-democrat.com\/story\/1601897.html",
-        "text":"[Nameplate] Fair ~ 75\u00b0F \u00a0\nHigh: 78\u00b0F ~ Low: 60\u00b0F\nSaturday, Apr. 18, 2015\n\nE-mail hoax is circulating\n\nWednesday, January 13, 2010\n\nCARUTHERSVILLE -- Law enforcement agencies are responding to a hoax circulating largely through e-mail.\n\nThe Pemiscot County Sheriff's Department has received calls from residents and municipalities regarding an e-mail that details how gang members are reportedly placing child car seats along major highways and interstates with baby dolls in them.\n\nFor the complete article and more stories from the Standard Democrat, click here to log on to the electronic edition.",
-        "topic_id":3,
-        "format_id":6,
-        "topic_confidence":0.9907338619,
-        "format_confidence":0.94545573
     },
     {
         "url":"http:\/\/www2.suffolk.edu\/sjc\/archive\/2011\/SJC_10722.html",
@@ -62,5 +38,29 @@
         "format_id":6,
         "topic_confidence":0.9660746455,
         "format_confidence":0.9883632064
+    },
+    {
+        "url":"https:\/\/www.law360.com\/articles\/143346\/evaluating-the-first-sale-rule",
+        "text":"Evaluating The First Sale Rule\n\nLaw360, New York (January 13, 2010, 4:23 PM EST) -- The holidays are over and we hope everyone is well rested and ready to feast upon the customs and trade challenges of 2010. If you are looking for something to sink your teeth into, perhaps you will want to choose the First Sale Rule file that has been sitting on a shelf for the past year.\n\nThe U.S. International Trade Commission released its report to the House Ways and Means and the Senate Finance Committees on Dec. 23, 2009, concerning Use of the \u201cFirst Sale Rule\u201d...\nTo view the full article, register now.\nLaw360 Pro Say Podcast\nCheck out Law360's new podcast, Pro Say, which offers a weekly recap of both the biggest stories and hidden gems from the world of law.",
+        "topic_id":3,
+        "format_id":6,
+        "topic_confidence":0.9404651523,
+        "format_confidence":0.9814652205
+    },
+    {
+        "url":"http:\/\/www.the-review.com\/local%20news\/2003\/01\/14\/alliance-student-charged-with-inciting-panic",
+        "text":"Heading Logo\n\nAlliance student charged with inciting panic\n\nBy GEORGE SALSBERRYThe Review Published:\n\nA 12-year-old boys Monday morning actions ran him afoul of school officials and police. The boy was\n\nCurrent subscribers have full access to all online news content as part of their subscription. If you are a current subscriber, please log in with your website account information for full access. If you are a current subscriber, but have not yet registered for access to the website, please call our Circulation Department at (330) 821-1200",
+        "topic_id":3,
+        "format_id":6,
+        "topic_confidence":0.9591688514,
+        "format_confidence":0.9845314622
+    },
+    {
+        "url":"http:\/\/www.euronews.com\/2012\/11\/02\/madrid-in-mourning-after-halloween-stampede\/",
+        "text":"Log in\nPlease enter your login details\n\nSkip to main content\n\nBreaking News\n  \u2022 Egypt says it has discovered the biggest gas field in the Mediterranean\nFacebook Twitter Google+ Reddit\n\nThe mayor of Madrid has declared a day of mourning after three girls died in an apparent stampede at a Halloween party. Two others have been left in a critical condition.\n\nIt is not known what caused the crush of people at the party held in an indoor stadium which can hold up to 10,000. Spanish police have launched an investigation.\n\nAlso read: Madrid Halloween party crush kills four women\n\nMore about:",
+        "topic_id":3,
+        "format_id":6,
+        "topic_confidence":0.6010963321,
+        "format_confidence":0.6957546473
     }
 ]

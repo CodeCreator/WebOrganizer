@@ -1,21 +1,5 @@
 [
     {
-        "url":"http:\/\/dfwstyledaily.com\/tag\/gemini\/",
-        "text":"Swimsuits For Every Zodiac Sign\n\nSummer is in the air and swimsuit season is in full swing. Regardless of whether or not you tune into\u00a0Zodiac signs when it comes to relationships and love, you have to admit\u2026at times the predictions are dead on. Are you adventurous in fashion or [\u2026]",
-        "topic_id":8,
-        "format_id":6,
-        "topic_confidence":0.9267550707,
-        "format_confidence":0.6854810715
-    },
-    {
-        "url":"http:\/\/www.thefabricstore.com.au\/new-arrivals\/amazing-silk-shipment-unloading-now",
-        "text":"A PHP Error was encountered\n\nSeverity: Warning\n\nMessage: array_slice() expects parameter 1 to be array, boolean given\n\nFilename: controllers\/galleries.php\n\nLine Number: 75\n\nThe Fabric Store, Australia | New Arrivals\n\nFabric availability is only valid at the time of posting and is not updated. Please contact your local store for current status of stock.",
-        "topic_id":8,
-        "format_id":6,
-        "topic_confidence":0.7332657576,
-        "format_confidence":0.8491877913
-    },
-    {
         "url":"http:\/\/www.peoplestylewatch.com\/people\/stylewatch\/gallery\/0,,20274968_20615996,00.html",
         "text":"Last Night's Look: Hit or Miss?\n\nVote on this week's styles including Kate Hudson, Jessica Biel, Jennifer Garner and more stars! You decide \u2013 are they fashionistas or flops?\n\n\nMary-Kate's sister takes an even sleeker approach at the luncheon in her little black dress, cutout sandals and pin-straight locks.",
         "topic_id":8,
@@ -32,6 +16,14 @@
         "format_confidence":0.5270239115
     },
     {
+        "url":"http:\/\/www.thefabricstore.com.au\/new-arrivals\/amazing-silk-shipment-unloading-now",
+        "text":"A PHP Error was encountered\n\nSeverity: Warning\n\nMessage: array_slice() expects parameter 1 to be array, boolean given\n\nFilename: controllers\/galleries.php\n\nLine Number: 75\n\nThe Fabric Store, Australia | New Arrivals\n\nFabric availability is only valid at the time of posting and is not updated. Please contact your local store for current status of stock.",
+        "topic_id":8,
+        "format_id":6,
+        "topic_confidence":0.7332657576,
+        "format_confidence":0.8491877913
+    },
+    {
         "url":"http:\/\/wigglingpen.com\/tag\/miss-world\/",
         "text":"Femina Miss India Throwback\n\nFem\u00adi\u00adna Miss India is a beau\u00adty pageant in India that annu\u00adal\u00adly selects rep\u00adre\u00adsen\u00adta\u00adtives to com\u00adpete in Miss World, Miss Uni\u00adverse, and Miss Asia Paci\u00adfic. Every year, every Indi\u00adan await for this pageant to look for\u00adward most beau\u00adti\u00adful girl with brains who will rep\u00adre\u00adsent India on the glob\u00adal\u00a0stage.\u00a0 Since1947, this pageant is hold\u00ading up its\u2019s val\u00adues Read More",
         "topic_id":8,
@@ -46,6 +38,14 @@
         "format_id":6,
         "topic_confidence":0.9601871967,
         "format_confidence":0.7230404615
+    },
+    {
+        "url":"http:\/\/dfwstyledaily.com\/tag\/gemini\/",
+        "text":"Swimsuits For Every Zodiac Sign\n\nSummer is in the air and swimsuit season is in full swing. Regardless of whether or not you tune into\u00a0Zodiac signs when it comes to relationships and love, you have to admit\u2026at times the predictions are dead on. Are you adventurous in fashion or [\u2026]",
+        "topic_id":8,
+        "format_id":6,
+        "topic_confidence":0.9267550707,
+        "format_confidence":0.6854810715
     },
     {
         "url":"https:\/\/rrp.photoshelter.com\/gallery-image\/Fashion\/G0000eV0REkr6o38\/I0000mibnMpVVuM8",
