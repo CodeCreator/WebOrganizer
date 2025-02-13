@@ -1,8 +1,8 @@
-# <img src="website/assets/icon.png" style="height: 1em; vertical-align: -10%;"> *Organize the Web: Constructing Domains Enhances Pre-Training Data Curation*
+# <img src="website/assets/images/icon.png" style="height: 1em; vertical-align: -10%;"> *Organize the Web: Constructing Domains Enhances Pre-Training Data Curation*
 
 [[Paper](ARXIV_TBD)] [[Website](WEBSITE_TBD)] [[Hugging Face](https://huggingface.co/WebOrganizer)]
 
-<img src="website/assets/treemaps.png" width="75%" alt="Overview over WebOrganizer domains">
+<img src="website/assets/images/treemaps.png" width="75%" alt="Overview over WebOrganizer domains">
 
 
 ## Resources
@@ -62,9 +62,9 @@ We also include statistics about the presence and co-occurence of domains in the
 ## Installation
 Different steps in this repository require different dependencies:
 
-*  __Data pre-processing__: // datatools gte installation...
+*  __Data pre-processing__: *coming soon*
 ```bash
-pip install
+# install datatools and gte...
 ```
 
 * __K-means clustering__: The code in `define_domains/k-means-clustering` is a fork of [facebookresearch/ssl-data-curation](https://github.com/facebookresearch/ssl-data-curation/tree/main). Please read the README in the this directory for installation instructions and to see our modifications.
