@@ -1,4 +1,4 @@
-# <img src="website/assets/images/icon.png" style="height: 1em; vertical-align: -10%;"> *Organize the Web: Constructing Domains Enhances Pre-Training Data Curation*
+# <img src="website/assets/images/icon.png" style="height: 1em; vertical-align: -10%;"> Organize the Web: Constructing Domains Enhances Pre-Training Data Curation
 
 [[Paper](ARXIV_TBD)] [[Website](WEBSITE_TBD)] [[Hugging Face](https://huggingface.co/WebOrganizer)]
 
