@@ -56,13 +56,13 @@
     {
         "domain_id":9,
         "domain_name":"Listicle",
-        "domain_description":"- A blog or article that presents content in the form of a list\n- Examples: Buzzfeed-style articles, ``Top 10'' lists, ``4 best places to visit in X''\n- Lists showing the site contents and facilitate navigation fall under `Content Listing'",
+        "domain_description":"- A blog or article that presents content in the form of a list\n- Examples: Buzzfeed-style articles, ''Top 10'' lists, ''4 best places to visit in X''\n- Lists showing the site contents and facilitate navigation fall under 'Content Listing'",
         "color": [0.697439446366782, 0.9010995770857362, 0.9458515955401768, 1.0]
     },
     {
         "domain_id":10,
         "domain_name":"News Article",
-        "domain_description":"- Written by journalists on current events and published by news organizations\n- Long reads, profiles, editorials, and journalistic essays fall under `Nonfiction Writing'\n- Newspaper interviews fall under `Audio Transcript'",
+        "domain_description":"- Written by journalists on current events and published by news organizations\n- Long reads, profiles, editorials, and journalistic essays fall under 'Nonfiction Writing'\n- Newspaper interviews fall under 'Audio Transcript'",
         "color": [0.697439446366782, 0.9010995770857362, 0.9458515955401768, 1.0]
     },
     {
@@ -74,7 +74,7 @@
     {
         "domain_id":12,
         "domain_name":"About (Org.)",
-        "domain_description":"- An organizational ``About Page'', typically containing a self-description or introduction by an organization such as a company, university, government agency, non-profit\n- Note that the content may appear similar to a `Knowledge Article' in some cases, but is not verified and may contain self-promotion",
+        "domain_description":"- An organizational ''About Page'', typically containing a self-description or introduction by an organization such as a company, university, government agency, non-profit\n- Note that the content may appear similar to a 'Knowledge Article' in some cases, but is not verified and may contain self-promotion",
         "color": [0.7254901960784313, 0.9490196078431372, 0.9411764705882353, 1.0]
     },
     {
@@ -86,7 +86,7 @@
     {
         "domain_id":14,
         "domain_name":"About (Pers.)",
-        "domain_description":"- An ``About Page'' on a personal website or hobby website, typically containing a self-description, introduction or profile information",
+        "domain_description":"- An ''About Page'' on a personal website or hobby website, typically containing a self-description, introduction or profile information",
         "color": [0.6313725490196078, 0.788235294117647, 0.9568627450980393, 1.0]
     },
     {
@@ -122,7 +122,7 @@
     {
         "domain_id":20,
         "domain_name":"Documentation",
-        "domain_description":"- Examples: technical writing, API documentation, README files, source code\n- Unlike `Customer Support', meant for developers and experts, rather than end-users",
+        "domain_description":"- Examples: technical writing, API documentation, README files, source code\n- Unlike 'Customer Support', meant for developers and experts, rather than end-users",
         "color": [0.7066666666666667, 0.9168627450980392, 0.9443137254901961, 1.0]
     },
     {
@@ -134,7 +134,7 @@
     {
         "domain_id":22,
         "domain_name":"Tutorial",
-        "domain_description":"- Examples: cooking recipes, DIY instructions, WikiHow page, Khan Academy course\n- The page must contain the actual content of the tutorial \/ how-to guide\n- Guides specific to products\/services from the website fall under `Customer Support'",
+        "domain_description":"- Examples: cooking recipes, DIY instructions, WikiHow page, Khan Academy course\n- The page must contain the actual content of the tutorial \/ how-to guide\n- Guides specific to products\/services from the website fall under 'Customer Support'",
         "color": [0.6594232987312572, 0.8361553248750481, 0.9521876201460977, 1.0]
     },
     {

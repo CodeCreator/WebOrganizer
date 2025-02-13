@@ -20,7 +20,7 @@
     {
         "domain_id":3,
         "domain_name":"Crime & Law",
-        "domain_description":"- Includes: law enforcement\n- Financial crime and litigation fall under `Finance & Business'\n- Social issues and the legislative process fall under `Politics'",
+        "domain_description":"- Includes: law enforcement\n- Financial crime and litigation fall under 'Finance & Business'\n- Social issues and the legislative process fall under 'Politics'",
         "color": [0.9921568627450981, 0.6996078431372549, 0.6635294117647059, 1.0]
     },
     {
@@ -38,7 +38,7 @@
     {
         "domain_id":6,
         "domain_name":"Entertainment",
-        "domain_description":"- Includes: music, movies, TV shows, videos, celebrities, humor, nightlife\n- Music or film discussed as art rather than entertainment falls under `Art & Design'",
+        "domain_description":"- Includes: music, movies, TV shows, videos, celebrities, humor, nightlife\n- Music or film discussed as art rather than entertainment falls under 'Art & Design'",
         "color": [0.984313725490196, 0.6933333333333334, 0.8172549019607843, 1.0]
     },
     {
@@ -62,7 +62,7 @@
     {
         "domain_id":10,
         "domain_name":"Food & Dining",
-        "domain_description":"- Includes: recipes, groceries, beverages, restaurants\n- Nutritional sciences fall under `Health'",
+        "domain_description":"- Includes: recipes, groceries, beverages, restaurants\n- Nutritional sciences fall under 'Health'",
         "color": [0.984313725490196, 0.6933333333333334, 0.8172549019607843, 1.0]
     },
     {
@@ -74,7 +74,7 @@
     {
         "domain_id":12,
         "domain_name":"Health",
-        "domain_description":"- Includes: medicine, wellness, mental health, veterinary science, nutritional science\n- Health insurance falls under `Finance & Business'",
+        "domain_description":"- Includes: medicine, wellness, mental health, veterinary science, nutritional science\n- Health insurance falls under 'Finance & Business'",
         "color": [0.988235294117647, 0.6964705882352942, 0.7403921568627451, 1.0]
     },
     {
@@ -92,7 +92,7 @@
     {
         "domain_id":15,
         "domain_name":"Industrial",
-        "domain_description":"- Topics related to mining, agriculture, manufacturing, utilities and construction\n- Includes: raw materials, industrial goods, chemicals, textiles\n- General business topics or business finance fall under `Finance & Business'",
+        "domain_description":"- Topics related to mining, agriculture, manufacturing, utilities and construction\n- Includes: raw materials, industrial goods, chemicals, textiles\n- General business topics or business finance fall under 'Finance & Business'",
         "color": [1.0, 0.7058823529411765, 0.5098039215686274, 1.0]
     },
     {
@@ -140,7 +140,7 @@
     {
         "domain_id":23,
         "domain_name":"Travel",
-        "domain_description":"- Includes: hospitality, hotels, sight-seeing, cruises\n- Detailed descriptions of tourist destinations fall under `History'",
+        "domain_description":"- Includes: hospitality, hotels, sight-seeing, cruises\n- Detailed descriptions of tourist destinations fall under 'History'",
         "color": [0.984313725490196, 0.6933333333333334, 0.8172549019607843, 1.0]
     }
 ]
