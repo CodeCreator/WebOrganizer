@@ -72,14 +72,29 @@ function getConditionalDistribution(conditionType, conditionId) {
 }
 
 function createTreemapTrace(data, values, type) {
+    // Calculate max value for scaling
+    const maxValue = Math.max(...values);
+    const minFontSize = 10;
+    const maxFontSize = 16;
+    
     return {
         type: 'treemap',
-        labels: data.map(d => d.domain_name),
+        labels: data.map((d, i) => {
+            const percentage = values[i] * 100;
+            return percentage >= 2 ? 
+                `${d.domain_name}<br>${percentage.toFixed(1)}%` :
+                d.domain_name;
+        }),
         parents: new Array(data.length).fill(''),
         values: values,
         textinfo: 'label',
-        textfont: { color: 'black' },
-        hovertext: data.map(d => d.domain_name + '<br>' + (values[d.domain_id]*100).toFixed(1) + '%'),
+        textposition: 'middle center',
+        textfont: { 
+            color: 'black',
+            // Scale font size based on the value's proportion of the maximum
+            size: minFontSize + ((maxFontSize - minFontSize) * (values[0] / maxValue))
+        },
+        hovertext: data.map((d, i) => d.domain_name + '<br>' + (values[i]*100).toFixed(1) + '%'),
         hoverinfo: 'text',
         hoverlabel: {
             font: { color: 'black' }
