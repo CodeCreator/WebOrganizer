@@ -7,25 +7,26 @@
     },
     {
         "domain_id":1,
-        "domain_name":"Art & Design",
+        "domain_name":"Art &<br>Design",
         "domain_description":"- Includes: architecture",
         "color": [0.988235294117647, 0.6964705882352942, 0.7403921568627451, 1.0]
     },
     {
         "domain_id":2,
         "domain_name":"Software Dev.",
+        "domain_fullname": "Software Development",
         "domain_description":"- Includes: algorithms, coding, and web development",
         "color": [0.996078431372549, 0.7027450980392157, 0.5866666666666667, 1.0]
     },
     {
         "domain_id":3,
-        "domain_name":"Crime & Law",
+        "domain_name":"Crime<br>& Law",
         "domain_description":"- Includes: law enforcement\n- Financial crime and litigation fall under 'Finance & Business'\n- Social issues and the legislative process fall under 'Politics'",
         "color": [0.9921568627450981, 0.6996078431372549, 0.6635294117647059, 1.0]
     },
     {
         "domain_id":4,
-        "domain_name":"Education & Jobs",
+        "domain_name":"Education<br>& Jobs",
         "domain_description":"- Includes: pedagogy, training & certification, academia\n- Educational pages about a topic, e.g., food or mathematics, fall under that topic",
         "color": [0.9921568627450981, 0.6996078431372549, 0.6635294117647059, 1.0]
     },
@@ -49,19 +50,19 @@
     },
     {
         "domain_id":8,
-        "domain_name":"Fashion & Beauty",
+        "domain_name":"Fashion<br>& Beauty",
         "domain_description":"- Includes: clothing, accessories, cosmetics",
         "color": [0.984313725490196, 0.6933333333333334, 0.8172549019607843, 1.0]
     },
     {
         "domain_id":9,
-        "domain_name":"Finance & Business",
+        "domain_name":"Finance &<br>Business",
         "domain_description":"- Includes: taxes, regulations, investments, insurance, credit cards, personal finance, corporate communication, marketing, human resources",
         "color": [1.0, 0.7058823529411765, 0.5098039215686274, 1.0]
     },
     {
         "domain_id":10,
-        "domain_name":"Food & Dining",
+        "domain_name":"Food &<br>Dining",
         "domain_description":"- Includes: recipes, groceries, beverages, restaurants\n- Nutritional sciences fall under 'Health'",
         "color": [0.984313725490196, 0.6933333333333334, 0.8172549019607843, 1.0]
     },
@@ -85,7 +86,7 @@
     },
     {
         "domain_id":14,
-        "domain_name":"Home & Hobbies",
+        "domain_name":"Home<br>& Hobbies",
         "domain_description":"- Includes: real estate, renting, relocation, furniture, appliances, home improvement, DIY, gardening, pets, toys, collecting",
         "color": [0.984313725490196, 0.6933333333333334, 0.8172549019607843, 1.0]
     },
@@ -115,7 +116,8 @@
     },
     {
         "domain_id":19,
-        "domain_name":"Science & Tech.",
+        "domain_name":"Science<br>& Tech.",
+        "domain_fullname": "Science & Technology",
         "domain_description":"- Includes: physics, chemistry, biology, environmental science, mathematics, statistics, biotech, engineering",
         "color": [0.996078431372549, 0.7027450980392157, 0.5866666666666667, 1.0]
     },
@@ -127,7 +129,7 @@
     },
     {
         "domain_id":21,
-        "domain_name":"Sports & Fitness",
+        "domain_name":"Sports &<br>Fitness",
         "domain_description":"- Includes: martial arts, motor sports, outdoor activities, sports equipment",
         "color": [0.984313725490196, 0.6933333333333334, 0.8172549019607843, 1.0]
     },

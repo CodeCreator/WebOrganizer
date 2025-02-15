@@ -6,8 +6,8 @@ let selectedTopic = null;
 let selectedFormat = null;
 let currentExampleIndex = 0;
 let currentExamples = [];
-let originalTopicValues = null;
-let originalFormatValues = null;
+let topicDistribution = null;
+let formatDistribution = null;
 let topicIdsToIndices = null;
 let formatIdsToIndices = null;
 
@@ -28,59 +28,58 @@ async function loadData() {
 
     statisticsData = statistics;
 
-    // Sort topics and originalTopicValues by color
     topicIdsToIndices = {
-        0: 12,
-        1: 9,
-        2: 2,
-        3: 5,
-        4: 6,
-        5: 3,
-        6: 13,
-        7: 21,
-        8: 14,
-        9: 0,
-        10: 15,
-        11: 16,
-        12: 10,
-        13: 17,
-        14: 18,
-        15: 1,
-        16: 11,
-        17: 22,
-        18: 23,
-        19: 4,
-        20: 7,
-        21: 19,
-        22: 8,
-        23: 20,
+        0:  23 - 3,  // Adult
+        1:  23 - 12, // Art & Design
+        2:  23 - 20, // Software Dev.
+        3:  23 - 18, // Crime & Law
+        4:  23 - 17, // Education & Jobs
+        5:  23 - 21, // Hardware
+        6:  23 - 4,  // Entertainment
+        7:  23 - 0,  // Social Life
+        8:  23 - 10, // Fashion & Beauty
+        9:  23 - 22, // Finance & Business
+        10: 23 -  5, // Food & Dining
+        11: 23 -  6, // Games
+        12: 23 -  13, // Health
+        13: 23 -  9, // History
+        14: 23 -  7, // Home & Hobbies
+        15: 23 -  23, // Industrial
+        16: 23 -  14, // Literature
+        17: 23 -  1, // Politics
+        18: 23 -  2, // Religion
+        19: 23 -  19, // Science & Tech.
+        20: 23 -  15, // Software
+        21: 23 -  11, // Sports & Fitness
+        22: 23 -  16, // Transportation
+        23: 23 -  8, // Travel
     }
 
     formatIdsToIndices = {
-        0: 16,
-        1: 12,
-        2: 5,
-        3: 18,
-        4: 2,
-        5: 19,
-        6: 8,
-        7: 6,
-        8: 20,
-        9: 13,
-        10: 14,
-        11: 15,
-        12: 21,
-        13: 22,
-        14: 0,
-        15: 1,
-        16: 23,
-        17: 3,
-        18: 9,
-        19: 10,
-        20: 17,
-        21: 11,
-        22: 7,
-        23: 4,
+        0:  23 - 7,   // Academic Writing
+        1:  23 - 8,   // Content Listing
+        2:  23 - 16,  // Creative Writing
+        3:  23 - 5,   // Customer Support Page
+        4:  23 - 21,  // Discussion Forum / Comment Section
+        5:  23 - 3,   // FAQs
+        6:  23 - 13,  // Incomplete Content
+        7:  23 - 17,  // Knowledge Article
+        8:  23 - 4,   // Legal Notices
+        9:  23 - 9,   // Listicle
+        10: 23 -  10, // News Article
+        11: 23 -  11, // Nonfiction Writing
+        12: 23 -  1,  // Organizational About Page
+        13: 23 -  2,  // Organizational Announcement
+        14: 23 -  22, // Personal About Page
+        15: 23 -  23, // Personal Blog
+        16: 23 -  0,  // Product Page
+        17: 23 -  19, // Q&A Forum
+        18: 23 -  12, // Spam / Ads
+        19: 23 -  15, // Structured Data
+        20: 23 -  6,  // Technical Writing
+        21: 23 -  14, // Transcript / Interview
+        22: 23 -  18, // Tutorial / How-To Guide
+        23: 23 -  20, // User Reviews
     }
 
     topicsData = (
@@ -95,16 +94,22 @@ async function loadData() {
     )
 
     // Calculate marginal distributions
-    originalTopicValues = new Array(topicsData.length).fill(0);
-    originalFormatValues = new Array(formatsData.length).fill(0);
+    topicDistribution = new Array(topicsData.length).fill(0);
+    formatDistribution = new Array(formatsData.length).fill(0);
 
     for (const stat of statistics) {
-        originalTopicValues[topicIdsToIndices[stat.topic_id]] += stat.weight;
-        originalFormatValues[formatIdsToIndices[stat.format_id]] += stat.weight;
+        topicDistribution[topicIdsToIndices[stat.topic_id]] += stat.weight;
+        formatDistribution[formatIdsToIndices[stat.format_id]] += stat.weight;
     }
 
+    // Normalize distributions by sum and round to 2 decimal places
+    const topicSum = topicDistribution.reduce((sum, value) => sum + value, 0);
+    const formatSum = formatDistribution.reduce((sum, value) => sum + value, 0);
+    topicDistribution = topicDistribution.map(d => Math.round((d / topicSum) * 1000) / 1000);
+    formatDistribution = formatDistribution.map(d => Math.round((d / formatSum) * 1000) / 1000);
+
     // Create and render initial treemaps
-    renderTreemaps(originalTopicValues, originalFormatValues);
+    renderTreemaps(topicDistribution, formatDistribution);
 
     // Initialize domain descriptions
     updateDomainDescriptions();
@@ -155,8 +160,9 @@ function createTreemapTrace(data, values, type) {
         sort: false,
         tiling: {
             packing: 'squarify',
-            flip: "y",
+            flip: 'y',
             pad: 2,
+            squarifyratio: 1,
         },
         textinfo: 'label+percent root',
         labels: data.map((d) => d.domain_name),
@@ -181,6 +187,10 @@ function createTreemapLayout() {
         margin: { l: 0, r: 0, t: 0, b: 0 },
         domain: { x: [0, 1], y: [0, 1] }
     };
+}
+
+function getFullName(domain) {
+    return domain.domain_fullname || domain.domain_name.replace(/<br>/g, " ");
 }
 
 function renderTreemaps(topicValues, formatValues) {
@@ -212,8 +222,8 @@ function renderTreemaps(topicValues, formatValues) {
             const point = data.points[0];
             if (point.pointNumber !== undefined) {
                 const hoveredIndex = point.pointNumber;
-                let topicValues = originalTopicValues;
-                let formatValues = originalFormatValues;
+                let topicValues = topicDistribution;
+                let formatValues = formatDistribution;
 
                 if (type === 'format') {
                     topicValues = getConditionalDistribution('format', hoveredIndex);
@@ -232,10 +242,10 @@ function renderTreemaps(topicValues, formatValues) {
         plot.on('plotly_unhover', () => {
             // Reset to original distributions when not hovering
             Plotly.update('topic-treemap', {
-                values: [originalTopicValues]
+                values: [topicDistribution]
             });
             Plotly.update('format-treemap', {
-                values: [originalFormatValues]
+                values: [formatDistribution]
             });
         });
 
@@ -292,6 +302,9 @@ function updateExampleViewer() {
     const topicScore = Math.round(example.topic_confidence * 100);
     const formatScore = Math.round(example.format_confidence * 100);
 
+    const topicName = getFullName(topicsData[topicIdsToIndices[example.topic_id]]);
+    const formatName = getFullName(formatsData[formatIdsToIndices[example.format_id]]);
+
     viewer.innerHTML = `
         <div class="example-navigation">
             <button onclick="previousExample()" ${currentExampleIndex === 0 ? 'disabled' : ''}>
@@ -306,8 +319,8 @@ function updateExampleViewer() {
             <div class="example-header">
                 <div class="url">${example.url}</div>
                 <div class="metadata">
-                    Topic: ${topicsData[topicIdsToIndices[example.topic_id]].domain_name} (<span class="score">${topicScore}%</span>) |
-                    Format: ${formatsData[formatIdsToIndices[example.format_id]].domain_name} (<span class="score">${formatScore}%</span>)
+                    Topic: ${topicName} (<span class="score">${topicScore}%</span>) |
+                    Format: ${formatName} (<span class="score">${formatScore}%</span>)
                 </div>
             </div>
             <pre>${example.text}</pre>
@@ -337,7 +350,7 @@ function updateDomainDescriptions() {
     if (selectedTopic !== null) {
         const topic = topicsData[topicIdsToIndices[selectedTopic]];
         topicDesc.innerHTML = `
-            <h3>${topic.domain_name}</h3>
+            <h3>${getFullName(topic)}</h3>
             <p>${topic.domain_description || 'No description available.'}</p>
         `;
         topicDesc.classList.add('active');
@@ -354,7 +367,7 @@ function updateDomainDescriptions() {
     if (selectedFormat !== null) {
         const format = formatsData[formatIdsToIndices[selectedFormat]];
         formatDesc.innerHTML = `
-            <h3>${format.domain_name}</h3>
+            <h3>${getFullName(format)}</h3>
             <p>${format.domain_description || 'No description available.'}</p>
         `;
         formatDesc.classList.add('active');

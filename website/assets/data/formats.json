@@ -1,31 +1,32 @@
 [
     {
         "domain_id":0,
-        "domain_name":"Academic Writing",
+        "domain_name":"Academic<br>Writing",
         "domain_description":"- Examples: a research paper, a paper abstract, a thesis, a literature review",
         "color": [0.7066666666666667, 0.9168627450980392, 0.9443137254901961, 1.0]
     },
     {
         "domain_id":1,
-        "domain_name":"Content Listing",
+        "domain_name":"Content<br>Listing",
         "domain_description":"- The page contains an overview of content and is used for navigation\n- Examples: sitemap, product catalog, search results, news listings with short snippets of articles\n- Note that hyperlinks are not visible from the text content and have to be deduced",
         "color": [0.697439446366782, 0.9010995770857362, 0.9458515955401768, 1.0]
     },
     {
         "domain_id":2,
-        "domain_name":"Creative Writing",
+        "domain_name":"Creative<br>Writing",
         "domain_description":"- The page consists of a short story, chapters from a novel, poem or song lyrics",
         "color": [0.6594232987312572, 0.8361553248750481, 0.9521876201460977, 1.0]
     },
     {
         "domain_id":3,
-        "domain_name":"Customer Support",
+        "domain_name":"Support",
+        "domain_fullname": "Customer Support",
         "domain_description":"- Content by an organization and for a general audience\n- Examples: a troubleshooting guide",
         "color": [0.7254901960784313, 0.9490196078431372, 0.9411764705882353, 1.0]
     },
     {
         "domain_id":4,
-        "domain_name":"Comment Section",
+        "domain_name":"Comment<br>Section",
         "domain_description":"- A comment section or discussion forum with multiple posts or comments\n- Examples: Community sites like reddit, comment sections on news article or blogs",
         "color": [0.6405997693194925, 0.80399846212995, 0.9553248750480585, 1.0]
     },
@@ -43,13 +44,14 @@
     },
     {
         "domain_id":7,
-        "domain_name":"Knowledge Article",
+        "domain_name":"Knowledge<br>Article",
         "domain_description":"- Written in an objective and neutral style\n- Published on a moderated platform (like Wikipedia) or by a reputable source",
         "color": [0.6594232987312572, 0.8361553248750481, 0.9521876201460977, 1.0]
     },
     {
         "domain_id":8,
-        "domain_name":"Legal Notices",
+        "domain_name":"Legal",
+        "domain_fullname": "Legal Notices",
         "domain_description":"- Examples: terms of service, legal disclaimers, privacy policy, license agreement",
         "color": [0.7254901960784313, 0.9490196078431372, 0.9411764705882353, 1.0]
     },
@@ -61,73 +63,78 @@
     },
     {
         "domain_id":10,
-        "domain_name":"News Article",
+        "domain_name":"News<br>Article",
         "domain_description":"- Written by journalists on current events and published by news organizations\n- Long reads, profiles, editorials, and journalistic essays fall under 'Nonfiction Writing'\n- Newspaper interviews fall under 'Audio Transcript'",
         "color": [0.697439446366782, 0.9010995770857362, 0.9458515955401768, 1.0]
     },
     {
         "domain_id":11,
-        "domain_name":"Nonfiction Writing",
+        "domain_name":"Nonfiction<br>Writing",
         "domain_description":"- Long reads, profiles, editorials, essays, obituaries, memoirs and other forms of nonfiction writing, written by journalists and other professional writers",
         "color": [0.697439446366782, 0.9010995770857362, 0.9458515955401768, 1.0]
     },
     {
         "domain_id":12,
-        "domain_name":"About (Org.)",
+        "domain_name":"About<br>(Org.)",
+        "domain_fullname": "About Page (Organization)",
         "domain_description":"- An organizational ''About Page'', typically containing a self-description or introduction by an organization such as a company, university, government agency, non-profit\n- Note that the content may appear similar to a 'Knowledge Article' in some cases, but is not verified and may contain self-promotion",
         "color": [0.7254901960784313, 0.9490196078431372, 0.9411764705882353, 1.0]
     },
     {
         "domain_id":13,
-        "domain_name":"News (Org.)",
+        "domain_name":"News<br>(Org.)",
+        "domain_fullname": "News (Organization)",
         "domain_description":"- Organizational news and announcements\n- Examples: a press release, a blog post by an organization such as a company, university, government agency, non-profit organization",
         "color": [0.7254901960784313, 0.9490196078431372, 0.9411764705882353, 1.0]
     },
     {
         "domain_id":14,
-        "domain_name":"About (Pers.)",
+        "domain_name":"About<br>(Pers.)",
+        "domain_fullname": "About Page (Personal)",
         "domain_description":"- An ''About Page'' on a personal website or hobby website, typically containing a self-description, introduction or profile information",
         "color": [0.6313725490196078, 0.788235294117647, 0.9568627450980393, 1.0]
     },
     {
         "domain_id":15,
-        "domain_name":"Personal Blog",
+        "domain_name":"Personal<br>Blog",
         "domain_description":"- Written by an individual typically relating personal experiences and opinions",
         "color": [0.6313725490196078, 0.788235294117647, 0.9568627450980393, 1.0]
     },
     {
         "domain_id":16,
-        "domain_name":"Product Page",
+        "domain_name":"Product<br>Page",
         "domain_description":"- Typically contains descriptions and promotions for a product or service\n- Also includes products in a wider sense, for example university course descriptions",
         "color": [0.7254901960784313, 0.9490196078431372, 0.9411764705882353, 1.0]
     },
     {
         "domain_id":17,
-        "domain_name":"Q&A Forum",
+        "domain_name":"Q&A",
+        "domain_fullname": "Q&A Forum",
         "domain_description":"- A user forum with an explicit question & answer format, e.g., Quora, Stack Exchange",
         "color": [0.6405997693194925, 0.80399846212995, 0.9553248750480585, 1.0]
     },
     {
         "domain_id":18,
-        "domain_name":"Spam \/ Ads",
+        "domain_name":"Spam<br>\/ Ads",
         "domain_description":"- The page consists primarily of spam content, SEO keyword stuffing, or short online ads for other pages, products or services, or has no apparent purpose",
         "color": [0.6786159169550173, 0.8689427143406382, 0.9489888504421377, 1.0]
     },
     {
         "domain_id":19,
-        "domain_name":"Structured Data",
+        "domain_name":"Structured<br>Data",
         "domain_description":"- Multiple data entries with a common structure\n- Examples: a table, datasheet, movie database, glossary, dictionary, json file, csv, xml",
         "color": [0.6786159169550173, 0.8689427143406382, 0.9489888504421377, 1.0]
     },
     {
         "domain_id":20,
-        "domain_name":"Documentation",
+        "domain_name": "Docs.",
+        "domain_fullname": "Documentation",
         "domain_description":"- Examples: technical writing, API documentation, README files, source code\n- Unlike 'Customer Support', meant for developers and experts, rather than end-users",
         "color": [0.7066666666666667, 0.9168627450980392, 0.9443137254901961, 1.0]
     },
     {
         "domain_id":21,
-        "domain_name":"Audio Transcript",
+        "domain_name":"Audio<br>Transcript",
         "domain_description":"- A written record of spoken language\n- Examples: interviews (e.g., in a newspaper), the transcript of a court hearing, movie, podcast, lecture, or speech",
         "color": [0.6786159169550173, 0.8689427143406382, 0.9489888504421377, 1.0]
     },
@@ -139,7 +146,7 @@
     },
     {
         "domain_id":23,
-        "domain_name":"User Review",
+        "domain_name":"User<br>Review",
         "domain_description":"- Reviews posted by users, e.g., on Yelp, TripAdvisor",
         "color": [0.6405997693194925, 0.80399846212995, 0.9553248750480585, 1.0]
     }
