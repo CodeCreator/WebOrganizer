@@ -8,6 +8,8 @@ let currentExampleIndex = 0;
 let currentExamples = [];
 let originalTopicValues = null;
 let originalFormatValues = null;
+let topicIdsToIndices = null;
+let formatIdsToIndices = null;
 
 // Fetch all required data
 async function loadData() {
@@ -24,17 +26,81 @@ async function loadData() {
         fetch('assets/data/statistics.json').then(r => r.json())
     ]);
 
-    topicsData = topics;
-    formatsData = formats;
     statisticsData = statistics;
+
+    // Sort topics and originalTopicValues by color
+    topicIdsToIndices = {
+        0: 12,
+        1: 9,
+        2: 2,
+        3: 5,
+        4: 6,
+        5: 3,
+        6: 13,
+        7: 21,
+        8: 14,
+        9: 0,
+        10: 15,
+        11: 16,
+        12: 10,
+        13: 17,
+        14: 18,
+        15: 1,
+        16: 11,
+        17: 22,
+        18: 23,
+        19: 4,
+        20: 7,
+        21: 19,
+        22: 8,
+        23: 20,
+    }
+
+    formatIdsToIndices = {
+        0: 16,
+        1: 12,
+        2: 5,
+        3: 18,
+        4: 2,
+        5: 19,
+        6: 8,
+        7: 6,
+        8: 20,
+        9: 13,
+        10: 14,
+        11: 15,
+        12: 21,
+        13: 22,
+        14: 0,
+        15: 1,
+        16: 23,
+        17: 3,
+        18: 9,
+        19: 10,
+        20: 17,
+        21: 11,
+        22: 7,
+        23: 4,
+    }
+
+    topicsData = (
+            topics
+                .map(topic => ({...topic, index: topicIdsToIndices[topic.domain_id]}))
+                .sort((a, b) => a.index - b.index)
+    )
+    formatsData = (
+        formats
+            .map(format => ({...format, index: formatIdsToIndices[format.domain_id]}))
+            .sort((a, b) => a.index - b.index)
+    )
 
     // Calculate marginal distributions
     originalTopicValues = new Array(topicsData.length).fill(0);
     originalFormatValues = new Array(formatsData.length).fill(0);
 
     for (const stat of statistics) {
-        originalTopicValues[stat.topic_id] += stat.weight;
-        originalFormatValues[stat.format_id] += stat.weight;
+        originalTopicValues[topicIdsToIndices[stat.topic_id]] += stat.weight;
+        originalFormatValues[formatIdsToIndices[stat.format_id]] += stat.weight;
     }
 
     // Create and render initial treemaps
@@ -44,7 +110,7 @@ async function loadData() {
     updateDomainDescriptions();
 }
 
-function getConditionalDistribution(conditionType, conditionId) {
+function getConditionalDistribution(conditionType, conditionIndex) {
     if (!conditionType) {
         return null;
     }
@@ -53,10 +119,11 @@ function getConditionalDistribution(conditionType, conditionId) {
     let total = 0;
 
     for (const stat of statisticsData) {
-        if ((conditionType === 'topic' && stat.topic_id === conditionId) ||
-            (conditionType === 'format' && stat.format_id === conditionId)) {
+        if ((conditionType === 'topic' && stat.topic_id === topicsData[conditionIndex].domain_id) ||
+            (conditionType === 'format' && stat.format_id === formatsData[conditionIndex].domain_id)) {
             const targetId = conditionType === 'topic' ? stat.format_id : stat.topic_id;
-            distribution[targetId] += stat.weight;
+            const targetIndex = conditionType === 'topic' ? formatIdsToIndices[targetId] : topicIdsToIndices[targetId];
+            distribution[targetIndex] += stat.weight;
             total += stat.weight;
         }
     }
@@ -71,34 +138,29 @@ function getConditionalDistribution(conditionType, conditionId) {
     return distribution;
 }
 
+
 function createTreemapTrace(data, values, type) {
-    // Calculate max value for scaling
-    const maxValue = Math.max(...values);
-    const minFontSize = 10;
-    const maxFontSize = 16;
-    
     return {
         type: 'treemap',
-        labels: data.map((d, i) => {
-            const percentage = values[i] * 100;
-            return percentage >= 2 ? 
-                `${d.domain_name}<br>${percentage.toFixed(1)}%` :
-                d.domain_name;
-        }),
         parents: new Array(data.length).fill(''),
-        values: values,
-        textinfo: 'label',
         textposition: 'middle center',
-        textfont: { 
+        textfont: {
             color: 'black',
-            // Scale font size based on the value's proportion of the maximum
-            size: minFontSize + ((maxFontSize - minFontSize) * (values[0] / maxValue))
+            size: 10
         },
-        hovertext: data.map((d, i) => d.domain_name + '<br>' + (values[i]*100).toFixed(1) + '%'),
         hoverinfo: 'text',
         hoverlabel: {
             font: { color: 'black' }
         },
+        sort: false,
+        tiling: {
+            packing: 'squarify',
+            flip: "y",
+            pad: 2,
+        },
+        textinfo: 'label+percent root',
+        labels: data.map((d) => d.domain_name),
+        values: values,
         marker: {
             colors: values.map((_, i) =>
                 `rgba(${Math.round(data[i].color[0] * 255)},
@@ -107,11 +169,7 @@ function createTreemapTrace(data, values, type) {
                       ${data[i].color[3] * 0.8})`
             )
         },
-        tiling: {
-            packing: 'squarify',
-            flip: "y",
-            sort: data.map(d => d.color[1]) // By color gradient
-        }
+        hovertext: data.map((d, i) => d.domain_name + '<br>' + (values[i]*100).toFixed(1) + '%'),
     };
 }
 
@@ -153,8 +211,21 @@ function renderTreemaps(topicValues, formatValues) {
         plot.on('plotly_hover', (data) => {
             const point = data.points[0];
             if (point.pointNumber !== undefined) {
-                const hoveredId = point.pointNumber;
-                updateConditionalDistribution(type, hoveredId);
+                const hoveredIndex = point.pointNumber;
+                let topicValues = originalTopicValues;
+                let formatValues = originalFormatValues;
+
+                if (type === 'format') {
+                    topicValues = getConditionalDistribution('format', hoveredIndex);
+                    Plotly.update('topic-treemap', {
+                        values: [topicValues],
+                    })
+                } else if (type === 'topic') {
+                    formatValues = getConditionalDistribution('topic', hoveredIndex);
+                    Plotly.update('format-treemap', {
+                        values: [formatValues]
+                    });
+                }
             }
         });
 
@@ -172,33 +243,14 @@ function renderTreemaps(topicValues, formatValues) {
         plot.on('plotly_treemapclick', (data) => {
             const point = data.points[0];
             if (type === 'topic') {
-                selectedTopic = point.pointNumber !== undefined ? point.pointNumber : null;
+                selectedTopic = point.pointNumber !== undefined ? topicsData[point.pointNumber].domain_id : null;
             } else {
-                selectedFormat = point.pointNumber !== undefined ? point.pointNumber : null;
+                selectedFormat = point.pointNumber !== undefined ? formatsData[point.pointNumber].domain_id : null;
             }
             updateDomainDescriptions();
             loadExamples();
             return false;
         });
-    });
-}
-
-function updateConditionalDistribution(type, hoveredId) {
-    let topicValues = originalTopicValues;
-    let formatValues = originalFormatValues;
-
-    if (type === 'format') {
-        topicValues = getConditionalDistribution('format', hoveredId);
-    } else if (type === 'topic') {
-        formatValues = getConditionalDistribution('topic', hoveredId);
-    }
-
-    // Update the visualizations with the conditional distributions
-    Plotly.update('topic-treemap', {
-        values: [topicValues]
-    });
-    Plotly.update('format-treemap', {
-        values: [formatValues]
     });
 }
 
@@ -254,8 +306,8 @@ function updateExampleViewer() {
             <div class="example-header">
                 <div class="url">${example.url}</div>
                 <div class="metadata">
-                    Topic: ${topicsData[example.topic_id].domain_name} (<span class="score">${topicScore}%</span>) |
-                    Format: ${formatsData[example.format_id].domain_name} (<span class="score">${formatScore}%</span>)
+                    Topic: ${topicsData[topicIdsToIndices[example.topic_id]].domain_name} (<span class="score">${topicScore}%</span>) |
+                    Format: ${formatsData[formatIdsToIndices[example.format_id]].domain_name} (<span class="score">${formatScore}%</span>)
                 </div>
             </div>
             <pre>${example.text}</pre>
@@ -283,7 +335,7 @@ function updateDomainDescriptions() {
 
     // Update topic description
     if (selectedTopic !== null) {
-        const topic = topicsData[selectedTopic];
+        const topic = topicsData[topicIdsToIndices[selectedTopic]];
         topicDesc.innerHTML = `
             <h3>${topic.domain_name}</h3>
             <p>${topic.domain_description || 'No description available.'}</p>
@@ -300,7 +352,7 @@ function updateDomainDescriptions() {
 
     // Update format description
     if (selectedFormat !== null) {
-        const format = formatsData[selectedFormat];
+        const format = formatsData[formatIdsToIndices[selectedFormat]];
         formatDesc.innerHTML = `
             <h3>${format.domain_name}</h3>
             <p>${format.domain_description || 'No description available.'}</p>
