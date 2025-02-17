@@ -1,6 +1,6 @@
 # <img src="website/assets/images/icon.png" style="height: 1em; vertical-align: -10%;"> Organize the Web: Constructing Domains Enhances Pre-Training Data Curation
 
-[[Paper](ARXIV_TBD)] [[Website](WEBSITE_TBD)] [[Hugging Face](https://huggingface.co/WebOrganizer)]
+[[Paper](https://arxiv.org/pdf/2502.10341.pdf)] [[Website](https://weborganizer.allen.ai)] [[Hugging Face](https://huggingface.co/WebOrganizer)]
 
 <img src="website/assets/images/treemaps.png" width="75%" alt="Overview over WebOrganizer domains">
 
