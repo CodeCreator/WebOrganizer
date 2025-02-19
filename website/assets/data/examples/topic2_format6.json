@@ -1,66 +1,162 @@
 [
     {
-        "url":"http:\/\/www.itprotoday.com\/software-development\/using-asynchronous-method-calls-c",
-        "text":"Using Asynchronous Method Calls in C#\n\nClasses in the .NET Framework Base Class Library (BCL) provide both synchronous and asynchronous method signatures. This article describes when and how it can be more beneficial to use asynchronous method calls.\n\nClick here for entire article.\n\nHide comments\n\n\n  \u2022 Allowed HTML tags: <em> <strong> <blockquote> <br> <p>\n\nPlain text\n\n  \u2022 No HTML tags allowed.\n  \u2022 Web page addresses and e-mail addresses turn into links automatically.\n  \u2022 Lines and paragraphs break automatically.",
+        "url":"http:\/\/pgbovine.net\/CACM-group-code-reviews.htm",
+        "text":"\n\nSmall-Group Code Reviews for Education\n\nCode reviews are essential in professional software development. When I worked at Google, every line of code I wrote had to be reviewed by several experienced colleagues before getting committed into the central code repository. The primary stated benefit of code review in industry is improving software quality, but an important secondary benefit is education.\n\n\n[Read the rest of this article at the CACM blog]\n\nCreated: 2014-06-19\nLast modified: 2014-06-19\nRelated pages tagged as programming:",
         "topic_id":2,
         "format_id":6,
-        "topic_confidence":0.9903631806,
-        "format_confidence":0.95940274
+        "topic_confidence":0.9699343443,
+        "format_confidence":0.9274686575
     },
     {
-        "url":"http:\/\/oxfordindex.oup.com\/view\/10.1093\/oi\/authority.20110803100008171",
-        "text":"Internet Server Application Programming Interface\n\nShow Summary Details\n\nQuick Reference\n\nAn API developed by Microsoft which enables developers to integrate a server with application programs; in this case programs written for the Windows operating system. For example, it would allow access to database management systems and enable back end processes.\n\nSubjects: Computing.\n\nReference entries\n\nUsers without a subscription are not able to see the full content. Please, subscribe or login to access all content.",
+        "url":"http:\/\/www.infoworld.com\/resources\/61873\/application-development\/quick-guide-20-tips-and-tricks-git-github-users",
+        "text":"Deep Dive\n\nQuick guide: 20 tips and tricks for Git and GitHub users\n\nBecome An Insider\n\nSign up now and get FREE access to hundreds of Insider articles, guides, reviews, interviews, blogs, and other premium content. Learn more.\n\nGet the most out of the programming world's favorite distributed version control system with these essential pointers for Git and GitHub\n\nGitHub Deep Dive promo\n\nAre you using Git or GitHub? Are you getting all you can out of them? If you've been slow on the uptake or simply want an expansive overview of the center of the programming universe, check out these 20 essential tips. You don't even have to choose between the command line (Git) or the client (GitHub). InfoWorld covers both in this handy guide.\n\nDownload the PDF today for pointers on clones, pulls, commits, branches, merges, forks, Markdown, and more in Git and GitHub. With this InfoWorld quick guide, not only can you get started, you can get smarter with Git and GitHub.\n\nTo continue reading this article register now",
         "topic_id":2,
         "format_id":6,
-        "topic_confidence":0.929289937,
-        "format_confidence":0.9186615348
+        "topic_confidence":0.9820304513,
+        "format_confidence":0.9202697277
     },
     {
-        "url":"https:\/\/gist.github.com\/uploadcare-user\/9df3b01a2a337e6c82bbe86777560810",
-        "text":"Skip to content\n\nInstantly share code, notes, and snippets.\n\nWhat would you like to do?\nSnippet, <safescript> in a template processor\n{% safescript %}\nvar s = \"surprise!<\/script><script>alert('whoops!')<\/script>\";\n{% endsafescript %}\n{% safescript %}\nvar a = 'Consider this string: <!--';\nvar b = '<script>';\n{% endsafescript %}\nSign up for free to join this conversation on GitHub. Already have an account? Sign in to comment\nYou can\u2019t perform that action at this time.",
+        "url":"https:\/\/insidehpc.com\/2015\/06\/video-three-ways-to-debug-parallel-cuda-applications\/",
+        "text":"\nSend me information from insideHPC:\n\nVideo: Three Ways to Debug Parallel CUDA Applications\n\n0In this video from the GPU Technology Conference, Chris Gottbrath from Rogue Wave Software presents: Three Ways to Debug Parallel CUDA Applications: Interactive, Batch, and Corefile.\n\nThere are now three ways that one can approach debugging an MPI application running on a cluster that is accelerated with NVIDIA GPUs. These are interactive hands on debugging, non-interactive batch debugging and post-mortem debugging using the GPU corefile functionality introduced in CUDA 7.0. Each of these techniques is a useful tool with benefits and limitations. This talk will introduce these three debugging techniques and provide some suggestions on selecting the optimal approach for a variety of debugging scenarios such as hangs, numerical errors, and crashes. Specific examples will be given using the TotalView debugger but the concepts covered may apply to other debugging tools such as GDB and the NVIDIA NSIGHT debugger.\u201d\n\nDownload the Slides (PDF) * Sign up for our insideHPC Newsletter\n\nLeave a Comment\n\n\nResource Links:",
         "topic_id":2,
         "format_id":6,
-        "topic_confidence":0.9852132201,
-        "format_confidence":0.5968676209
+        "topic_confidence":0.9550749063,
+        "format_confidence":0.7937206626
     },
     {
-        "url":"https:\/\/redtalks.live\/2017\/02\/",
-        "text":"REDtalks #16 \u2013 Andy & Tom on Metrics Driven\u00a0Automation\n\nIn episode #16 we are joined by Andreas (Andy) Grabner, of Dynatrace, and Tom McGonagle, of F5 Networks.\n\nWatch this episode to hear about Metrics Driven Automation, or Informed Automation, and how this takes the feat out of fully integrated deployment pipelines. Andy shares some great insights on how to avoid automating oneself into dangerous situations.\n\nFollowing this, Tom shows us (yes, a live demo) how to deploy an F5 BIG-IP policy using the CI\/CD tool, Jenkins.\n\n\nYou may recall Tom from a previous episode,\u00a0REDtalks #14 \u2013 Tom & David on the Principles & Practices of DevOps. Thanks for coming back, Tom! Here\u2019s the Jenkins Github repo he referenced in his demo:\n\nAnd thanks, Andy, for your valuable insights on \u00a0impelmenting safe, information automation. Andreas To hear more from Andy Grabner, take a look at some of these links:\n\nThanks, both, for your time!",
+        "url":"https:\/\/nearsoft.com\/videos\/53-seconds\/",
+        "text":"53-second introduction\n\nWhy, Where, and How in less than a minute\u2026\n\nWe have a different approach. It is not offshoring or off-putting.\n\nNearsoft was created by people who faced the same challenges you are facing today: shortage of developers, limited budgets, and frustrating offshoring options. So, we built the company we wish had existed to grow our own development team.\n\nWe are not a staffing company. We are not an offshoring company. We are not even an outsourcing company.\n\nWe are a grow-your-team-and-build-great-products company.\n\nNow that you\u2019ve spent a few seconds watching the video, learn more about us in a few minutes, chatting. If we are a match, it will add hours to your day and years to your life.\n\nRequest a phone call\n\nRequest a phone call\n\nWe will call you right away! Try us!\nContact Request\n\nSee also:\n\n\nOutsourcing in Local Time\n\nHow working with Nearsoft compares to offshore.\n\nContact Request\n\nAll information is kept private",
         "topic_id":2,
         "format_id":6,
-        "topic_confidence":0.9334541559,
-        "format_confidence":0.503837347
+        "topic_confidence":0.7778210044,
+        "format_confidence":0.5656305552
     },
     {
-        "url":"https:\/\/blog.yo61.com\/2012\/06\/20\/",
-        "text":"When I began using puppet, I quickly realised that configuration data was best kept separate from puppet manifests. Initially, I used extlookup and kept configuration data in CSV files. Then complex data structures came to puppet and I now use hirea\/hiera-puppet with configuration data stored in hierarchical YAML files (other hiera backends are available). This article describes how to define in YAML the resources that should be applied to a node.\n\nContinue reading",
+        "url":"http:\/\/itx.web.id\/tag\/object-oriented-php\/",
+        "text":"\u2018Object Oriented Php\u2019 Articles at itx si tukang kritix\n\nObject Oriented Programming with PHP\n\nObject Oriented Programming with PHP\nMaret 8, 2011\n\nDiscussion Board : Introduction to object oriented programming concept on the PHP, especially class and inheritance. Requirements: webserver package, already installed. According Wikipedia.Com, Object Oriented Programming is paradigm to object-oriented programming. All data and functions within this paradigm is wrapped in a class or object. Key in OOP is the object. Objects can be said \u2026 Baca Selengkapnya\n\nError. Page cannot be displayed. Please contact your service provider for more details. (10)",
         "topic_id":2,
         "format_id":6,
-        "topic_confidence":0.9440408349,
-        "format_confidence":0.7923573256
+        "topic_confidence":0.9867136478,
+        "format_confidence":0.7585058212
     },
     {
-        "url":"http:\/\/www.es.mdh.se\/news-events\/75-Seminar__Kurt_Wallnau_SEI_CMU",
-        "text":"\n\nThe full-text document you are about to access is subject to national and international copyright laws. In most cases (but not necessarily all) the consequence is that personal use is allowed given that the copyright owner is duly acknowledged and respected. All other use (typically) require an explicit permission (often in writing) by the copyright owner.\n\nFor the reports in this repository we specifically note that\n\n  \u2022 the use of articles under IEEE copyright is governed by the IEEE copyright policy (available at\n  \u2022 the use of articles under ACM copyright is governed by the ACM copyright policy (available at\n  \u2022 technical reports and other articles issued by M\u00c3\u00a4lardalen University is free for personal use. For other use, the explicit consent of the authors is required\n  \u2022 in other cases, please contact the copyright owner for detailed information\n\nBy accepting I agree to acknowledge and respect the rights of the copyright owner of the document I am about to access.\n\nIf you are in doubt, feel free to contact\n\nSeminar, Kurt Wallnau SEI\/CMU\n\n\nKurt Wallnau , Kurt Wallnau\n\n\n\nStart time:\n\n2004-01-29 13:15\n\nEnd time:\n\n2004-01-29 16:15\n\n\n\nContact person:\n\n\nKurt Wallnau, SEI\/CMU, US Predictable assembly from certificated componentsAs a part of a course Advanced component-based software engineering Kurt will present concepts of Predictable assembly from certificated components. For more information see Predictable assembly - an Overview\n\nKurt Wallnau,",
+        "url":"https:\/\/www.scalablepath.com\/blog\/tag\/multi-page-applications\/",
+        "text":"by Rafael Carvalho |\nSenior Developer\n\nSingle Page Applications: When and Why You Should Use Them\n\nSelecting the correct technology stack can make or break a project. Sometimes, the desire to\u00a0use the next \u2018hot\u2019 technology leads stakeholders (both technical and non-technical) to make unwise decisions in this department.\u00a0 Twitter is a high profile example of this phenomenon. In 2010, the social giant shipped a new Single Page Application (SPA) architecture that\u2026 [Read entire article]",
         "topic_id":2,
         "format_id":6,
-        "topic_confidence":0.9200991392,
-        "format_confidence":0.5630412102
+        "topic_confidence":0.9688789248,
+        "format_confidence":0.9236595631
     },
     {
-        "url":"http:\/\/javacook.darwinsys.com\/fr.html",
-        "text":"French Edition\n\nThe French Edition <<Java en action>> is temporarily out of print and the page has been removed from the O' site. Here is a link to the original, to the Internet Archive copy, and a local copy. I presume that O' is working on a translation of the second edition, but I often don't find out about these things until they appear. Contact O'Reilly France to find out.",
+        "url":"https:\/\/www.adrian.idv.hk\/page\/104\/",
+        "text":"FORTRAN (or Fortran) has three major favors currently, Fortran 77, Fortran 90 and Fortran 95. Fortran 77 is the most popular one and de-facto. Fortran 90 relaxes some constrains of Fortran 77, most notably is the allowance of free-format programming in Fortran 90. Fortran 95 is just a revision of... [more]",
         "topic_id":2,
         "format_id":6,
-        "topic_confidence":0.9513236284,
-        "format_confidence":0.8531663418
+        "topic_confidence":0.7948539257,
+        "format_confidence":0.7633478642
     },
     {
-        "url":"https:\/\/www.confreaks.tv\/videos\/rubyconf2014-strong-duck-type-driven-development",
-        "text":"Talking head\nRuby Conference 2014\n\nThis presentation, by John Cinnamond, is licensed under a Creative Commons Attribution ShareAlike 3.0\n\nAs a language, Ruby plays fast and loose with the type system. Developers rely on duck typing to check that the things they want to do with an object are permissible. Whilst this freedom makes writing code frictionless and often a whole lot of fun, it doesn't always scale up well to writing larger systems. I can't promise that strong duck typing - adding automated checking to inter-object interfaces - will make writing complex systems easy but it will help you think about how to structure code in new ways and bring some of the lessons learned from other languages to the Ruby community.\n\nRated: Everyone\nViewed 986 times\nTags: There are no tags for this video.",
+        "url":"http:\/\/channel9.msdn.com\/Shows\/Continuum\/ASPNET-MVC-1-with-Phil-Haack?format=auto",
+        "text":"Loading User Information from Channel 9\n\nSomething went wrong getting user information from Channel 9\n\nLatest Achievement:\n\nLoading User Information from MSDN\n\nSomething went wrong getting user information from MSDN\n\nVisual Studio Achievements\n\nLatest Achievement:\n\nLoading Visual Studio Achievements\n\nSomething went wrong getting the Visual Studio Achievements\n\nASP.NET MVC 1 with Phil\u00a0Haack\n\n\nRight click \u201cSave as\u2026\u201d\n\n  \u2022 High Quality WMV (PC)\n  \u2022 MP3 (Audio only)\n  \u2022 MP4 (iPhone, Android)\n  \u2022 Mid Quality WMV (Lo-band, Mobile)\n  \u2022 WMV (WMV Video)\nASP.NET MVC 1.0 has been released today at MIX09!\u00a0 Phil Haack stopped by the studio last week to explain what makes this version 1 of the MVC Framework for ASP.NET and spends a little time explaining the MVC pattern.\u00a0 Phil then demos the scaffolding functionality which allows you to quickly build a functional website based on your existing data services.\n\n\nFollow the Discussion\n\nRemove this comment\n\nRemove this thread\n\n\nComments Closed\n\nComments have been closed since this content was published more than 30 days ago, but if you'd like to continue the conversation, please create a new thread in our Forums,\nor Contact Us and let us know.",
         "topic_id":2,
         "format_id":6,
-        "topic_confidence":0.9904933572,
-        "format_confidence":0.9655559063
+        "topic_confidence":0.9834768176,
+        "format_confidence":0.8016169667
+    },
+    {
+        "url":"http:\/\/www.testingtv.com\/2016\/08\/15\/multithreaded-test-synthesis\/",
+        "text":"Multithreaded Test Synthesis\n\nSubtle concurrency errors in multithreaded libraries that arise because of incorrect or inadequate synchronization are often difficult to pinpoint precisely using only static techniques. On the other hand, the effectiveness of dynamic detectors is critically dependent on multithreaded test suites whose execution can be used to identify and trigger concurrency bugs including data races, deadlocks and atomicity violations. Usually, such multithreaded tests need to invoke a specific combination of methods with objects involved in the invocations being shared appropriately to expose a bug. Without a priori knowledge of the bug, construction of such tests can be challenging.\n\nThis talk presents a lightweight and scalable technique for synthesizing tests for detecting thread-safety violations. Given a multi-threaded library and a sequential test suite, I will describe a fully automated analysis that examines sequential execution traces, and produces as its output a concurrent client program that drives shared objects via library method calls to states conducive for triggering a concurrency bug. Experimental results on a variety of well-tested Java libraries demonstrate the effectiveness of our approach in revealing many complex bugs.\n\nVideo producer:\n\nRelated Videos:\n\n  \u2022 No Related Videos",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.9849224091,
+        "format_confidence":0.5133565068
+    },
+    {
+        "url":"https:\/\/aspdotnet5hosting.com\/tag\/spain-asp-net-mvc-4-hosting\/",
+        "text":"ASP.NET MVC 4 Tutorial :: Mobile Authentication With ASP.NET MVC 4\n\nASP.NET MVC 4 Tutorial | In this article, I am going to show you how to build an ASP.NET MVC web app with Two-Factor Authentication using Google Authenticator for preventing brute force attack. Two-Factor authentication is a great way to help secure user accounts as It authenticates users using two valid authentication factors. Here in[\u2026]",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.9831725359,
+        "format_confidence":0.6527763605
+    },
+    {
+        "url":"https:\/\/www.ruby-toolbox.com\/resources\/175",
+        "text":"Optimize your Images\n\nSubmitted by Christoph Olszowka 2011-03-24 17:21:08 UTC\nSource:\u00a0 http:\/\/www.ror-e.com\/posts\/6-optimize-your-images\n\nReferenced projects\n\n\nEasy upload management for ActiveRecord\n\nGithub thoughtbot\/paperclip\n\nDevelopment activity\nLast commit\n2016-04-30 18:32:08 UTC\n\nIn order to continue, you must be signed in using your Github account.\n\nIf you're signing in using this account for the first time Github will ask for your permission to give access to your public user data to the Ruby Toolbox.\n\nAlthough the Github Authorization page does not mention it, the request includes read-only access to your verified email address (user:email OAuth scope). This is neccessary so there's a way to notify you about comments, information about your accepted project edits and the like. You can review your notification settings on your account page once you're signed in.",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.962382853,
+        "format_confidence":0.8122227192
+    },
+    {
+        "url":"https:\/\/blogs.forgerock.org\/aggregator\/?cat=72",
+        "text":"\n\nThe short video log that follows was prepared to answer a question raised in the Forum on the ForgeRock Community Website. It\u2019s an easy one on how to configure two separate BaseDNs of a single ForgeRock OpenDJ instance as Identity Repository for two separate Realms in ForgeRock OpenAM.\n\n\nThis blog post was first published @, included here with permission.",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.8845794797,
+        "format_confidence":0.8094521165
+    },
+    {
+        "url":"https:\/\/www.safaribooksonline.com\/a\/coaching-agile-teams\/240035\/",
+        "text":"O'Reilly logo\n  \u2022 Janice Molloy thinks this is interesting:\n\nCreate Annotation From Video Agile Development - ManagerAgile Development - Product OwnerAgile Development - Scrum MasterAgile Development - Team MemberArduino for ParentsDeveloping Your PeopleDistributed TeamsDraft TutorialsDriving InnovationGetting helpGetting started with our toolsImplementing ChangeInfluence and Effective CommunicationMaximizing Team PerformanceOrganizational NetworkingOur productsRaspberry Pi for ParentsRemoved LessonsSales for OutsidersStrategic Thinking for ManagersThe Leader in YouTutorial TestWelcome Cancel Save Annotate\n\n\nCover of Coaching Agile Teams\n\n\nThis video is the fifth in a series of five in which Lyssa Adkins, an agile coach trainer, discusses the mindsets required for success in an agile environment. As a scrum master, it is important that you maintain these mindsets yourself and know how to encourage them in others.",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.7187126279,
+        "format_confidence":0.8835268021
+    },
+    {
+        "url":"https:\/\/www.codeproject.com\/script\/Articles\/ViewDownloads.aspx?aid=4671",
+        "text":"Click here to Skip to main content\n13,198,850 members (41,985 online)\nClick here to Skip to main content\n\n\n51 bookmarked\nPosted 31 Jul 2003\n\nHow to Programmatically add IP Addresses to IIS's Deny Access List using C# and WMI\n\n, 31 Jul 2003\nAn article that shows the basic steps to programmatically adding an IP address to the IIS deny access list.\n\nBy viewing downloads associated with this article you agree to the Terms of Service and the article's licence.\n\nIf a file you wish to view isn't highlighted, and is a text file (not binary), please let us know and we'll add colourisation support for it.\n\n\nThis article has no explicit license attached to it but may contain usage terms in the article text or the download files themselves. If in doubt please contact the author via the discussion board below.\n\nA list of licenses authors might use can be found here\n\n\nAbout the Author\n\nScott Burgett\nWeb Developer\nUnited States United States\nCurrently a manager at a healthcare IT company, I've spent the last 7 years managing a variety of projects that range from web based kiosk applications to larger transaction based applications. Previously, I spent 8 years as a software engineer developing messaging, image editing, web based applications, and mainframe applications.\n\nYou may also be interested in...\n\nPermalink | Advertise | Privacy | Terms of Use | Mobile\nWeb03 | 2.8.171020.1 | Last Updated 1 Aug 2003\nArticle Copyright 2003 by Scott Burgett\nEverything else Copyright \u00a9 CodeProject, 1999-2017\nLayout: fixed | fluid",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.9843373895,
+        "format_confidence":0.7629676461
+    },
+    {
+        "url":"https:\/\/wordpress.tv\/2015\/08\/18\/konstantin-obenland-building-themes-lessons-learned-from-contributing-to-default-themes\/",
+        "text":"Konstantin Obenland: Building Themes: Lessons Learned from Contributing to Default\u00a0Themes\n\nContinue the discussion\n\nFill in your details below or click an icon to log in:\n\nWordPress.com Logo\n\nYou are commenting using your WordPress.com account. Log\u00a0Out\u00a0\/\u00a0 Change\u00a0)\n\nGoogle photo\n\nYou are commenting using your Google account. Log\u00a0Out\u00a0\/\u00a0 Change\u00a0)\n\nTwitter picture\n\nYou are commenting using your Twitter account. Log\u00a0Out\u00a0\/\u00a0 Change\u00a0)\n\nFacebook photo\n\nYou are commenting using your Facebook account. Log\u00a0Out\u00a0\/\u00a0 Change\u00a0)\n\nConnecting to %s\n\n\nAugust 18, 2015\n\nKonstantin has been involved in creating three out of the last four default themes for WordPress. It\u2019s been a great learning opportunity both as a WordPress developer as well as a contributor and member of the community. Konstantin Obenland shares some lessons learned, on the theme creation side of things about how innovative we were able to be even though we had to cater to such a broad spectrum of users, and on the community side how it enabled him to become more involved with the project and work with other contributors around the world towards a common goal.\n\nRate this:\n\n\nWordCamp Mumbai 2015 14\n\n\nKonstantin Obenland 41\n\n\nThemes 275\n\n\nEnglish 8518\n\nMP4: Low, Med, High\nOGG: Low\nSubtitle this video \u2192\n%d bloggers like this:",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.881436646,
+        "format_confidence":0.9122963548
+    },
+    {
+        "url":"https:\/\/changelog.com\/news\/jsfuzz-a-coverageguided-fuzzer-for-testing-javascriptnode-packages-mn31",
+        "text":"Jsfuzz \u2013 a coverage-guided fuzzer for testing JavaScript\/Node packages\u00a0\u00a0\u21a6\n\nFuzzing for safe languages like nodejs is a powerful strategy for finding bugs like unhandled exceptions, logic bugs, security bugs that arise from both logic bugs and Denial-of-Service caused by hangs and excessive memory usage.\n\nAs we recently learned on Go Time: pessimists write tests, fuzz functions, and sleep well at night. \ud83d\udca4\n\n\nSign in or Join to comment or subscribe\n\n0:00 \/ 0:00",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.9811896086,
+        "format_confidence":0.5726367235
+    },
+    {
+        "url":"http:\/\/phaser.io\/news\/2017\/06\/creating-games-with-phaser-part-6",
+        "text":"In Part 6 of this new video based tutorial course learn about adding Artificial Intelligence to your games.\n\nArticle by Richard Davey. Posted on 27th Jun 2017. \u00a0 @photonstorm\n\nBrian Greig has published a series of tutorial videos on YouTube covering game development in Phaser. In Part 6 he teaches you about implementing artificial intelligence into your games.\n\nWatch on YouTube",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.9359115362,
+        "format_confidence":0.5288786888
+    },
+    {
+        "url":"http:\/\/www.tvagile.com\/2009\/09\/07\/discovering-lean-at-hewlett-packard\/",
+        "text":"Discovering Lean at Hewlett Packard\n\nThe Hewlett Packard LaserJet Development team used systems engineering tools to discover the laws of Lean and increase the productivity of developing embedded and server based software by hundreds of percent. Learn from the actual work done on LaserJet products these laws of Lean. You will learn:\n* How to increase software developer productivity dramatically while making the developers happier\n* Lean approaches that reduce the risk of schedule slip even on very new and complex projects\n* The keys to using Kanban and other principles that give constant high productivity on any size of project\n* How to move from slow, costly and inaccurate planning to fast, inexpensive and accurate planning\n* Learn about an approach to testing to get the best results available with Lean\n* How to have accurate status to build credibility with your management\n* Why some Agile efforts are much more successful\n* How to have confidence in applying Lean to your important projects\n\nWatch this video on\n\nRelated Videos:",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.5814142227,
+        "format_confidence":0.6494146585
+    },
+    {
+        "url":"https:\/\/www.irmconnects.com\/case-management-and-cmmn-for-developers\/",
+        "text":"Case Management and CMMN for Developers\n\nIn Business Process Management by IRM UKLeave a Comment\n\nPrint Friendly, PDF & Email\n\nWorkflow engines have arrived in developer toolboxes. The BPMN 2.0 standard is typically used. When automating, however, one might come across situations in which\nhumans must be able to affect the process.\n\nBy: Bernd Rucker, Camunda, [email\u00a0protected]\n\nJakob Freund, CEO of Camunda, will be participating in our Business Process Management Conference Europe 2015, 15-18 June where he will be presenting the following session BPMN and CMMN: A Match Made in Heaven? and will also be participating in the Panel Session: BPM, Case Management, Decision Management \u2013 More than Buzzwords?\n\nThis article is in PDF format, and can be downloaded by following the button link below\n\nDownload PDF\n\nAll articles are \u00a9 2015 by the authors.\n\nThe views and opinions expressed by our authors are those of our authors and do not necessarily reflect the official policy or position of IRM UK.\n\nThis article was featured in IRM UK\u2019s Monthly E-newsletter. To subscribe please visit Please note we are always on the look-out for new contributors so if you have an article you would like published please forward it to [email\u00a0protected] for consideration.\n\nIRM UK Strategic IT Training Ltd. 2nd Floor, Monument House, 215 Marsh Road, Pinner, Middlesex, HA5 5NE, Tel: +44 (0)20 8866 8366 E-Mail: [email\u00a0protected] Web:\n\nLeave a Comment",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.7954275608,
+        "format_confidence":0.7713996768
+    },
+    {
+        "url":"https:\/\/www.yourkit.com\/forum\/ucp.php?mode=login&sid=e26240ec706a40bfad2c623b1c0c5c9c",
+        "text":"\nEasy to use performance and memory .NET profiler for Windows and Linux.\nPerformance monitoring and profiling of Jenkins, Bamboo, TeamCity, Gradle, Maven, Ant and JUnit.\n\n\nI forgot my password\nResend activation e-mail\n\n\nIn order to login you must be registered. Registering takes only a few moments but gives you increased capabilities. The board administrator may also grant additional permissions to registered users. Before you register please ensure you are familiar with our terms of use and related policies. Please ensure you read any forum rules as you navigate around the board.\n\nTerms of use | Privacy policy\n\n\n\nYourKit uses cookies and other tracking technologies to improve your browsing experience on our website, to show you personalized content and targeted ads, to analyze our website traffic, and to understand where our visitors are coming from.\n\nBy browsing our website, you consent to our use of cookies and other tracking technologies in accordance with the Privacy Policy.",
+        "topic_id":2,
+        "format_id":6,
+        "topic_confidence":0.8163944483,
+        "format_confidence":0.9244030118
     }
 ]
