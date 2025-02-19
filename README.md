@@ -2,7 +2,10 @@
 
 [[Paper](https://arxiv.org/pdf/2502.10341.pdf)] [[Website](https://weborganizer.allen.ai)] [[Hugging Face](https://huggingface.co/WebOrganizer)]
 
-<img src="website/assets/images/treemaps.png" width="75%" alt="Overview over WebOrganizer domains">
+<a href="https://weborganizer.allen.ai"><img src="website/assets/images/treemaps.png" width="75%" alt="Overview over WebOrganizer domains"></a>
+
+*Interactively explore these domains and examples of web pages they contain at [https://weborganizer.allen.ai](https://weborganizer.allen.ai)*
+
 
 
 ## Resources
@@ -26,7 +29,9 @@ The __topic and format definitions__ and instructions for prompting large langua
 #### Corpus Annotations
 We pre-process the `1b-1x` pool from DataComps-LM using [RefinedWeb filters](https://github.com/mlfoundations/dclm/blob/main/baselines/baselines_configs/dclm_baseline_refinedweb.yaml) and [BFF deduplication](https://github.com/mlfoundations/dclm/tree/main/dedup/bff).
 The resulting 200B token corpus is available at, together with the annotations: [WebOrganizer/Corpus-200B](https://huggingface.co/datasets/WebOrganizer/Corpus-200B).
+
 __Download the dataset by cloning the repository with Git LFS instead of HuggingFace's `load_dataset()`.__
+
 The dataset has the following folder structure:
 ```bash
 Corpus-200B/
@@ -34,7 +39,7 @@ Corpus-200B/
         - CC_shard_00000000_processed.jsonl.zst
         - CC_shard_00000001_processed.jsonl.zst
         - ...
-    tokens/  # number of tokens per document
+    tokens/  # number of tokens per document (GPT-NeoX tokenizer)
         - CC_shard_00000000_processed.npy
         - CC_shard_00000001_processed.npy
         - ...
@@ -43,15 +48,21 @@ Corpus-200B/
         - ...
     scores_fineweb-edu/  # FineWeb-Edu score
         - CC_shard_00000000_processed.npy
-        - CC_shard_00000000_processed__rounded.npy  # rounded FineWeb-Edu score
+        - ...
+    scores_fineweb-edu__rounded/  # Rounded FineWeb-Edu score
+        - CC_shard_00000000_processed__rounded.npy
         - ...
     domains_topics/  # TopicClassifier annotations
-        - CC_shard_00000000_processed__logits.npy  # logits for each topic
         - CC_shard_00000000_processed__choice.npy  # index of top choice
         - ...
+    domain_topics__logits/
+        - CC_shard_00000000_processed__logits.npy  # logits for each topic
+        - ...
     domains_formats/  # FormatClassifier annotations
-        - CC_shard_00000000_processed__logits.npy  # logits for each format
         - CC_shard_00000000_processed__choice.npy  # index of top choice
+        - ...
+      domains_formats/  # FormatClassifier annotations
+        - CC_shard_00000000_processed__logits.npy  # logits for each format
         - ...
     domains_clusters-k24/  # K-means clusters
         - CC_shard_00000000_processed.npy  # cluster assignment for each document
@@ -107,6 +118,7 @@ The folder of selected documents can then be used with the tokenization and trai
 @article{wettig2025organize,
   title={Organize the Web: Constructing Domains Enhances Pre-Training Data Curation},
   author={Alexander Wettig and Kyle Lo and Sewon Min and Hannaneh Hajishirzi and Danqi Chen and Luca Soldaini},
+  journal={arXiv preprint arXiv:2502.10341},
   year={2025}
 }
 ```
