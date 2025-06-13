@@ -99,8 +99,8 @@ The script `annotate_data/annotate.sh` does large-scale data annotation using a 
 Example usage:
 ```python
 python select_training_data.py \
-    --input_base "datasets/Corpus-200B" \
-    --output_base "datasets/selected/Baseline-30B" \
+    "datasets/Corpus-200B" \
+    "datasets/selected/Baseline-30B" \
     --num_tokens 30000000000 \
     --do_sample \
     --num_proc 16
